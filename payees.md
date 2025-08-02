@@ -338,4 +338,4 @@ This separation of powers means you can delegate work without delegating trust. 
 
 ---
 
-_For technical implementation details, see the [technical documentation](technical/)._
+_For technical implementation details, see the [technical documentation](https://underscore-1.gitbook.io/developers/)._

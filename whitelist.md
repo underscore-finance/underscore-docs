@@ -226,4 +226,4 @@ Stop being prisoner to your own protection. Start having security that knows the
 
 ---
 
-_For technical implementation details, see the [technical documentation](technical/)._
+_For technical implementation details, see the [technical documentation](https://underscore-1.gitbook.io/developers/)._

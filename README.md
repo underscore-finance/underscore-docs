@@ -150,7 +150,7 @@ Start with the [User Wallet](user-wallet.md) to understand the foundation. Then 
 
 ## Technical Documentation
 
-For developers and integrators: [Complete Technical Documentation](technical/)
+For developers and integrators: [Complete Technical Documentation](https://underscore-1.gitbook.io/developers/)
 
 Build on Underscore's infrastructure with detailed guides on smart contract architecture, Lego Partner integrations, and security models. Over 30 production contracts documented with integration examples.
 

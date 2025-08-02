@@ -376,4 +376,4 @@ This is what wallet management should have been from the start. Not choosing bet
 Stop letting your wallet run on manual mode. The right operators, with the right permissions, executing the right strategies — that's how winning portfolios are built in DeFi.
 
 
-_For technical implementation details, see the [technical documentation](technical/)._
+_For technical implementation details, see the [technical documentation](https://underscore-1.gitbook.io/developers/)._

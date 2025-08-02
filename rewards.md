@@ -169,4 +169,4 @@ This is how DeFi should work — where protocols and users succeed together.
 
 ---
 
-_For technical implementation details, see the [LootDistributor contract documentation](technical/)._
+_For technical implementation details, see the [LootDistributor contract documentation](https://underscore-1.gitbook.io/developers/)._

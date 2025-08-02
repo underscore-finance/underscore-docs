@@ -12,7 +12,12 @@
 - [Digital Cheques](cheques.md)
 - [Whitelist](whitelist.md)
 
-## Earn & Build
+## Earn
 
 - [Rewards](rewards.md)
-- [Technical Documentation](technical/README.md)
+
+## Developers
+
+* [Technical Documentation](https://underscore-1.gitbook.io/developers)
+* [Deployed Contracts](https://underscore-1.gitbook.io/developers/home/deployments)
+* [GitHub](https://github.com/underscore-finance/underscore-protocol)
