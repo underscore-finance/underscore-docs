@@ -8,11 +8,11 @@ Transform your static wallet into a dynamic financial operating system. One that
 
 **Atomic Operations**: Rebalance $500k across five protocols in one transaction. Move from Aave's 7% to Morpho's 12% APY in one click. Claim rewards, swap to USDC, and re-deploy — what took 15 minutes and 5 transactions now happens instantly.
 
-**Secure Delegation**: Let AI agents capture that 15% APY spike at 3am while you sleep. Enable your CFO to pay $100k in vendor invoices without touching your $2M reserves. Set exact position limits: "Trade up to $50k USDC but never touch my ETH." Every action validated against your rules, revocable with one click.
+**Secure Delegation**: Let AI agents capture that 15% APY spike at 3am while you sleep. Enable your CFO to pay $100k in vendor invoices without touching your $2M reserves. Set exact position limits: "Trade up to $50k USDC but never touch my ETH." Every action validated against your rules, revocable with one click. All powered by [Managers](managers.md) — your automated operators that never sleep.
 
 **Unified Protocol Access**: No more tab juggling or phishing risks. Your Underscore wallet connects directly to Morpho, Aerodrome, Aave, Uniswap, and every major protocol through battle-tested adapters. Execute a Morpho deposit → Aerodrome swap → Aave leverage strategy in a single transaction.
 
-**Intelligent Payment Rails**: Pay contractors with 72-hour cancellation windows using Digital Cheques. Let employees pull their exact $5k monthly salary (not a penny more) as Payees. Move millions between your own wallets instantly via Whitelist. Your funds earn 5% APY until the millisecond they're needed.
+**Intelligent Payment Rails**: Pay contractors with 72-hour cancellation windows using [Digital Cheques](cheques.md). Let employees pull their exact $5k monthly salary (not a penny more) as [Payees](payees.md). Move millions between your own wallets instantly via [Whitelist](whitelist.md). Your funds earn 5% APY until the millisecond they're needed.
 
 Your wallet shouldn't just hold money. It should make money. Every second. Automatically.
 
