@@ -2,15 +2,11 @@
 description: Automated recurring payments to verified addresses while your funds earn yield
 ---
 
-# Payees: Your Circle of Trust for Automated Payments
+# Payees: Autopay That Earns While It Waits
 
-Your business checking account holds $500,000. At 0.01% APY, that's $50 a year. Meanwhile, you're paying $35 per wire transfer, 20 times a month. That's $8,400 annually — gone.
+Payees are pre-approved addresses that receive payments from your Underscore wallet — within exact limits you control. Send payments directly or let recipients pull funds themselves. Set individual caps: "$5k monthly for Employee A, $10k for Employee B." Configure period resets: daily, weekly, monthly, or custom. Your funds keep earning in DeFi until the millisecond they're needed.
 
-Now imagine those same funds earning 5% in DeFi ($25,000/year) while automatically paying your team on schedule. No wires. No manual transfers. No watching the clock on payday. Just verified addresses with preset limits, executing payments while your money keeps working.
-
-**Payees** are your [wallet's](user-wallet.md) trusted contacts — verified once, paid forever. Like speed dial for payments, but with built-in spending limits and automatic execution. Add an employee with a $10,000 monthly cap. A vendor with $50,000 quarterly. Your office rent at exactly $8,500 on the first.
-
-Stop choosing between yield and liquidity. Your money can do both.
+Replace wire transfers with programmable payment relationships. Pay salaries automatically while funds compound. Let contractors pull approved amounts without manual transfers. Handle rent, subscriptions, and recurring bills without lifting a finger. Every payment validated against your rules, every penny earning yield until sent.
 
 ## Why Payees Exist
 
@@ -291,16 +287,16 @@ Yes. Changes take effect immediately.
 
 Understanding when to use Payees versus Cheques ensures you're using the most efficient tool for each situation:
 
-| Feature                 | **Payees**                                                                                              | **[Cheques](cheques.md)**                                                                                                                      |
-| ----------------------- | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Primary Use Case**    | Automated, recurring payments for ongoing relationships                                                 | Flexible, one-time payments that you control until cashed                                                                                      |
-| **Payment Frequency**   | Scheduled intervals (weekly, monthly, etc.)                                                             | Single, non-repeating transaction                                                                                                              |
-| **Recipient Setup**     | Must add recipient to your "Circle of Trust" first                                                      | No setup needed — send to any address                                                                                                          |
-| **Key Benefit**         | Convenience & Automation: Set once, runs automatically                                                  | Control & Flexibility: Create now, cancel anytime before cashed                                                                                |
+| Feature                 | **Payees**                                                                                     | **[Cheques](cheques.md)**                                                                                                             |
+| ----------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Primary Use Case**    | Automated, recurring payments for ongoing relationships                                        | Flexible, one-time payments that you control until cashed                                                                             |
+| **Payment Frequency**   | Scheduled intervals (weekly, monthly, etc.)                                                    | Single, non-repeating transaction                                                                                                     |
+| **Recipient Setup**     | Must add recipient to your "Circle of Trust" first                                             | No setup needed — send to any address                                                                                                 |
+| **Key Benefit**         | Convenience & Automation: Set once, runs automatically                                         | Control & Flexibility: Create now, cancel anytime before cashed                                                                       |
 | **Ideal For**           | • Employee salaries • Rent or subscriptions • Regular vendor payments • Allowances or stipends | • Paying contractors after work approval • Settling one-time invoices • Sending gifts or prizes • Large transfers needing review time |
-| **Management**          | Set up once, modify schedule as needed                                                                  | Each cheque managed individually                                                                                                               |
-| **How Payment Happens** | Can be executed by owner/manager or pulled by recipient (if enabled)                                    | Can be cashed by owner/manager or pulled by recipient (if enabled)                                                                             |
-| **Cancellation**        | Pause or stop entire payment schedule                                                                   | Cancel specific cheque anytime before cashed                                                                                                   |
+| **Management**          | Set up once, modify schedule as needed                                                         | Each cheque managed individually                                                                                                      |
+| **How Payment Happens** | Can be executed by owner/manager or pulled by recipient (if enabled)                           | Can be cashed by owner/manager or pulled by recipient (if enabled)                                                                    |
+| **Cancellation**        | Pause or stop entire payment schedule                                                          | Cancel specific cheque anytime before cashed                                                                                          |
 
 ## The Future of Business Payments
 

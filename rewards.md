@@ -2,13 +2,11 @@
 description: Earn revenue share from protocol fees with no lock-ups or complex tokenomics
 ---
 
-# Rewards: Real Revenue Share from Real DeFi Activity
+# Rewards: Get Paid for Using DeFi
 
-You just paid $50 in swap fees. Another protocol pocketed 100% of it. Your $25K position earned the protocol $2,500 in yield fees this year. You got nothing back. Meanwhile, professional trading firms negotiate revenue share deals worth millions. Regular users are excluded from these deals.
+Underscore shares up to 50% of protocol revenue with users and ambassadors. Earn from swap fees, yield profits, and reward claims — paid in the same assets you're already using. No lock-ups, no vesting schedules, no complex tokenomics. Just real revenue share from real DeFi activity.
 
-**Underscore** shares actual protocol revenue with users and ambassadors. Swap fees, yield fees, rewards fees — up to 50% flows directly back to participants. Direct fee sharing in the assets you already use, plus additional rewards and bonuses.
-
-Finally, a protocol that treats you like a partner, not exit liquidity.
+Become an ambassador and earn when your referrals use the protocol. Get yield bonuses on profitable positions. Accumulate deposit points based on your holdings. Claim anytime, directly to any whitelisted address. Every fee you generate becomes an earning opportunity.
 
 ## How Revenue Sharing Works
 

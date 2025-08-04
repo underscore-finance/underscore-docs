@@ -2,15 +2,11 @@
 description: One-time payments you can cancel anytime before they're cashed
 ---
 
-# Digital Cheques: Send Money with Total Control
+# Digital Cheques: Send Now, Confirm Later
 
-You send $5,000 USDC to a contractor. Three hours later, you realize it's the wrong address. Your money? Gone forever. No undo button. No customer service. Just an expensive lesson in triple-checking addresses.
+Digital Cheques are time-locked payment promises that give you complete control until cashed. Write a $5,000 payment to a contractor — cancel it if they don't deliver. Set 72-hour security delays for large amounts. Recipients see the cheque immediately but can't cash until the delay expires. Your funds keep earning yield until the second they're claimed.
 
-Or you're paying a vendor for work they haven't finished yet. With traditional crypto, you either pay upfront and hope, or make them wait and chase you for payment. Neither feels right.
-
-**Digital Cheques** bring the control of paper cheques to crypto — without the paper. Write payments that recipients cash on their schedule. Cancel anytime before they do. Set automatic delays for large amounts. Keep earning yield until the moment of payment in your [wallet](user-wallet.md).
-
-Finally, crypto payments that understand mistakes happen.
+Perfect for contractor payments, large transfers needing review time, or any payment where you want an undo button. No pre-approval needed — send to any address. Cancel anytime before cashing. Full transparency onchain for both parties.
 
 ## Why Digital Cheques Exist
 
@@ -203,41 +199,41 @@ Like the automated payment system, cheques intelligently source funds from yield
 
 ## Common Questions
 
-**What if I send the wrong amount?**
+**What if I send the wrong amount?**  
 Cancel the cheque before it's cashed, create a new one.
 
-**Can recipients see pending cheques?**
-Yes, full transparency on-chain from creation.
+**Can recipients see pending cheques?**  
+Yes, full transparency onchain from creation.
 
-**Can I modify a cheque?**
+**Can I modify a cheque?**  
 No, but you can cancel and recreate with new terms.
 
-**Can I write a cheque to a whitelisted address?**
+**Can I write a cheque to a whitelisted address?**  
 No — use [Whitelist](whitelist.md) for instant payments. Cheques are for non-whitelisted recipients who need payment controls.
 
-**What happens when a cheque expires?**
+**What happens when a cheque expires?**  
 Just like a void cheque at the bank, expired cheques become invalid automatically. The funds never leave your wallet, so they're immediately available for other uses. No action needed from you.
 
-**Are there limits on cheque amounts or how many I can have?**
+**Are there limits on cheque amounts or how many I can have?**  
 Yes, for security. You can set maximum values per cheque and limit total active cheques. These safeguards prevent accidental overcommitment while giving plenty of flexibility for normal use.
 
-**Can my [Manager](managers.md) handle cheques for me?**
+**Can my [Manager](managers.md) handle cheques for me?**  
 Yes, and it's incredibly useful. You can authorize a [Wallet Manager](managers.md) to create and cancel cheques within limits you set. This is perfect for businesses where your CFO handles vendor payments, or individuals who want their financial advisor to help manage large transactions. The beauty is that Managers can only operate within your pre-set boundaries — they can't exceed spending limits or change your security settings. Learn how to set up these secure delegated permissions in our guide on [Managing Your Wallet with Managers](managers.md).
 
 ## Cheques vs Payees: Which Payment Tool is Right for You?
 
 Understanding when to use Cheques versus Payees ensures you're using the most efficient tool for each situation:
 
-| Feature                 | **Cheques**                                                                                                                                    | **[Payees](payees.md)**                                                                                 |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| **Primary Use Case**    | Flexible, one-time payments that you control until cashed                                                                                      | Automated, recurring payments for ongoing relationships                                                 |
-| **Payment Frequency**   | Single, non-repeating transaction                                                                                                              | Scheduled intervals (weekly, monthly, etc.)                                                             |
-| **Recipient Setup**     | No setup needed — send to any address                                                                                                          | Must add recipient to your "Circle of Trust" first                                                      |
-| **Key Benefit**         | Control & Flexibility: Create now, cancel anytime before cashed                                                                                | Convenience & Automation: Set once, runs automatically                                                  |
+| Feature                 | **Cheques**                                                                                                                                                            | **[Payees](payees.md)**                                                                        |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Primary Use Case**    | Flexible, one-time payments that you control until cashed                                                                                                              | Automated, recurring payments for ongoing relationships                                        |
+| **Payment Frequency**   | Single, non-repeating transaction                                                                                                                                      | Scheduled intervals (weekly, monthly, etc.)                                                    |
+| **Recipient Setup**     | No setup needed — send to any address                                                                                                                                  | Must add recipient to your "Circle of Trust" first                                             |
+| **Key Benefit**         | Control & Flexibility: Create now, cancel anytime before cashed                                                                                                        | Convenience & Automation: Set once, runs automatically                                         |
 | **Ideal For**           | • Splitting lunch with coworkers • Paying contractors after work approval • Settling one-time invoices • Sending gifts or prizes • Large transfers needing review time | • Employee salaries • Rent or subscriptions • Regular vendor payments • Allowances or stipends |
-| **Management**          | Each cheque managed individually                                                                                                               | Set up once, modify schedule as needed                                                                  |
-| **How Payment Happens** | Can be cashed by owner/manager or pulled by recipient (if enabled)                                                                             | Can be executed by owner/manager or pulled by recipient (if enabled)                                    |
-| **Cancellation**        | Cancel specific cheque anytime before cashed                                                                                                   | Pause or stop entire payment schedule                                                                   |
+| **Management**          | Each cheque managed individually                                                                                                                                       | Set up once, modify schedule as needed                                                         |
+| **How Payment Happens** | Can be cashed by owner/manager or pulled by recipient (if enabled)                                                                                                     | Can be executed by owner/manager or pulled by recipient (if enabled)                           |
+| **Cancellation**        | Cancel specific cheque anytime before cashed                                                                                                                           | Pause or stop entire payment schedule                                                          |
 
 ## The Future of Crypto Payments
 

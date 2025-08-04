@@ -2,15 +2,11 @@
 description: Instant unlimited transfers to your most trusted addresses with time-locked security
 ---
 
-# Whitelist: Unlimited Trust for Your Most Important Addresses
+# Whitelist: Instant Access for Trusted Addresses
 
-Your AI trading agent just spotted a massive arbitrage opportunity. You need to move $500,000 from your conservative [Underscore wallet](user-wallet.md) to your aggressive trading [Underscore wallet](user-wallet.md) immediately. But without the whitelist, you'd need to create multiple Cheques with delays or set up Payees with limits. By the time the funds arrive, the opportunity is gone.
+The Whitelist allows specific addresses to receive unlimited transfers from your Underscore wallet — no spending limits, no delays, no restrictions. Perfect for your hardware wallets, cold storage, other Underscore wallets, or emergency contacts. Move millions instantly when markets shift. Evacuate funds in seconds if compromised. Execute multi-wallet strategies at the speed of opportunity.
 
-Or your DAO needs immediate treasury consolidation. Markets are volatile, opportunities are time-sensitive, and you need to move $2 million between [wallets](user-wallet.md) now — not after security delays, not in chunks to avoid limits.
-
-**The Whitelist** breaks the emergency glass on your own security. Your cold storage wallet. Your corporate treasury for business operations. Your backup wallet for redundancy. These addresses get unlimited transfers — no limits, no delays, no friction.
-
-Your security should protect you from threats, not from yourself.
+Add addresses with a time-locked security delay (configurable, typically 3-7 days) to prevent unauthorized additions. Remove instantly if an address becomes compromised. Every whitelisted transfer executes immediately without limits — this is your highest trust level.
 
 ## Why the Whitelist Exists
 
@@ -110,14 +106,18 @@ Unlike additions, removing whitelisted addresses takes effect immediately — pr
 ## Permission System
 
 ### Owner (You)
+
 Complete authority over all whitelist operations:
+
 - Add, confirm, cancel, remove addresses
 - No restrictions on your control
 - Override all other permissions
 - Direct [rewards](rewards.md) to any whitelisted wallet
 
 ### [Managers](managers.md)
+
 Delegated whitelist powers (if granted):
+
 - **Propose**: Suggest new addresses for your approval
 - **Confirm**: Complete additions after the security delay
 - **Cancel**: Stop pending additions before they activate
@@ -136,6 +136,7 @@ Each permission must be explicitly granted — managers only get the whitelist p
 ### Multi-Wallet Strategies
 
 **Conservative + Aggressive Split**
+
 - Conservative wallet: Stablecoin yield farming, vendor payments
 - Aggressive wallet: AI trading agent, DeFi strategies
 - Instant rebalancing: Move millions between strategies as opportunities arise
@@ -143,6 +144,7 @@ Each permission must be explicitly granted — managers only get the whitelist p
 Whitelist each other for instant capital deployment when your AI spots alpha.
 
 **Security Threat Response**
+
 - Active wallet: Daily operations, exposed to more interactions
 - Secure cold storage: Maximum security setup, rarely accessed
 - Instant evacuation: Move entire balance when threats emerge
@@ -152,11 +154,13 @@ When you suspect compromise or face a wrench attack, every second counts. Whitel
 ### DAO & Corporate Treasury
 
 **Multi-Signature Operations**
+
 - Operations wallet → Main treasury: Daily revenue consolidation
 - Treasury → Operations: Instant funding for opportunities
 - Emergency moves: React to governance decisions immediately
 
 **Department Management**
+
 - Marketing wallet needs urgent campaign funding
 - Development wallet requires immediate contractor payment
 - Investment wallet spots time-sensitive opportunity
@@ -166,6 +170,7 @@ Whitelist between departments for operational efficiency without compromising se
 ### AI Agent Operations
 
 **Automated Strategy Execution**
+
 - AI identifies arbitrage across protocols
 - Needs immediate capital from your yield wallet
 - Opportunity window: Often under 60 seconds
@@ -175,37 +180,37 @@ With whitelist: Your AI executes at market speed
 
 ## Common Questions
 
-**Can I speed up the time-lock?**
+**Can I speed up the time-lock?**  
 No. The delay is absolute for security. Plan additions in advance.
 
-**What if I lose access to a whitelisted address?**
+**What if I lose access to a whitelisted address?**  
 Remove it immediately. A compromised whitelisted address is your highest risk.
 
-**Can removed addresses be re-added?**
+**Can removed addresses be re-added?**  
 Yes, but they go through the full process again.
 
-**What happens if I try to send to an unapproved address?**
+**What happens if I try to send to an unapproved address?**  
 The transaction will be blocked before any funds leave your wallet.
 
-**Can a Manager steal my funds?**
+**Can a Manager steal my funds?**  
 No. Managers cannot initiate transfers or withdraw funds. They can only manage your whitelist if you've granted those specific permissions.
 
-**How does the whitelist interact with my daily transfer limits?**
+**How does the whitelist interact with my daily transfer limits?**  
 Whitelisted addresses bypass ALL limits — daily, weekly, and lifetime. This is why you should only whitelist addresses you trust completely.
 
 ## Whitelist vs Other Payment Methods
 
 Understanding when to use the Whitelist versus other payment tools:
 
-| Feature                 | **Whitelist**                                                          | **[Payees](payees.md)**                                                                                 | **[Cheques](cheques.md)**                                                                                      |
-| ----------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| **Primary Use Case**    | Unlimited instant transfers to your most trusted addresses             | Automated, recurring payments for ongoing relationships                                                 | Flexible, one-time payments that you control until cashed                                                      |
-| **Payment Limits**      | None — completely unlimited                                            | Customizable per-recipient limits                                                                       | Set per cheque with optional delays                                                                            |
-| **Recipient Setup**     | Time-locked addition (i.e. 3-7 days), instant removal                       | Add to Circle of Trust with specific limits                                                             | No setup needed — send to any address                                                                          |
-| **Key Benefit**         | Emergency Access: Move millions instantly when needed                  | Convenience & Automation: Set once, runs automatically                                                  | Control & Flexibility: Create now, cancel anytime before cashed                                                |
-| **Ideal For**           | • Your hardware wallets • Emergency contacts • Treasury wallets • Business operations | • Employee salaries • Rent or subscriptions • Regular vendor payments • Allowances or stipends | • Paying contractors after work approval • Settling one-time invoices • Sending gifts or prizes • Large transfers needing review time |
-| **Risk Level**          | Highest — can drain entire wallet                                      | Medium — limited by configured caps                                                                     | Low — cancellable until cashed                                                                                 |
-| **Manager Access**      | Can manage whitelist (if permitted) but bypasses their spending limits | Managers pay within their own limits                                                                    | Managers can create/cancel within rules                                                                        |
+| Feature              | **Whitelist**                                                                         | **[Payees](payees.md)**                                                                        | **[Cheques](cheques.md)**                                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Primary Use Case** | Unlimited instant transfers to your most trusted addresses                            | Automated, recurring payments for ongoing relationships                                        | Flexible, one-time payments that you control until cashed                                                                             |
+| **Payment Limits**   | None — completely unlimited                                                           | Customizable per-recipient limits                                                              | Set per cheque with optional delays                                                                                                   |
+| **Recipient Setup**  | Time-locked addition (i.e. 3-7 days), instant removal                                 | Add to Circle of Trust with specific limits                                                    | No setup needed — send to any address                                                                                                 |
+| **Key Benefit**      | Emergency Access: Move millions instantly when needed                                 | Convenience & Automation: Set once, runs automatically                                         | Control & Flexibility: Create now, cancel anytime before cashed                                                                       |
+| **Ideal For**        | • Your hardware wallets • Emergency contacts • Treasury wallets • Business operations | • Employee salaries • Rent or subscriptions • Regular vendor payments • Allowances or stipends | • Paying contractors after work approval • Settling one-time invoices • Sending gifts or prizes • Large transfers needing review time |
+| **Risk Level**       | Highest — can drain entire wallet                                                     | Medium — limited by configured caps                                                            | Low — cancellable until cashed                                                                                                        |
+| **Manager Access**   | Can manage whitelist (if permitted) but bypasses their spending limits                | Managers pay within their own limits                                                           | Managers can create/cancel within rules                                                                                               |
 
 ## The Future of Trust Without Limits
 

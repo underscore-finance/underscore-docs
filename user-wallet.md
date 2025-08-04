@@ -1,53 +1,25 @@
 ---
-description: One wallet unifying 20+ DeFi protocols with automated payments and secure delegation
+description: One wallet unifying top DeFi protocols with automated payments and secure delegation
 ---
 
 # User Wallet: Your DeFi Command Center
 
-You're managing $100K+ across 5 protocols, but you're still copying addresses, approving tokens one by one, and checking rates manually like it's 2020.
+The Underscore User Wallet is a smart contract wallet that unifies access to top DeFi protocols through a single address. Execute complex multi-protocol strategies in one transaction. Delegate operations to AI agents and trusted operators within strict boundaries. Automate payments while funds earn yield. Move millions between your wallets instantly.
 
-The constant tab switching. The missed yield opportunities while you sleep. The anxiety every time you paste an address. The hours lost to manual operations that should take seconds.
+Built on Base L2, your wallet combines institutional-grade security with the flexibility to capture opportunities 24/7 — whether you're actively managing or sound asleep.
 
-**Underscore** unifies your entire DeFi experience into one powerful smart wallet. Direct access to 20+ protocols. Managers that optimize yields 24/7. Payment systems that actually work. Security that protects without restricting.
+At its core, Underscore provides four key components:
 
-Finally, professional-grade DeFi tools without the complexity.
-
-## Core Architecture
-
-Underscore is a smart wallet system built on Base L2 that provides four key components:
-
-1. **Unified Protocol Access**: Direct integration with 20+ DeFi protocols through standardized adapters
-2. **Delegation System**: Managers who can execute strategies within defined boundaries
-3. **Payment Rails**: Automated payment systems for recurring transfers and one-time payments
+1. **Unified Protocol Access**: Direct integration with top DeFi protocols through standardized adapters
+2. **Delegation System**: [Managers](managers.md) who can execute strategies within defined boundaries
+3. **Payment Rails**: Automated payment systems for recurring transfers and one-time payments (see [Payees](payees.md) and [Cheques](cheques.md))
 4. **Security Layers**: Time-locks, whitelists, and granular permissions protecting every operation
 
-## Security Architecture
+## One Wallet, Every Protocol
 
-The wallet implements a hierarchical permission system:
+Underscore connects to DeFi protocols through standardized adapters called "Legos". Each Lego provides a consistent interface for protocol-specific operations, enabling atomic multi-protocol transactions with optimized gas usage. 
 
-```
-OWNER → Full control, can modify all settings
-  │
-  ├── WHITELIST → Unlimited transfer access to trusted addresses
-  │
-  ├── MANAGERS → Delegated operators with specific permissions and limits
-  │
-  └── PAYEES → Pre-approved recipients with configured payment limits
-```
-
-**Access Control**:
-
-- **Owner**: Complete control over wallet configuration and funds
-- **Whitelist**: Time-locked additions, instant removal, unlimited transfers
-- **Managers**: Can only execute permitted actions within spending limits
-- **Payees**: Can only receive payments up to configured amounts
-- **Others**: No access - all transfers and actions blocked
-
-This architecture ensures that every transaction must pass through appropriate security checks before execution.
-
-## Protocol Integration: The Lego System
-
-Underscore connects to DeFi protocols through standardized adapters called "Legos". Each Lego provides a consistent interface for protocol-specific operations, enabling atomic multi-protocol transactions with optimized gas usage. New protocols integrate seamlessly through the Lego Book registry — your wallet gains new capabilities automatically without upgrades.
+**Your wallet is future-proof**: When new DeFi protocols launch or existing ones add features, they're automatically available to your wallet through new Lego integrations. No need to migrate funds, deploy a new wallet, or update anything — your existing Underscore wallet instantly gains access to every new protocol the moment its Lego is deployed.
 
 ### Yield & Lending Protocols
 
@@ -136,7 +108,7 @@ Underscore's architecture allows complex multi-step operations to execute atomic
 → Entire rebalance atomically
 ```
 
-## Core Features
+## Other Wallet Features
 
 ### [Managers](managers.md): Delegated Operations
 
@@ -202,6 +174,30 @@ The whitelist breaks the emergency glass on your security — addresses that get
 | Manual yield tracking               | Automatic profit calculation   |
 | Limited automation options          | Full delegation capabilities   |
 | Separate security per wallet        | Unified security model         |
+
+## Security Architecture
+
+The wallet implements a hierarchical permission system:
+
+```
+OWNER → Full control, can modify all settings
+  │
+  ├── WHITELIST → Unlimited transfer access to trusted addresses
+  │
+  ├── MANAGERS → Delegated operators with specific permissions and limits
+  │
+  └── PAYEES → Pre-approved recipients with configured payment limits
+```
+
+**Access Control**:
+
+- **Owner**: Complete control over wallet configuration and funds
+- **Whitelist**: Time-locked additions, instant removal, unlimited transfers
+- **Managers**: Can only execute permitted actions within spending limits
+- **Payees**: Can only receive payments up to configured amounts
+- **Others**: No access - all transfers and actions blocked
+
+This architecture ensures that every transaction must pass through appropriate security checks before execution.
 
 ## Frequently Asked Questions
 
