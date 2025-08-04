@@ -105,6 +105,31 @@ Your Underscore Wallet isn't just one thing — it's an ecosystem of intelligent
 
 ---
 
+## Who Uses Underscore
+
+Underscore isn't a consumer app — it's the infrastructure that powers the next generation of financial applications. Think of it like AWS for DeFi.
+
+### Applications Building on Underscore
+
+- **Fintech Apps**: Like [Hightop](https://hightop.com), which uses Underscore to power yield optimization, swaps, borrowing, and their AI Private Banker
+- **Payment Platforms**: Cross-border remittance, B2B payments, and payroll systems leveraging our [Cheques](cheques.md) and [Payees](payees.md)
+- **Smart Wallets**: Adding advanced DeFi features and [delegation](managers.md) to existing wallets
+- **AI Agents**: Portfolio managers and trading bots operating as [Managers](managers.md) within user-defined limits
+
+### The Hightop Example
+
+Hightop demonstrates the power of building on Underscore:
+- Their **AI Private Banker** is an Underscore Manager that optimizes yield 24/7
+- **User withdrawals** work through Underscore's Whitelist for instant access
+- **All DeFi operations** (yield, swaps, borrowing) powered by Underscore Legos
+- Users see a simple mobile app — Underscore handles all the complexity
+
+Most users will never interact with Underscore directly. They'll use apps like Hightop that leverage our infrastructure to deliver seamless experiences.
+
+**→ Learn more: [Who Uses Underscore](who-uses-underscore.md)**
+
+---
+
 ## Common Questions
 
 **Is my wallet upgradeable?**  

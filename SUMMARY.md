@@ -4,6 +4,7 @@
 
 - [Underscore Protocol](README.md)
 - [User Wallet](user-wallet.md)
+- [Who Uses Underscore](who-uses-underscore.md)
 
 ## Core Features
 
