@@ -107,7 +107,7 @@ Your Underscore Wallet isn't just one thing — it's an ecosystem of intelligent
 
 ## Who Uses Underscore
 
-Underscore isn't a consumer app — it's the infrastructure that powers the next generation of financial applications. Think of it like AWS for DeFi.
+Underscore isn't a consumer app — it's the infrastructure that powers the next generation of financial applications. Think of it like AWS for DeFi — but fully non-custodial.
 
 ### Applications Building on Underscore
 

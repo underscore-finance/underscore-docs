@@ -6,7 +6,7 @@ description: Understanding Underscore's role as infrastructure for next-generati
 
 Underscore isn't a consumer app — it's the rails that power the next generation of financial applications. Users experience Underscore through the apps they love, without ever knowing it's there.
 
-Think of Underscore like AWS for DeFi. Just as millions use Netflix without knowing about Amazon's servers, millions will use financial apps powered by Underscore's infrastructure. The complexity stays under the hood while users enjoy seamless experiences.
+Think of Underscore like AWS for DeFi — but fully non-custodial. Just as millions use Netflix without knowing about Amazon's servers, millions will use financial apps powered by Underscore's infrastructure. The key difference: users always maintain control of their funds. The complexity stays under the hood while users enjoy seamless experiences.
 
 Underscore provides the core components — [User Wallets](user-wallet.md), [Managers](managers.md) for delegation, [Payees](payees.md) for recurring payments, [Cheques](cheques.md) for one-time transfers, and [Whitelists](whitelist.md) for trusted addresses — that developers combine to create powerful financial applications.
 
