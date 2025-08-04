@@ -175,29 +175,6 @@ The whitelist breaks the emergency glass on your security — addresses that get
 | Limited automation options          | Full delegation capabilities   |
 | Separate security per wallet        | Unified security model         |
 
-## Security Architecture
-
-The wallet implements a hierarchical permission system:
-
-```
-OWNER → Full control, can modify all settings
-  │
-  ├── WHITELIST → Unlimited transfer access to trusted addresses
-  │
-  ├── MANAGERS → Delegated operators with specific permissions and limits
-  │
-  └── PAYEES → Pre-approved recipients with configured payment limits
-```
-
-**Access Control**:
-
-- **Owner**: Complete control over wallet configuration and funds
-- **Whitelist**: Time-locked additions, instant removal, unlimited transfers
-- **Managers**: Can only execute permitted actions within spending limits
-- **Payees**: Can only receive payments up to configured amounts
-- **Others**: No access - all transfers and actions blocked
-
-This architecture ensures that every transaction must pass through appropriate security checks before execution.
 
 ## Frequently Asked Questions
 
@@ -209,11 +186,7 @@ Yes, absolutely. You maintain complete control of your private keys and assets. 
 **What happens if Underscore disappears?**  
 Your funds remain safe and accessible. The smart contracts are immutable and don't depend on Underscore's servers. You could interact with your wallet directly through BaseScan or any other interface.
 
-**Can managers or automated strategies steal my funds?**  
-No. Managers operate within strict, code-enforced boundaries. They can only perform the specific actions you've authorized, with the limits you've set. You can revoke access instantly at any time.
 
-**How do I recover access if I lose my keys?**  
-Use your whitelisted addresses (like your hardware wallet or Gnosis Safe) to recover funds. If you lose access to your owner wallet but still have manager access, managers can transfer funds to your whitelisted addresses - providing a recovery path even when the primary wallet is lost.
 
 ### 💰 **Costs & Fees**
 
@@ -228,8 +201,6 @@ Use your whitelisted addresses (like your hardware wallet or Gnosis Safe) to rec
 
 ### Technical Setup
 
-**Which blockchain is this on?**  
-Underscore runs on Base L2, providing Ethereum's security with significantly lower transaction costs.
 
 **Can I use this with my existing wallet?**  
 Yes. You deploy your Underscore smart wallet using your existing wallet (like MetaMask), which then acts as the owner key.

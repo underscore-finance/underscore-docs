@@ -31,23 +31,6 @@ Underscore: Add vendor as Payee → $5,000/month limit → Only USDC → Auto-ex
 
 Your funds stay in DeFi earning yield (via protocols like Aave, Morpho, Euler) until the moment of payment. The system automatically withdraws only what's needed, when it's needed. Plus, you earn [rewards](rewards.md) on all your DeFi activity.
 
-**Example Impact**:
-
-- $500k operating funds at 5% APY = $25,000/year earned
-- Traditional bank at 0.01% APY = $50/year earned
-- Difference: $24,950 additional revenue annually
-- Plus: [Protocol rewards](rewards.md) on top of yield
-
-## Payment Validation Hierarchy
-
-The system checks payment recipients in strict order:
-
-1. **[Whitelisted Addresses](whitelist.md)** → Instant, no limits
-2. **Owner (You)** → Can self-pay if enabled
-3. **Active Payees** → All configured limits apply
-4. **Others** → Payment blocked
-
-This hierarchy maximizes flexibility while maintaining security.
 
 ## Why Your Circle of Trust is Unbreakable
 
@@ -283,32 +266,7 @@ Yes. Each payee has individual limits and tracking.
 **Can I modify limits after setup?**
 Yes. Changes take effect immediately.
 
-## Payees vs Cheques: Which Payment Tool is Right for You?
 
-Understanding when to use Payees versus Cheques ensures you're using the most efficient tool for each situation:
-
-| Feature                 | **Payees**                                                                                     | **[Cheques](cheques.md)**                                                                                                             |
-| ----------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **Primary Use Case**    | Automated, recurring payments for ongoing relationships                                        | Flexible, one-time payments that you control until cashed                                                                             |
-| **Payment Frequency**   | Scheduled intervals (weekly, monthly, etc.)                                                    | Single, non-repeating transaction                                                                                                     |
-| **Recipient Setup**     | Must add recipient to your "Circle of Trust" first                                             | No setup needed — send to any address                                                                                                 |
-| **Key Benefit**         | Convenience & Automation: Set once, runs automatically                                         | Control & Flexibility: Create now, cancel anytime before cashed                                                                       |
-| **Ideal For**           | • Employee salaries • Rent or subscriptions • Regular vendor payments • Allowances or stipends | • Paying contractors after work approval • Settling one-time invoices • Sending gifts or prizes • Large transfers needing review time |
-| **Management**          | Set up once, modify schedule as needed                                                         | Each cheque managed individually                                                                                                      |
-| **How Payment Happens** | Can be executed by owner/manager or pulled by recipient (if enabled)                           | Can be cashed by owner/manager or pulled by recipient (if enabled)                                                                    |
-| **Cancellation**        | Pause or stop entire payment schedule                                                          | Cancel specific cheque anytime before cashed                                                                                          |
-
-## The Future of Business Payments
-
-Remember that $500,000 sitting in your checking account earning $50 a year? That's not banking — that's charity to your bank.
-
-With Payees, those same funds earn $25,000 annually. Your team gets paid automatically on schedule. No more Friday afternoon wire transfers. No more $35 fees adding up to thousands. No more manual entry errors sending money to the wrong place.
-
-This is what business banking should have been from the start. Not choosing between yield and liquidity. Not trusting vendors with unlimited access. Not wasting hours on repetitive transfers.
-
-Just verified addresses. Preset limits. Automatic execution. And money that works as hard as you do.
-
-Welcome to payments that finally make sense.
 
 ## The Perfect Partnership: Managers + Payees
 
@@ -332,6 +290,3 @@ This separation of powers means you can delegate work without delegating trust. 
 - **[Whitelist](whitelist.md)**: Configure instant, unlimited transfers for your most trusted addresses
 - **[User Wallet](user-wallet.md)**: Explore your complete financial command center and all its features
 
----
-
-_For technical implementation details, see the [technical documentation](https://underscore-1.gitbook.io/developers/)._

@@ -349,16 +349,3 @@ No. Each period starts fresh with the full limit. Use it or lose it.
 - Whitelisted addresses bypass all manager restrictions
 - Use whitelist for emergency access, managers for daily operations
 
-## The Future of Wallet Operations
-
-Remember that 15% APY opportunity you missed at 3am? The vendor payments that disrupted your weekend? The specialized strategies locked behind $10M minimums?
-
-Those problems end with Managers.
-
-Your yield optimizer now captures overnight opportunities within your risk limits. Your CFO handles invoices without touching your reserves. Your AI trading agent executes institutional strategies on your behalf. All operating within unbreakable boundaries you control.
-
-This is what wallet management should have been from the start. Not choosing between security and opportunity. Not missing gains because you need sleep. Not paying premiums for strategies that should be accessible to everyone.
-
-Stop letting your wallet run on manual mode. The right operators, with the right permissions, executing the right strategies — that's how winning portfolios are built in DeFi.
-
-_For technical implementation details, see the [technical documentation](https://underscore-1.gitbook.io/developers/)._

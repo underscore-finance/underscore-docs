@@ -133,6 +133,21 @@ Pre-whitelist your hardware wallet or secure addresses. Unlike payees (with limi
 
 ---
 
+## Payment Methods Comparison
+
+Understanding which payment tool to use for different situations:
+
+| Feature | **[Whitelist](whitelist.md)** | **[Payees](payees.md)** | **[Cheques](cheques.md)** |
+|---------|--------------------------------|--------------------------|---------------------------|
+| **Use Case** | Instant unlimited transfers to trusted addresses | Automated recurring payments | One-time payments with control |
+| **Payment Limits** | None — completely unlimited | Customizable per-recipient | Set per cheque |
+| **Setup Time** | Time-locked addition (configurable) | Immediate with limits | No setup needed |
+| **Key Benefit** | Emergency access & multi-wallet strategies | Set once, runs automatically | Cancel anytime before cashed |
+| **Best For** | Hardware wallets, cold storage, other Underscore wallets | Salaries, rent, subscriptions | Contractors, large transfers |
+| **Risk Level** | Highest — can drain wallet | Medium — capped by limits | Low — cancellable |
+
+---
+
 ## Getting Started
 
 Start with the [User Wallet](user-wallet.md) to understand the foundation. Then explore the specific features that match your needs:

@@ -220,30 +220,7 @@ Yes, for security. You can set maximum values per cheque and limit total active 
 **Can my [Manager](managers.md) handle cheques for me?**  
 Yes, and it's incredibly useful. You can authorize a [Wallet Manager](managers.md) to create and cancel cheques within limits you set. This is perfect for businesses where your CFO handles vendor payments, or individuals who want their financial advisor to help manage large transactions. The beauty is that Managers can only operate within your pre-set boundaries — they can't exceed spending limits or change your security settings. Learn how to set up these secure delegated permissions in our guide on [Managing Your Wallet with Managers](managers.md).
 
-## Cheques vs Payees: Which Payment Tool is Right for You?
 
-Understanding when to use Cheques versus Payees ensures you're using the most efficient tool for each situation:
-
-| Feature                 | **Cheques**                                                                                                                                                            | **[Payees](payees.md)**                                                                        |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Primary Use Case**    | Flexible, one-time payments that you control until cashed                                                                                                              | Automated, recurring payments for ongoing relationships                                        |
-| **Payment Frequency**   | Single, non-repeating transaction                                                                                                                                      | Scheduled intervals (weekly, monthly, etc.)                                                    |
-| **Recipient Setup**     | No setup needed — send to any address                                                                                                                                  | Must add recipient to your "Circle of Trust" first                                             |
-| **Key Benefit**         | Control & Flexibility: Create now, cancel anytime before cashed                                                                                                        | Convenience & Automation: Set once, runs automatically                                         |
-| **Ideal For**           | • Splitting lunch with coworkers • Paying contractors after work approval • Settling one-time invoices • Sending gifts or prizes • Large transfers needing review time | • Employee salaries • Rent or subscriptions • Regular vendor payments • Allowances or stipends |
-| **Management**          | Each cheque managed individually                                                                                                                                       | Set up once, modify schedule as needed                                                         |
-| **How Payment Happens** | Can be cashed by owner/manager or pulled by recipient (if enabled)                                                                                                     | Can be executed by owner/manager or pulled by recipient (if enabled)                           |
-| **Cancellation**        | Cancel specific cheque anytime before cashed                                                                                                                           | Pause or stop entire payment schedule                                                          |
-
-## The Future of Crypto Payments
-
-Remember that $5,000 you accidentally sent to the wrong address? With Digital Cheques, that's a story that never happens.
-
-Every other payment method forces you to choose: instant but irreversible, or slow but safe. Digital Cheques break the tradeoff. Write payments with the confidence of knowing you can cancel. Let recipients cash on their timeline. Keep your funds earning until the last second. Get automatic protection on large amounts without committees or delays.
-
-This is what crypto payments should have been from the start. Not just moving money, but moving it intelligently.
-
-Stop hoping you got the address right. Start knowing you can fix it if you didn't.
 
 ## Related Features
 
@@ -252,6 +229,3 @@ Stop hoping you got the address right. Start knowing you can fix it if you didn'
 - **[Whitelist](whitelist.md)**: Configure instant, unlimited transfers for your most trusted addresses
 - **[User Wallet](user-wallet.md)**: Explore your complete financial command center and all its features
 
----
-
-_For technical implementation details, see the [technical documentation](https://underscore-1.gitbook.io/developers/)._

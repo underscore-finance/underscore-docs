@@ -165,6 +165,3 @@ This is how DeFi should work — where protocols and users succeed together.
 - **[Add Managers](managers.md)**: Automate reward claiming
 - **[Set Up Whitelist](whitelist.md)**: Direct rewards to any trusted wallet
 
----
-
-_For technical implementation details, see the [LootDistributor contract documentation](https://underscore-1.gitbook.io/developers/)._

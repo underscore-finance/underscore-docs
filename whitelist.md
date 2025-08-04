@@ -192,35 +192,11 @@ Yes, but they go through the full process again.
 **What happens if I try to send to an unapproved address?**  
 The transaction will be blocked before any funds leave your wallet.
 
-**Can a Manager steal my funds?**  
-No. Managers cannot initiate transfers or withdraw funds. They can only manage your whitelist if you've granted those specific permissions.
 
 **How does the whitelist interact with my daily transfer limits?**  
 Whitelisted addresses bypass ALL limits — daily, weekly, and lifetime. This is why you should only whitelist addresses you trust completely.
 
-## Whitelist vs Other Payment Methods
 
-Understanding when to use the Whitelist versus other payment tools:
-
-| Feature              | **Whitelist**                                                                         | **[Payees](payees.md)**                                                                        | **[Cheques](cheques.md)**                                                                                                             |
-| -------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **Primary Use Case** | Unlimited instant transfers to your most trusted addresses                            | Automated, recurring payments for ongoing relationships                                        | Flexible, one-time payments that you control until cashed                                                                             |
-| **Payment Limits**   | None — completely unlimited                                                           | Customizable per-recipient limits                                                              | Set per cheque with optional delays                                                                                                   |
-| **Recipient Setup**  | Time-locked addition (i.e. 3-7 days), instant removal                                 | Add to Circle of Trust with specific limits                                                    | No setup needed — send to any address                                                                                                 |
-| **Key Benefit**      | Emergency Access: Move millions instantly when needed                                 | Convenience & Automation: Set once, runs automatically                                         | Control & Flexibility: Create now, cancel anytime before cashed                                                                       |
-| **Ideal For**        | • Your hardware wallets • Emergency contacts • Treasury wallets • Business operations | • Employee salaries • Rent or subscriptions • Regular vendor payments • Allowances or stipends | • Paying contractors after work approval • Settling one-time invoices • Sending gifts or prizes • Large transfers needing review time |
-| **Risk Level**       | Highest — can drain entire wallet                                                     | Medium — limited by configured caps                                                            | Low — cancellable until cashed                                                                                                        |
-| **Manager Access**   | Can manage whitelist (if permitted) but bypasses their spending limits                | Managers pay within their own limits                                                           | Managers can create/cancel within rules                                                                                               |
-
-## The Future of Trust Without Limits
-
-Remember that AI trading opportunity that needed $500,000 moved in seconds? Or your DAO's urgent treasury consolidation? Without the Whitelist, those moments become missed opportunities and operational nightmares.
-
-Every other security system forces you to choose: protection or accessibility. The Whitelist breaks the tradeoff. Time-locked additions keep attackers out. Instant removal maintains your control. Unlimited transfers mean your money moves at the speed of opportunity.
-
-This is what wallet security should have been from the start. Not choosing between being safe and being functional. Not watching arbitrage windows close while funds sit in transit. Not explaining to your DAO why the treasury consolidation is delayed by security theater.
-
-Stop being prisoner to your own protection. Start having security that knows the difference between a thief and your hardware wallet.
 
 ## Related Features
 
@@ -229,6 +205,3 @@ Stop being prisoner to your own protection. Start having security that knows the
 - **[Managers](managers.md)**: Learn how to delegate payment tasks to AI or team members
 - **[User Wallet](user-wallet.md)**: Explore your complete financial command center and all its features
 
----
-
-_For technical implementation details, see the [technical documentation](https://underscore-1.gitbook.io/developers/)._
