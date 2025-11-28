@@ -4,7 +4,7 @@ description: One-time payments you can cancel anytime before they're cashed
 
 # Digital Cheques: Send Now, Confirm Later
 
-Digital Cheques are time-locked payment promises that give you complete control until cashed. Write a $5,000 payment to a contractor — cancel it if they don't deliver. Set 72-hour security delays for large amounts. Recipients see the cheque immediately but can't cash until the delay expires. Your funds keep earning yield until the second they're claimed.
+Digital Cheques are time-locked payment promises that give you complete control until cashed. Write a $5,000 payment to a contractor — cancel it if they don't deliver. Set security delays for large amounts. Recipients see the cheque immediately but can't cash until the delay expires. Your funds keep earning yield until the second they're claimed.
 
 Perfect for contractor payments, large transfers needing review time, or any payment where you want an undo button. No pre-approval needed — send to any address. Cancel anytime before cashing. Full transparency onchain for both parties.
 

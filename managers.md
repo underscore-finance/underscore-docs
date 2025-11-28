@@ -143,6 +143,13 @@ Unused amounts don't roll over — each period starts clean
 - Example: Only allow Aave and Compound interactions
 - Maximum 25 different protocols per manager
 
+**Approved Yield Protocols Only**
+
+- Restrict managers to pre-approved vault tokens for yield deposits
+- Prevents deposits into risky, unvetted, or unknown protocols
+- Managed through the protocol's VaultRegistry whitelist
+- Enable via `onlyApprovedYieldOpps` setting
+
 **Payee Restrictions**
 
 - Limit transfers to pre-approved addresses only
@@ -154,6 +161,34 @@ Unused amounts don't roll over — each period starts clean
 - Safety feature blocking transactions when asset price is $0
 - Prevents trading during oracle failures
 - Protects against manipulation when prices unavailable
+
+### Swap Controls
+
+Control trading activity with dedicated swap permissions that protect against excessive losses and manipulation:
+
+| Setting | Purpose | Example |
+|---------|---------|---------|
+| **Max Slippage** | Maximum acceptable price movement on swaps | Default: 5% max |
+| **Max Swaps Per Period** | Limit trading frequency | Default: 2 swaps per day |
+| **Require USD Value** | Both tokens must have price data | Prevents trading unpriced tokens |
+
+**How Slippage Protection Works**:
+
+Before each swap, the system calculates the minimum acceptable output based on your slippage setting. If the actual output would fall below this threshold, the transaction reverts automatically.
+
+```
+Example: Swapping $1,000 USDC → ETH with 5% max slippage
+Minimum acceptable: $950 worth of ETH
+If DEX would return only $940 worth → Transaction reverts
+```
+
+This protects against:
+- MEV sandwich attacks
+- Price manipulation during execution
+- Extreme market volatility
+- Accidental bad trades
+
+The system uses the tighter (lower) limit between global and manager-specific settings.
 
 ### Time-Based Security
 

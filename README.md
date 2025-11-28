@@ -1,10 +1,10 @@
 ---
-description: Your Financial Command Center, Reimagined
+description: Your Money, Working 24/7
 ---
 
-# Underscore Protocol: Intelligent Financial Automation
+# Underscore Protocol: Your Money, Working 24/7
 
-Transform your static wallet into a dynamic financial operating system. One that connects to every top DeFi protocol, enables automated strategies through secure delegation, and maintains institutional-grade security — all through a single interface.
+Deposit into **AI-managed Vaults** that optimize yield across DeFi — no wallet setup required. Or deploy a **Smart Wallet** with automated payments, secure delegation, and access to 20+ protocols in one place. Either way, your funds earn while you sleep. No manual management. No missed opportunities.
 
 **Atomic Operations**: Rebalance $500k across five protocols in one transaction. Move from Aave's 7% to Morpho's 12% APY in one click. Claim rewards, swap to USDC, and re-deploy — what took 15 minutes and 5 transactions now happens instantly.
 
@@ -20,9 +20,19 @@ Your wallet shouldn't just hold money. It should make money. Every second. Autom
 
 ## Core Components
 
-### [User Wallet: The Brain of Your DeFi Empire](user-wallet.md)
+### [Vaults: AI-Managed Yield for Everyone](vaults.md)
 
-Stop choosing between security and functionality. Get both.
+AI-managed yield strategies wrapped into standard ERC-4626 tokens. Deposit assets, receive vault shares, and the AI handles everything — finding the best yields, rebalancing across protocols, claiming rewards. You just hold the token.
+
+- **Composable** — Vault shares work anywhere in DeFi: trade them, bridge them, use as collateral
+- **Productive collateral** — Borrow on Ripe while your collateral keeps earning yield
+- **Scalable** — 100,000 users share one strategy. AI rebalances once. Everyone benefits.
+
+**Perfect for:** Passive yield seekers, protocols needing productive collateral, fintech apps adding yield features
+
+### [User Wallet: Your DeFi Command Center](user-wallet.md)
+
+Full control with powerful automation.
 
 - **One address** for every DeFi protocol
 - **Intelligent automation** with manual override always available
@@ -74,16 +84,15 @@ Unlimited access for your most trusted addresses.
 
 **Perfect for:** Multi-wallet strategies, hardware wallet, cold storage
 
-### [Rewards: Get Paid for Using DeFi](rewards.md)
+### [Rewards: Earn RIPE Tokens](rewards.md)
 
-Earn real revenue share from protocol activity.
+Earn RIPE tokens just by using Underscore.
 
-- **50% revenue share** for ambassadors (default)
-- **Yield bonuses** on realized profits
-- **Deposit points** for holding assets
-- **No lock-ups** - claim anytime
+- **1:1 yield bonus** — get $1 of RIPE for every $1 of yield you earn
+- **Deposit rewards** — earn RIPE based on holdings over time
+- **Referral bonuses** — earn RIPE when friends you invite profit
 
-**Perfect for:** All users (passive income from regular activity)
+**Perfect for:** All users earning yield or holding assets
 
 ---
 
@@ -101,7 +110,7 @@ Your Underscore Wallet isn't just one thing — it's an ecosystem of intelligent
 
 **4 PM**: Time to fund your aggressive trading wallet. Move $20k to your other Underscore wallet ([whitelisted](whitelist.md)) instantly. Your AI agent spots an arbitrage opportunity.
 
-**11 PM**: Your portfolio rebalanced 3 times today across 5 protocols. You didn't lift a finger..
+**11 PM**: Your portfolio rebalanced 3 times today across 5 protocols. You didn't lift a finger.
 
 ---
 
@@ -112,6 +121,7 @@ Underscore isn't a consumer app — it's the infrastructure that powers the next
 ### Applications Building on Underscore
 
 - **Fintech Apps**: Like [Hightop](https://hightop.com), which uses Underscore to power yield optimization, swaps, borrowing, and their AI Private Banker
+- **Vault Integrators**: Apps adding AI-managed yield without building infrastructure — just integrate [Vaults](vaults.md) and go
 - **Payment Platforms**: Cross-border remittance, B2B payments, and payroll systems leveraging our [Cheques](cheques.md) and [Payees](payees.md)
 - **Smart Wallets**: Adding advanced DeFi features and [delegation](managers.md) to existing wallets
 - **AI Agents**: Portfolio managers and trading bots operating as [Managers](managers.md) within user-defined limits
@@ -144,8 +154,8 @@ Yes. Whitelist them for instant transfers between your wallets.
 **What about L2s?**  
 Currently Base L2 only. More chains coming.
 
-**How do fees work?**  
-Small fees on swaps (0.25%), yield profits (10%), and external reward claims (10%). No fees on transfers, deposits, or idle funds. Up to 50% of fees go to ambassadors and users through revenue sharing.
+**How do fees work?**
+Small fees on swaps (0.25%) and external reward claims (20%). Vaults charge 20% performance fees on yield profits only. No fees on transfers, deposits, or idle funds. See [Protocol Economics](protocol-economics.md) for details.
 
 **What happens if I lose my owner wallet?**  
 If you've set up managers and whitelisted addresses beforehand, managers can still transfer funds to your whitelisted addresses (like hardware wallets), providing a recovery path.
@@ -175,7 +185,23 @@ Understanding which payment tool to use for different situations:
 
 ## Getting Started
 
-Start with the [User Wallet](user-wallet.md) to understand the foundation. Then explore the specific features that match your needs:
+### Quick Start
+
+**Want passive yield? (2 minutes)**
+1. Connect your wallet to Underscore
+2. Choose a vault (USDC, ETH, etc.)
+3. Deposit — AI handles everything from here
+
+**Want full control? (5 minutes)**
+1. Deploy your Underscore smart wallet
+2. Add managers, payees, or whitelist addresses as needed
+3. Start using 20+ DeFi protocols from one place
+
+### Explore Features
+
+**For Passive Yield**: Start with [Vaults](vaults.md) — deposit and let AI optimize. No wallet setup required.
+
+**For Full Control**: Deploy a [User Wallet](user-wallet.md) and explore features that match your needs:
 
 - **For Automation**: Set up [Managers](managers.md) to delegate operations
 - **For Recurring Payments**: Configure [Payees](payees.md) for automated transfers

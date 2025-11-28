@@ -23,7 +23,7 @@ Underscore connects to DeFi protocols through standardized adapters called "Lego
 
 ### Yield & Lending Protocols
 
-**Integrated protocols**: Morpho, Moonwell, Aave, Euler, Fluid, Compound
+**Integrated protocols**: Morpho, Moonwell, Aave, Euler, Fluid, Compound, plus specialized protocols like Avantis, ExtraFi, and more
 
 **Capabilities**:
 
@@ -51,9 +51,10 @@ Underscore connects to DeFi protocols through standardized adapters called "Lego
 **Capabilities**:
 
 - Deposit any supported asset as collateral
-- Borrow against collateral in GREEN or yield-bearing sGREEN
+- Borrow against collateral in GREEN (stablecoin) or yield-bearing sGREEN (earns while you hold)
 - Repay debt with any accepted token
 - Earn and claim RIPE rewards
+- Manage multiple collateral vaults with automated deleveraging
 
 ### Asset Transformations
 
@@ -109,6 +110,31 @@ Underscore's architecture allows complex multi-step operations to execute atomic
 ```
 
 ## Other Wallet Features
+
+### Eject Mode: Emergency Lockdown
+
+If you suspect your wallet is compromised or need to restrict activity immediately, activate eject mode to lock down operations:
+
+**When Active**:
+- Only transfers and ETH/WETH conversions allowed
+- No yield, swap, debt, or liquidity operations permitted
+- Only wallet owner can perform any actions
+- All managers are blocked from operating
+
+**Use Case**:
+```
+Suspicious activity detected
+    ↓
+Activate eject mode (one transaction)
+    ↓
+Wallet locked to basic operations only
+    ↓
+Safely transfer funds to whitelisted addresses
+    ↓
+Deactivate eject mode when secure
+```
+
+Eject mode provides a panic button for emergencies — restrict first, investigate later.
 
 ### [Managers](managers.md): Delegated Operations
 
@@ -183,21 +209,21 @@ The whitelist breaks the emergency glass on your security — addresses that get
 **Is this a self-custody wallet?**  
 Yes, absolutely. You maintain complete control of your private keys and assets. Underscore provides the smart contract infrastructure, but only you can authorize transactions.
 
-**What happens if Underscore disappears?**  
+**What happens if Underscore disappears?**
 Your funds remain safe and accessible. The smart contracts are immutable and don't depend on Underscore's servers. You could interact with your wallet directly through BaseScan or any other interface.
 
-
+**Can I migrate to a new wallet?**
+Yes. The protocol includes a migration system that lets you move funds and copy your configuration (managers, payees, whitelist) to a new Underscore wallet. Useful if you want access to new features or need to restructure your setup.
 
 ### 💰 **Costs & Fees**
 
 **What are the fees?**
 
-- **Swap fees**: Small percentage on token swaps (configurable by protocol)
-- **Rewards fees**: Small percentage when claiming protocol rewards (configurable by protocol)
-- **Yield fees**: Small percentage of profits when earning yield (configurable by protocol)
-- **Revenue sharing**: Up to 50% of fees go back to users and ambassadors through [rewards](rewards.md)
+- **Swap fees**: 0.25% on token swaps
+- **External reward claims**: 20% when claiming protocol rewards (MORPHO, WELL, etc.)
 - **No fees on**: Transfers, idle funds, deposits, debt operations, liquidity provision, or ETH/WETH wrapping
-- **Full transparency**: Exact fee percentages shown before every transaction
+
+See [Protocol Economics](protocol-economics.md) for details on how fees work and where they go.
 
 ### Technical Setup
 

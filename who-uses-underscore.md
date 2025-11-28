@@ -8,7 +8,7 @@ Underscore isn't a consumer app — it's the rails that power the next generatio
 
 Think of Underscore like AWS for DeFi — but fully non-custodial. Just as millions use Netflix without knowing about Amazon's servers, millions will use financial apps powered by Underscore's infrastructure. The key difference: users always maintain control of their funds. The complexity stays under the hood while users enjoy seamless experiences.
 
-Underscore provides the core components — [User Wallets](user-wallet.md), [Managers](managers.md) for delegation, [Payees](payees.md) for recurring payments, [Cheques](cheques.md) for one-time transfers, and [Whitelists](whitelist.md) for trusted addresses — that developers combine to create powerful financial applications.
+Underscore provides two core products: **[Vaults](vaults.md)** for AI-managed yield that anyone can access, and **[User Wallets](user-wallet.md)** with [Managers](managers.md), [Payees](payees.md), [Cheques](cheques.md), and [Whitelists](whitelist.md) — components developers combine to create powerful financial applications.
 
 ## The Underscore Ecosystem
 
@@ -19,6 +19,7 @@ Underscore provides the core components — [User Wallets](user-wallet.md), [Man
 - Consumer-facing apps that need DeFi yields
 - Neobanks offering crypto services
 - Payment processors requiring automated flows
+- Apps integrating [Vaults](vaults.md) for instant AI-managed yield features
 
 **Crypto Wallets**
 
@@ -44,11 +45,12 @@ Underscore provides the core components — [User Wallets](user-wallet.md), [Man
 
 Users interact with friendly apps while Underscore handles the complexity:
 
-- **Earning Yield**: "Deposit USDC, earn 8% APY" → Underscore routes to optimal protocols
+- **Earning Yield**: "Deposit USDC, earn 8% APY" → [Vaults](vaults.md) route to optimal protocols automatically
 - **Making Payments**: "Send $500 to contractor" → Underscore [cheque system](cheques.md) ensures safety
 - **Portfolio Management**: "AI optimizes my yield" → Underscore [manager](managers.md) executes strategies
 - **Asset Swaps**: "Trade ETH for USDC" → Underscore finds best rates across DEXs
 - **Borrowing**: "Borrow against my ETH" → Underscore Ripe Protocol Lego manages collateral safely
+- **Productive Collateral**: "Use my yield shares as collateral" → [Vault](vaults.md) shares work on Ripe while earning
 
 The user sees a simple interface. Underscore does the heavy lifting.
 
@@ -123,6 +125,61 @@ What they never see:
 - Any concept of gas, private keys, or seed phrases
 
 They just earn. The complexity vanishes. That's the power of building on Underscore.
+
+## Perfect for Vault Integration
+
+The fastest way to add AI-managed yield to any application:
+
+### Why Integrate Vaults
+
+**For Fintech Apps**
+
+Skip months of infrastructure development. Integrate [Vaults](vaults.md) directly:
+
+- Standard ERC4626 interface — minimal integration work
+- AI optimization handled entirely by Underscore
+- Users deposit through your interface, you track shares
+- No wallet infrastructure needed on your side
+
+**For DeFi Protocols**
+
+Make collateral productive:
+
+- Accept vault shares as collateral
+- Users earn yield while borrowing
+- Standard ERC20 compatibility
+- Vault value trackable on-chain
+
+**For Portfolio Managers**
+
+Offer managed strategies without building infrastructure:
+
+- Earn Vaults for straightforward yield optimization
+- Leveraged Vaults for amplified returns with managed risk
+- White-label as your own product
+- Focus on user acquisition, not infrastructure
+
+### Example: Quick Vault Integration
+
+A payment app wants yield on user float:
+
+```
+Traditional approach:
+- Build yield infrastructure (3-6 months)
+- Integrate multiple protocols (ongoing maintenance)
+- Build rebalancing logic (security risk)
+- Audit everything ($$$$)
+
+Vault approach:
+- Call deposit() with user funds
+- Track user shares internally
+- Call redeem() for withdrawals
+- Done in 2 weeks
+```
+
+The vault handles protocol selection, rebalancing, reward claiming, and risk management. The app handles UX.
+
+---
 
 ## Perfect for Payment Applications
 

@@ -1,91 +1,50 @@
 ---
-description: Earn revenue share from protocol fees with no lock-ups or complex tokenomics
+description: Earn RIPE tokens through yield bonuses and deposit rewards
 ---
 
-# Rewards: Get Paid for Using DeFi
+# Rewards: Earn RIPE Tokens
 
-Underscore shares up to 50% of protocol revenue with users and ambassadors. Earn from swap fees, yield profits, and reward claims — paid in the same assets you're already using. No lock-ups, no vesting schedules, no complex tokenomics. Just real revenue share from real DeFi activity.
+Earn RIPE tokens — the governance token of [Ripe Protocol](https://ripe.finance) — just by using Underscore. The more yield you generate and the more you hold, the more RIPE you earn.
 
-Become an ambassador and earn when your referrals use the protocol. Get yield bonuses on profitable positions. Accumulate deposit points based on your holdings. Claim anytime, directly to any whitelisted address. Every fee you generate becomes an earning opportunity.
+**Two ways to earn:**
 
-## How Revenue Sharing Works
+1. **Yield Bonuses** — Get a 1:1 RIPE match on your yield profits
+2. **Deposit Rewards** — Earn RIPE based on how much you hold and for how long
 
-Underscore collects fees on value-generating activities and distributes them through the LootDistributor:
+Invite friends and earn RIPE on their yield profits too.
 
-```
-User Activity → Protocol Fee → Distribution:
-                              ├── Ambassador Revenue Share (50% default)
-                              ├── Yield Bonuses (if configured)
-                              └── Deposit Rewards Pool
-```
+---
 
-The math is transparent. The distribution is automatic. The claiming is permissionless.
+## Yield Bonuses (1:1 RIPE Match)
 
-_Note: All percentages shown are defaults and examples. Actual rates are configurable by the protocol._
+When you realize yield profits, you get bonus RIPE tokens on top:
 
-## Ambassador Earnings: Two Revenue Streams
+- **1:1 match** — for every $1 of yield you earn, get $1 worth of RIPE
+- Paid automatically when withdrawing yield
+- Applies to yield strategies only (not swaps or reward claims)
+- Requires available RIPE balance in distributor (first-come, first-served)
 
-Ambassadors earn when their referred users generate value:
+**Example**: You withdraw $1,000 in yield profit
+- You keep your $1,000 profit (in the yield asset)
+- You also receive ~$1,000 worth of RIPE tokens
 
-### 1. Revenue Share on All Fees
+### Referral Bonuses
 
-**Automatic percentage of every fee generated** (default 50%, configurable):
+Invite friends to Underscore and earn RIPE when they profit:
 
-| User Activity       | Protocol Fee | Ambassador Gets 50% | Example                     |
-| ------------------- | ------------ | ------------------- | --------------------------- |
-| $10,000 swap        | 0.25% = $25  | $12.50              | User swaps tokens           |
-| $1,000 yield profit | 10% = $100   | $50                 | User realizes gains         |
-| $200 rewards claim  | 10% = $20    | $10                 | User claims MORPHO/WELL/etc |
+- **1:1 match** — for every $1 of yield your referred user earns, you get $1 worth of RIPE
+- Your friend still gets their full 1:1 bonus too
+- Both parties benefit from the same yield event
 
-### 2. Yield Bonuses (Only on Yield Profits)
+**Example**: Your friend realizes $1,000 in yield profit
+- Friend keeps $1,000 profit + gets ~$1,000 RIPE bonus
+- You get ~$1,000 RIPE bonus for referring them
 
-**Additional rewards when users realize yield profits** (not on swaps or reward claims):
+---
 
-- 25% bonus on top of the yield profit amount (typical example, varies by asset)
-- Can be yield asset, underlying, or alternative tokens (configurable by protocol)
-- Requires: eligible yield position and available distributor balance
-- Distributed first-come, first-served when balance is limited
+## Deposit Rewards
 
-**Example**: User realizes $1,000 in yield profit
-
-- User keeps their $1,000 profit
-- Ambassador gets $250 bonus (25% of profit amount)
-- This is IN ADDITION to the $50 revenue share from fees
-
-**Example Ambassador Income**:
-
-Assuming each user generates $50/month in total protocol fees:
-
-- Protocol collects: $50 in fees
-- Ambassador receives: $25 (50% revenue share)
-
-**Network Growth Projections**:
-| Users in Network | Monthly Revenue Share | Annual Revenue Share |
-|------------------|----------------------|---------------------|
-| 5 users | $125 | $1,500 |
-| 10 users | $250 | $3,000 |
-| 20 users | $500 | $6,000 |
-| 50 users | $1,250 | $15,000 |
-
-_Plus potential yield bonuses when users realize profits (calculated separately based on actual yield performance)_
-
-## User Earnings: Two Reward Mechanisms
-
-Users earn through participation and performance:
-
-### 1. Yield Bonuses (Only on Yield Profits)
-
-**Direct bonus on your realized yield profits** (not on swaps or rewards):
-
-- 25% extra on top of your yield profit (typical example, configurable)
-- Paid automatically when claiming yield
-- Only applies to yield strategies, not trading or reward claims
-- Requires: eligible yield position and available distributor balance
-- Example: Realize $1,000 yield profit → Get $250 bonus
-
-### 2. Deposit Points System
-
-**Share of protocol-wide rewards based on holdings**:
+Earn RIPE simply by holding assets in your Underscore wallet:
 
 ```
 Points = (USD Value × Blocks Held)
@@ -96,72 +55,79 @@ Your Share = Your Points / Total Global Points
 
 1. Hold assets in your [wallet](user-wallet.md)
 2. Accumulate points over time
-3. Protocol adds rewards to pool
-4. Claim your proportional share
+3. Claim your proportional share of the RIPE rewards pool
 
-**Example calculation**:
+**Example**:
+- Hold $10,000 for 2 weeks
+- Total protocol points = 3,024, your points = 60.48 (2% share)
+- $5,000 worth of RIPE in pool → You claim ~$100 worth of RIPE
 
-- Hold $10,000 for 2 weeks = 60.48 points
-- Total protocol points = 3,024
-- Your share = 2%
-- $5,000 rewards added to pool → You claim $100
+---
+
+## RIPE Token Details
+
+RIPE is the governance token of [Ripe Protocol](https://ripe.finance), Underscore's integrated borrowing protocol. Your RIPE can be:
+
+- **Held** for potential appreciation
+- **Staked** in Ripe governance for voting power and additional rewards
+- **Traded** on supported exchanges
+
+### Auto-Staking
+
+Currently, **80% of RIPE rewards are automatically staked** in Ripe's governance vault with a 180-day lock period. The remaining 20% is sent directly to your wallet. This gives you instant staking benefits without extra transactions.
+
+---
 
 ## Fee Structure
 
-### What Gets Collected
+Underscore charges small fees on certain activities:
 
-_All fees are configurable. Examples below show typical defaults._
+| Activity | Fee | Applied To |
+| -------- | --- | ---------- |
+| Swaps | 0.25% | Trade amount |
+| External Rewards | 20% | Protocol reward claims (MORPHO, WELL, etc.) |
+| Vault Performance | 20% | Vault yield profits only |
 
-| Activity | Fee Range       | Applied To      | Example                  |
-| -------- | --------------- | --------------- | ------------------------ |
-| Yield    | 10% (default)   | Profits only    | $1,000 profit → $100 fee |
-| Swaps    | 0.25% (default) | Trade amount    | $10,000 trade → $25 fee  |
-| Rewards  | 10% (default)   | External claims | $200 claim → $20 fee     |
+**No fees on**: Transfers, deposits, idle funds, or principal.
 
-### Where Fees Go
+---
 
-All fees flow through transparent distribution:
+## Future: Ambassador Revenue Share
 
-- **Ambassador share**: 50% to referrer (default, configurable)
-- **Yield bonuses**: If eligible and available
-- **Deposit pool**: For points-based distribution
-- **Protocol**: Remaining for operations
+In addition to the RIPE yield bonuses described above, ambassadors may also receive a percentage of fees in-kind (paid in the same asset as the fee). This feature exists in the protocol but revenue share ratios are currently set to 0%.
+
+---
 
 ## Common Questions
 
 **Q: When can I claim?**
-A: Immediately after fees generate, subject to cooldown. [Managers](managers.md) can claim on your behalf if authorized.
+A: Immediately after rewards accumulate, subject to cooldown. [Managers](managers.md) can claim on your behalf if authorized.
 
 **Q: Can rewards be lost?**
 A: No, they accumulate until claimed (limited by contract balance).
 
-**Q: How do points work?**
-A: Points = deposit value × time. More deposits + longer holding = more points.
-
-**Q: What's the cooldown?**
-A: Configured cooldown period, preventing spam while allowing regular claims.
-
 **Q: Do bonuses always pay out?**
-A: Only if distributor has sufficient balance. First-come, first-served.
+A: Only if distributor has sufficient RIPE balance. First-come, first-served.
+
+**Q: How do deposit points work?**
+A: Points = deposit value × time. More deposits + longer holding = more points = larger share of the rewards pool.
+
+**Q: Is my RIPE automatically staked?**
+A: Yes. 80% is auto-staked in Ripe governance with a 180-day lock. 20% goes directly to your wallet.
+
+---
 
 ## The Bottom Line
 
-Traditional protocols keep 100% of the fees you generate. Underscore shares real revenue from real activity.
+Earn yield, get RIPE. Hold assets, get RIPE. Refer friends, get RIPE when they profit.
 
-**For Ambassadors**: Build a network, earn 50% of all fees forever (default rate). Five active users = $2,700/year. Scale from there.
-
-**For Users**: Your deposits earn points. Your yields earn bonuses. Your activity generates returns.
-
-Transparent fee sharing that rewards participation. Use DeFi, get paid. Refer users, get paid more. Rewards come in various forms — the assets you're already using, protocol tokens, or other valuable assets.
-
-This is how DeFi should work — where protocols and users succeed together.
+Your DeFi activity directly translates to token rewards.
 
 ---
 
 ## Next Steps
 
-- **[Deploy Your Wallet](user-wallet.md)**: Start earning rewards immediately
-- **[Become an Ambassador](user-wallet.md)**: Build a network and earn revenue share
+- **[Deposit in Vaults](vaults.md)**: Earn AI-optimized yields + RIPE bonuses
+- **[Deploy Your Wallet](user-wallet.md)**: Start accumulating deposit points
 - **[Add Managers](managers.md)**: Automate reward claiming
 - **[Set Up Whitelist](whitelist.md)**: Direct rewards to any trusted wallet
-
