@@ -4,7 +4,9 @@ description: Tokenized yield strategies managed by AI — open to everyone
 
 # Vaults: AI-Managed Yield for Everyone
 
-Underscore Vaults are AI-managed yield strategies wrapped into standard ERC-4626 tokens. Deposit assets, receive vault shares that represent your stake in an actively managed portfolio. The AI continuously finds the best yields and rebalances across DeFi protocols — you just hold the token.
+Underscore Vaults are AI-managed yield strategies wrapped into standard ERC-4626 tokens. Deposit assets, receive vault shares that represent your stake in an actively managed portfolio. The vault AI agent monitors yields around the clock — catching rate spikes, monitoring liquidity risk, claiming rewards, rebalancing across protocols — while you just hold the token.
+
+Vaults are non-custodial. Your assets stay yours. Withdraw anytime, no permissions required.
 
 The key difference from a normal [Underscore Wallet](user-wallet.md): your position isn't locked. Vault shares are composable tokens you can use anywhere in DeFi — trade them, use them as collateral, bridge them cross-chain. The underlying AI strategy keeps running no matter where your tokens go.
 
@@ -12,13 +14,25 @@ The key difference from a normal [Underscore Wallet](user-wallet.md): your posit
 
 ## Why Vaults Exist
 
+### The Origin Story
+
+Vaults weren't designed in a vacuum — they emerged from real problems we hit while building.
+
+We started with [Hightop](https://hightop.com), where AI agents managed user portfolios through individual [Underscore Wallets](user-wallet.md). The AI would analyze yields across DeFi, then rebalance each user's wallet to capture better opportunities. It worked, but we quickly ran into a wall: every optimization meant touching every wallet. If we wanted to move 10,000 users into a higher-yield Morpho market, that was 10,000 separate transactions. Expensive. Slow. The AI was doing the same work over and over for users who wanted the same outcome.
+
+Then came Ripe Protocol. Users would borrow against their yield-bearing positions — Aave deposits, Morpho positions, and the like. But once those positions became collateral, they were locked. Even if a better yield opportunity appeared, users couldn't rebalance that collateral without first repaying their loan. Their yield-earning assets were stuck.
+
+Both problems came from the same place: real users, real usage, real feedback. We felt the inefficiency firsthand running AI optimization at scale on Hightop.
+
+So we built vaults. The core insight: keep everything we built with Underscore Wallets — the AI capabilities, the clear boundaries, the onchain rules and policies — but give the AI just one "wallet" to manage. Users deposit into a shared vault and receive tokens representing their share. The AI optimizes once, everyone benefits. And because vault shares are standard tokens, they can be used as collateral on Ripe while the AI keeps optimizing the underlying positions.
+
+This architecture also opened the door to new vault types: leveraged strategies, index vaults, and more — all built on the same foundation.
+
+Today, vaults are live and powering Hightop in production.
+
 ### Scale
 
-Imagine 100,000 users all running the same yield strategy. With individual wallets, that's 100,000 separate rebalancing transactions every time the AI optimizes. Expensive. Inefficient.
-
-With a vault, 100,000 users share one strategy. The AI rebalances once. Everyone benefits. Gas costs get socialized. Efficiency gets maximized.
-
-This isn't theoretical — it's exactly what we experienced building Hightop. Each user had their own [Underscore Wallet](user-wallet.md), and every yield optimization meant touching every wallet individually. A shared vault architecture changes the economics entirely.
+One vault, one rebalance, everyone benefits.
 
 That's how we scale to millions of users.
 
@@ -26,7 +40,7 @@ That's how we scale to millions of users.
 
 Vault shares are standard ERC-20 tokens. This unlocks:
 
-- **Collateral**: Use vault shares on Ripe Protocol to get a loan — your collateral keeps earning yield in the background
+- **Collateral**: Use vault shares on Ripe Protocol to get a loan — the AI keeps optimizing your collateral even while it's locked
 - **Liquidity**: Sell shares in liquidity pools for instant exit
 - **Portability**: Bridge cross-chain, use in other protocols
 - **Integration**: Any app can plug into vaults with a standard interface
@@ -35,7 +49,9 @@ Your position becomes a building block, not a locked asset.
 
 ### Simplicity
 
-Users don't need to understand liquidity pools or yield aggregators. They deposit, get a token, and earn yield. All the complexity — multi-protocol strategies, AI rebalancing, risk management — happens behind the scenes.
+Chasing yields is exhausting. Checking Morpho rates, comparing Aave markets, tracking Euler promotions, claiming rewards before they expire — it's a full-time job.
+
+Vaults handle all of it. Users deposit, get a token, and earn yield. All the complexity — multi-protocol strategies, AI rebalancing, risk management, claiming and compounding rewards — happens behind the scenes.
 
 ---
 
@@ -58,7 +74,6 @@ The AI agent continuously optimizes the vault's positions:
 - **Risk Analysis**: Evaluates strategies beyond just APY — analyzing depositor count, total deposits, utilization ratios, and available liquidity to assess withdrawal risk
 - **Automatic Rebalancing**: Moves funds to capture better risk-adjusted yields as conditions change
 - **Reward Harvesting**: Claims and compounds protocol incentives automatically
-- **Gas Optimization**: Batches operations to minimize transaction costs
 
 ### Example: USDC Earn Vault
 
@@ -67,7 +82,7 @@ The AI agent continuously optimizes the vault's positions:
 - You receive 10,000 _USDC tokens
 
 **After 3 months**:
-- AI captured a 12% Morpho rate spike, moved to 8% Euler promotion, claimed $15k in rewards
+- AI executed dozens of rebalances — capturing rate opportunities, evaluating risk before moving, rotating through promotions, claiming rewards as they unlock
 - Vault now holds 1,025,000 USDC (2.5% growth)
 - Your 10,000 _USDC now redeemable for 10,250 USDC
 - No action required from you
@@ -93,11 +108,11 @@ Higher yields through managed leverage on Ripe Protocol — with built-in debt s
 
 ### How It Works
 
-Leveraged Vaults amplify your yield by borrowing against your collateral, but with a key safety feature: **borrowed funds always maintain USD-based exposure** to ensure the vault can always repay its debt. The borrowed amount is also deposited back into Ripe as additional collateral, further strengthening the health of the debt position.
+Leveraged Vaults amplify your yield by borrowing against your collateral, but with a key safety feature: **borrowed funds always maintain USD-based exposure** to ensure the vault can always repay its debt. The borrowed amount is also deposited back into Ripe as additional collateral, giving you two layers of collateral backing your debt — your original asset plus the borrowed USD.
 
 Here's the full flow:
 
-1. **You deposit** a volatile asset (e.g., cbBTC, ETH)
+1. **You deposit** a volatile asset into the Underscore Leverage vault (e.g., cbBTC, ETH)
 2. **Vault deposits** your asset into the corresponding Earn Vault (AI optimizes yield)
 3. **Vault uses** those yield-bearing shares as collateral on Ripe Protocol
 4. **Vault borrows** GREEN (stablecoin) against that collateral
@@ -144,8 +159,8 @@ Compare this to traditional leveraged positions where borrowed funds buy more of
 The AI manages both yield and risk:
 
 - **Collateral Management**: Deposits assets into Earn Vaults, then into Ripe Protocol
-- **Strategic Borrowing**: Borrows GREEN against collateral, converts to USDC
-- **USD Exposure Only**: Borrowed funds always go into USDC Earn Vault — never swapped to volatile assets
+- **Strategic Borrowing**: Borrows GREEN against collateral, then either swaps to USDC (if DEX liquidity is favorable) or stakes as Savings GREEN — either way, the borrowed amount earns yield
+- **USD Exposure Only**: Borrowed funds stay in USD-denominated assets (USDC or GREEN) — never swapped to volatile assets
 - **Debt Ratio Monitoring**: Maintains configurable maximum leverage
 - **Automatic Deleveraging**: Reduces positions when debt ratios approach limits
 
@@ -236,11 +251,13 @@ A small buffer (2%) ensures you receive your expected amount even during positio
 
 ### Approved Protocols Only
 
-Each vault operates within strict boundaries:
+Each vault operates within strict boundaries — enforced by smart contracts, not company policies:
 
 - **Whitelisted Destinations**: AI can only deposit to pre-approved yield protocols
 - **Registry Controlled**: Underscore governance manages the approved protocol list
-- **No Rogue Deposits**: AI cannot move funds to unapproved or risky protocols
+- **No Rogue Deposits**: The AI literally cannot move funds to unapproved destinations — it's not a matter of trust, it's code
+
+These rules are onchain. No rogue trades. No experimental farms. No hallucinations.
 
 ### Deposit Controls
 
@@ -362,9 +379,9 @@ No protocol-enforced minimum, though gas costs make very small deposits impracti
 
 ## Get Started
 
-Ready to earn AI-optimized yield?
+Ready to earn AI-optimized yield? [**Open the app →**](https://app.underscore.finance/)
 
-- **Deposit directly**: Send supported assets to any Underscore vault contract
+- **Deposit directly**: Connect your wallet and deposit into any vault
 - **Track your position**: Your vault shares appear in any ERC-20 compatible wallet
 - **Use as collateral**: Deposit shares to Ripe Protocol to borrow against your yield
 - **Withdraw anytime**: Redeem shares for underlying assets whenever you need them
