@@ -2,7 +2,7 @@
 description: Complete list of DeFi protocols accessible through your Underscore wallet
 ---
 
-# Supported Protocols
+# DeFi Integrations
 
 Your Underscore wallet connects to 20+ DeFi protocols through standardized adapters called "Legos". Here's the complete list of what's available today.
 
