@@ -46,15 +46,44 @@ Underscore connects to DeFi protocols through standardized adapters called "Lego
 
 ### Debt Management
 
-**Integrated protocols**: Ripe Protocol
+**Integrated protocol**: [Ripe Protocol](https://ripeprotocol.com)
+
+Ripe Protocol is Underscore's borrowing partner, letting you access liquidity without selling your assets. The key advantage: **Underscore Earn Vaults are accepted as collateral**. This means your assets can be earning AI-optimized yield while you borrow against them — you're not choosing between yield and liquidity, you get both.
+
+**How It Works**:
+
+1. **Deposit Collateral**: Lock assets in Ripe Protocol — including Underscore Earn Vault tokens
+2. **Borrow Against It**: Take a loan in GREEN (stablecoin) or yield-bearing sGREEN
+3. **Keep Earning**: If using Vault tokens as collateral, your underlying assets continue earning optimized yield
+4. **Repay Anytime**: Pay back principal + interest on your schedule
+5. **Reclaim Collateral**: Withdraw your assets once debt is cleared
+
+**Why This Matters**:
+
+Traditional borrowing forces a choice: either earn yield OR use assets as collateral. With Underscore + Ripe:
+- Deposit into an Earn Vault (AI optimizes your yield)
+- Use your vault tokens as collateral on Ripe
+- Borrow GREEN/sGREEN for liquidity needs
+- Your collateral keeps earning the whole time
 
 **Capabilities**:
 
 - Deposit any supported asset as collateral
-- Borrow against collateral in GREEN (stablecoin) or yield-bearing sGREEN (earns while you hold)
+- Use Underscore Earn Vault tokens as productive collateral
+- Borrow GREEN (stablecoin) or sGREEN (yield-bearing stablecoin)
 - Repay debt with any accepted token
-- Earn and claim RIPE rewards
-- Manage multiple collateral vaults with automated deleveraging
+- Earn and claim RIPE rewards on debt positions
+
+**Manager Permissions**:
+- **Manage Debt**: Add/remove collateral, borrow, repay
+- Managers cannot withdraw borrowed funds to external addresses
+- All operations respect standard manager limits
+
+**Why Borrow?**
+- Access liquidity without selling appreciating assets
+- Keep earning yield on your collateral
+- Tax efficiency — loans aren't taxable events
+- Bridge short-term cash flow needs
 
 ### Asset Transformations
 
@@ -108,6 +137,98 @@ Underscore's architecture allows complex multi-step operations to execute atomic
 4. Claim and reinvest all [rewards](rewards.md)
 → Entire rebalance atomically
 ```
+
+## Swaps: Trade Any Token
+
+When you swap tokens through your Underscore wallet, the system finds the best route across integrated DEXes.
+
+### How Swaps Work
+
+Multi-hop routing example:
+```
+Want to swap USDC → PEPE?
+Direct route may not exist or have poor liquidity.
+
+Smart routing finds:
+USDC → ETH → PEPE (2 hops)
+or
+USDC → WETH → PEPE (2 hops with better rate)
+
+Up to 5 hops supported for optimal pricing.
+```
+
+### Slippage Protection
+
+Every swap includes slippage protection — you specify the minimum amount you'll accept. If market conditions change and you'd receive less, the transaction reverts.
+
+- Wallet default: Configurable per swap
+- Manager limit: Managers have maximum slippage caps (e.g., 1% max)
+- Fail-safe: Transactions revert rather than execute at bad prices
+
+### Swap Fees
+
+Underscore charges 0.25% on swaps. This is in addition to any DEX fees (which go to liquidity providers).
+
+### Manager Swap Controls
+
+When managers execute swaps, additional controls apply:
+- Maximum slippage percentage
+- Maximum swaps per period
+- Minimum USD value per swap
+- Asset restrictions (which tokens can be swapped)
+
+---
+
+## Liquidity Provision: Earn From Trading Fees
+
+Your Underscore wallet lets you provide liquidity to decentralized exchanges and earn a share of trading fees. This is one of the most powerful DeFi strategies — your assets work for you by facilitating trades for others.
+
+### How It Works
+
+When you provide liquidity, you deposit a pair of tokens (like USDC and ETH) into a trading pool. Traders swap between these tokens and pay fees, which you earn proportionally to your share of the pool.
+
+**Basic Example**:
+
+```
+You deposit: $5,000 USDC + $5,000 ETH worth
+Pool share: 1% of total liquidity
+Daily trading volume: $1,000,000
+Fee rate: 0.3%
+Your daily earnings: $30 (0.3% × $1M × 1%)
+```
+
+### Two Types of Liquidity
+
+**Simple Liquidity (Uniswap V2 style)**
+
+- Deposit equal value of two tokens
+- Earn fees across all price ranges
+- Receive LP tokens representing your share
+- Supported on: Aerodrome Classic, Uniswap V2, Curve
+
+**Concentrated Liquidity (Uniswap V3 style)**
+
+- Choose specific price ranges for your liquidity
+- Higher fees when price is in your range
+- More capital efficient but requires monitoring
+- Receive an NFT position (not fungible tokens)
+- Supported on: Aerodrome Slipstream, Uniswap V3
+
+### Manager Permissions for LP
+
+Managers can handle liquidity operations with the **Manage Liquidity** permission:
+
+- Add liquidity to approved pools
+- Remove liquidity when rebalancing
+- Subject to all standard manager limits
+
+### Risks to Understand
+
+**Impermanent Loss**: If token prices diverge significantly, you may have less value than if you held the tokens separately. This loss only becomes "permanent" when you withdraw.
+
+**Smart Contract Risk**: LP positions exist within DEX smart contracts. Underscore integrates only with established, audited protocols.
+
+---
 
 ## Other Wallet Features
 
