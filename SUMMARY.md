@@ -9,7 +9,7 @@
 
 - [AI-Managed Vaults](vaults.md) — Tokenized yield strategies for everyone
 - [User Wallet](user-wallet.md) — Your DeFi command center
-- [DeFi Integrations](supported-protocols.md) — supported protocols
+- [DeFi Integrations](defi-integrations.md) — supported protocols
 
 ## Payments & Permissions
 
