@@ -1,12 +1,12 @@
 ---
-description: One-time payments you can cancel anytime before they're cashed
+description: One-off spend without blind trust — cancellable payments with review delays
 ---
 
-# Digital Cheques: Send Now, Confirm Later
+# Digital Cheques: One-Off Spend Without Blind Trust
 
-Digital Cheques are time-locked payment promises that give you complete control until cashed. Write a $5,000 payment to a contractor — cancel it if they don't deliver. Set security delays for large amounts. Recipients see the cheque immediately but can't cash until the delay expires. Your funds keep earning yield until the second they're claimed.
+Digital Cheques are time-locked payment promises that give you complete control until cashed. When an agent needs to pay a new counterparty, Digital Cheques turn a transfer into a controlled payment commitment. Small spends clear immediately. Larger payouts sit behind review delays and stay cancellable until they're cashed. Your funds keep earning yield until the second they're claimed.
 
-Perfect for contractor payments, large transfers needing review time, or any payment where you want an undo button. No pre-approval needed — send to any address. Cancel anytime before cashing. Full transparency onchain for both parties.
+Your agent buys a $3 dataset instantly. A $5,000 compute job waits behind a review window you can cancel. Contractor payments get built-in review time. No pre-approval needed — send to any address. Cancel anytime before cashing. Full transparency onchain for both parties.
 
 ## Why Digital Cheques Exist
 
@@ -18,6 +18,10 @@ Traditional crypto transfers are irreversible the moment you click send. No grac
 - Large amounts require extra security measures
 - Payment timing needs to align with business processes
 - Mistakes in addresses or amounts must be correctable
+
+### Why Agents Need Cheques
+
+For AI agents, Digital Cheques provide controlled one-off spending. Unlike [Payees](payees.md) (which handle recurring service payments to known recipients), Cheques handle ad-hoc purchases from new counterparties — buying a dataset, paying for a one-time analysis, or acquiring temporary compute resources. Small purchases clear instantly. Larger ones get a review window where you can cancel if something looks wrong.
 
 ### The Digital Cheque Solution
 
@@ -130,6 +134,36 @@ Limit cheques to specific tokens:
 
 ## Real-World Configurations
 
+### Agent Dataset Purchase
+
+```
+Amount: $3 USDC
+Unlock: Immediate (under threshold)
+Expiry: 24 hours
+Pull: Enabled
+Result: Agent buys a dataset instantly, no review needed
+```
+
+### Agent One-Off Service Payment
+
+```
+Amount: $500 USDC
+Unlock: Immediate (under $1,000 threshold)
+Expiry: 7 days
+Pull: Enabled
+Result: Agent pays for a one-time compute job, provider claims when ready
+```
+
+### Agent Large Purchase (With Review)
+
+```
+Amount: $5,000 USDC
+Unlock: 3 days (automatic over threshold)
+Expiry: 30 days
+Review: Owner can cancel during 3-day delay if purchase looks wrong
+Result: Large agent spend gets human review window
+```
+
 ### Social Payment
 
 ```
@@ -227,5 +261,5 @@ Yes, and it's incredibly useful. You can authorize a [Wallet Manager](managers.m
 - **[Payees](payees.md)**: Set up automated recurring payments for regular expenses
 - **[Managers](managers.md)**: Learn how to delegate payment tasks to AI or team members
 - **[Whitelist](whitelist.md)**: Configure instant, unlimited transfers for your most trusted addresses
-- **[User Wallet](user-wallet.md)**: Explore your complete financial command center and all its features
+- **[Programmable Wallets](user-wallet.md)**: Explore your agentic wallet and all its features
 

@@ -1,26 +1,20 @@
 ---
-description: Your Money, Working 24/7
+description: Your Money Never Sleeps
 ---
 
-# Underscore Protocol: Your Money, Working 24/7
+# Underscore Protocol: Your Money Never Sleeps
 
-Deposit into **AI-managed Vaults** that optimize yield across DeFi — no wallet setup required. Or deploy a **Smart Wallet** with automated payments, secure delegation, and access to 20+ protocols in one place. Either way, your funds earn while you sleep. No manual management. No missed opportunities.
+One protocol. Two products.
 
-**Atomic Operations**: Rebalance $500k across five protocols in one transaction. Move from Aave's 7% to Morpho's 12% APY in one click. Claim rewards, swap to USDC, and re-deploy — what took 15 minutes and 5 transactions now happens instantly.
+1. **[Earn Vaults](vaults.md)** — AI-managed passive yield across 10+ DeFi protocols. Deposit assets, receive vault shares, and the AI handles everything.
 
-**Secure Delegation**: Let AI agents capture that 15% APY spike at 3am while you sleep. Enable your CFO to pay $100k in vendor invoices without touching your $2M reserves. Set exact position limits: "Trade up to $50k USDC but never touch my ETH." Every action validated against your rules, revocable with one click. All powered by [Managers](managers.md) — your automated operators that never sleep.
+2. **[Programmable Wallets](user-wallet.md)** — Agentic wallets where AI agents and operators pay, rebalance, and move funds within your rules. No custody. No private keys. No unrestricted access.
 
-**Unified Protocol Access**: No more tab juggling or phishing risks. Your Underscore wallet connects directly to Morpho, Aerodrome, Aave, Uniswap, and every major protocol through battle-tested adapters. Execute a Morpho deposit → Aerodrome swap → Aave leverage strategy in a single transaction.
-
-**Intelligent Payment Rails**: Pay contractors with 72-hour cancellation windows using [Digital Cheques](cheques.md). Let employees pull their exact $5k monthly salary (not a penny more) as [Payees](payees.md). Move millions between your own wallets instantly via [Whitelist](whitelist.md). Your funds earn 5% APY until the millisecond they're needed.
-
-Your wallet shouldn't just hold money. It should make money. Every second. Automatically.
+Your funds earn while you sleep. No manual management. No missed opportunities.
 
 ---
 
-## Core Components
-
-### [Vaults: AI-Managed Yield for Everyone](vaults.md)
+## Earn Vaults
 
 AI-managed yield strategies wrapped into standard ERC-4626 tokens. Deposit assets, receive vault shares, and the AI handles everything — finding the best yields, rebalancing across protocols, claiming rewards. You just hold the token.
 
@@ -30,49 +24,48 @@ AI-managed yield strategies wrapped into standard ERC-4626 tokens. Deposit asset
 
 **Perfect for:** Passive yield seekers, protocols needing productive collateral, fintech apps adding yield features
 
-### [User Wallet: Your DeFi Command Center](user-wallet.md)
+**→ Learn more: [AI-Managed Vaults](vaults.md)**
 
-Full control with powerful automation.
+---
 
-- **One address** for every DeFi protocol
-- **Intelligent automation** with manual override always available
-- **Institutional security** without institutional complexity
-- **Complex operations** executed in single transactions
+## Programmable Wallets: Money For Agents
 
-**Perfect for:** Active DeFi users managing $10k-10M portfolios
+Most agents can recommend. Underscore lets them execute — with real funds, without ever holding your private keys.
 
-### [Managers: 24/7 Operators Within Your Rules](managers.md)
+Programmable Wallets give AI agents and operators onchain execution rights within strict boundaries. [Managers](managers.md) define permissions. [Payees](payees.md) handle recurring spend. [Digital Cheques](cheques.md) handle one-off payments with optional review delays. Everything is enforced onchain by smart contracts.
 
-Let humans or AI work for you — within your exact boundaries.
+### [Managers: Give Agents Execution Rights, Not Custody](managers.md)
 
-- **Granular permissions** - Allow only what you specify
-- **Hard spending limits** - Daily, monthly, and lifetime caps
-- **Time-based controls** - Auto-expire after set periods
-- **Instant revocation** - Your control is absolute
+Authorize agents to manage yield, swap, borrow, repay, claim rewards, and pay. Restrict by asset, protocol, budget, cooldown, expiry.
 
-**Perfect for:** Traders who need 24/7 execution, teams managing treasury
+- **Granular permissions** — Allow only what you specify
+- **Hard spending limits** — Daily, monthly, and lifetime caps
+- **Time-based controls** — Auto-expire after set periods
+- **Instant revocation** — Your control is absolute
 
-### [Payees: Autopay That Earns While It Waits](payees.md)
+*Example: A yield agent can rebalance across Aave, Morpho, and Euler with a $25,000 daily limit.*
 
-Replace wire transfers with programmable payment relationships.
+### [Payees: Let Agents Pay for the Services They Need](payees.md)
+
+Pre-approve recurring recipients like market data feeds, model providers, compute vendors, contractors, payroll, subscriptions. Set per-payment caps, period limits, allowed assets, cooldowns.
 
 - **Pre-approved recipients** with individual limits
 - **Automated payments** while funds earn yield
-- **Pull payment support** for subscriptions
+- **Pull payment support** for subscriptions and service fees
 - **Period-based caps** preventing overspending
 
-**Perfect for:** Payroll, rent, subscription services
+*Example: Your trading agent keeps its data feed, inference API, and GPU provider online with fixed USDC allowances.*
 
-### [Cheques: Send Now, Confirm Later](cheques.md)
+### [Digital Cheques: One-Off Spend Without Blind Trust](cheques.md)
 
-Time-locked payment promises you control until cashed.
+Turn transfers into controlled payment commitments. Small spends clear immediately. Larger payouts sit behind review delays and stay cancellable.
 
 - **Security delays** for large amounts
 - **Cancel anytime** before payment
 - **Transparent onchain** for both parties
 - **No funds locked** until actual payment
 
-**Perfect for:** Contractors, large one-time payments, untrusted recipients
+*Example: Your agent buys a $3 dataset instantly. Larger payouts wait behind a review window.*
 
 ### [Whitelist: Instant Access for Trusted Addresses](whitelist.md)
 
@@ -84,33 +77,35 @@ Unlimited access for your most trusted addresses.
 
 **Perfect for:** Multi-wallet strategies, hardware wallet, cold storage
 
-### [Rewards: Earn RIPE Tokens](rewards.md)
+> **Underscore lets agents execute with real money without ever giving them custody, private keys, or unrestricted access. Budgets, recipient rules, asset restrictions, review delays, and expiry windows are enforced onchain in open-source smart contracts.**
 
-Earn RIPE tokens just by using Underscore.
-
-- **1:1 yield bonus** — get $1 of RIPE for every $1 of yield you earn
-- **Deposit rewards** — earn RIPE based on holdings over time
-- **Referral bonuses** — earn RIPE when friends you invite profit
-
-**Perfect for:** All users earning yield or holding assets
+**→ Learn more: [Programmable Wallets](user-wallet.md)**
 
 ---
 
-## The Magic: How It All Works Together
+## How It All Works Together
 
-Your Underscore Wallet isn't just one thing — it's an ecosystem of intelligent features working in harmony.
+Your Underscore infrastructure isn't just one thing — it's an ecosystem of intelligent features working in harmony.
 
-### Example Day in Your Financial Life
+### An Agent's Day
 
-**5 AM**: Your [AI Manager](managers.md) notices Morpho offering 1% better yield than Aave. It automatically rebalances $50k, capturing extra yield while you sleep.
+**3 AM**: Your [yield agent](managers.md) notices Morpho offering 1% better yield than Aave. It automatically rebalances $50k, staying within its $25,000 daily limit. You're asleep.
+
+**6 AM**: Your trading agent's data feed subscription renews. $200 USDC pulls automatically from its [Payee](payees.md) allowance. The agent keeps running.
+
+**10 AM**: The trading agent needs a one-time dataset for backtesting. It creates a $3 [Digital Cheque](cheques.md) — clears instantly, under the review threshold.
+
+**2 PM**: A larger $5,000 compute job needs payment. The agent creates a cheque with a 3-day review window. You can cancel if something looks wrong.
+
+**11 PM**: Your portfolio rebalanced 3 times today across 5 protocols. Your agent paid for its own services. You didn't lift a finger. No keys were shared.
+
+### A Human's Day
 
 **10 AM**: Monthly rent is due. Your landlord (configured as [Payee](payees.md)) pulls exactly $2,500 USDC. Not a penny more. Your remaining funds keep earning yield.
 
-**2 PM**: You need to pay a contractor. Create a $5,000 [cheque](cheques.md) with 3-day delay. If they don't deliver, cancel it. Simple.
+**2 PM**: You need to pay a contractor. Create a $5,000 [cheque](cheques.md) with 3-day delay. If they don't deliver, cancel it.
 
-**4 PM**: Time to fund your aggressive trading wallet. Move $20k to your other Underscore wallet ([whitelisted](whitelist.md)) instantly. Your AI agent spots an arbitrage opportunity.
-
-**11 PM**: Your portfolio rebalanced 3 times today across 5 protocols. You didn't lift a finger.
+**4 PM**: Time to fund your trading wallet. Move $20k to your other Underscore wallet ([whitelisted](whitelist.md)) instantly.
 
 ---
 
@@ -120,11 +115,11 @@ Underscore isn't a consumer app — it's the infrastructure that powers the next
 
 ### Applications Building on Underscore
 
+- **AI Agents & Autonomous Systems**: Yield optimization agents, trading bots, and autonomous economic actors operating as [Managers](managers.md) within user-defined limits — paying for their own data feeds, compute, and inference APIs through [Payees](payees.md) and [Cheques](cheques.md)
 - **Fintech Apps**: Like [Hightop](https://hightop.com), which uses Underscore to power yield optimization, swaps, borrowing, and their AI Private Banker
 - **Vault Integrators**: Apps adding AI-managed yield without building infrastructure — just integrate [Vaults](vaults.md) and go
 - **Payment Platforms**: Cross-border remittance, B2B payments, and payroll systems leveraging our [Cheques](cheques.md) and [Payees](payees.md)
-- **Smart Wallets**: Adding advanced DeFi features and [delegation](managers.md) to existing wallets
-- **AI Agents**: Portfolio managers and trading bots operating as [Managers](managers.md) within user-defined limits
+- **Wallet Providers**: Adding advanced DeFi features and [programmable delegation](managers.md) to existing wallets
 
 ### The Hightop Example
 
@@ -142,28 +137,28 @@ Most users will never interact with Underscore directly. They'll use apps like H
 
 ## Common Questions
 
-**Is my wallet upgradeable?**  
-No. Your wallet code is immutable for security. New features come through Lego integrations. If new features come, you can migrate to a new Underscore wallet.
+**Is my wallet upgradeable?**
+No. Your wallet code is immutable for security. New features come through Lego integrations. If new features come, you can migrate to a new Programmable Wallet.
 
-**What are Legos?**  
+**What are Legos?**
 Standardized integrations with DeFi protocols. When new protocols launch, your wallet can use them immediately.
 
-**Can I use multiple wallets?**  
+**Can I use multiple wallets?**
 Yes. Whitelist them for instant transfers between your wallets.
 
-**What about L2s?**  
+**What about L2s?**
 Currently Base L2 only. More chains coming.
 
 **How do fees work?**
 Small fees on swaps (0.25%) and external reward claims (20%). Vaults charge 20% performance fees on yield profits only. No fees on transfers, deposits, or idle funds. See [Protocol Economics](protocol-economics.md) for details.
 
-**What happens if I lose my owner wallet?**  
+**What happens if I lose my owner wallet?**
 If you've set up managers and whitelisted addresses beforehand, managers can still transfer funds to your whitelisted addresses (like hardware wallets), providing a recovery path.
 
-**Can managers steal my funds?**  
+**Can managers steal my funds?**
 No. Managers operate within blockchain-enforced limits. They can only perform authorized actions within your spending caps and cannot withdraw to external addresses or modify their own permissions.
 
-**How do I handle emergency transfers?**  
+**How do I handle emergency transfers?**
 Pre-whitelist your hardware wallet or secure addresses. Unlike payees (with limits) or cheques (with delays), whitelisted addresses can receive unlimited transfers instantly for emergencies.
 
 ---
@@ -178,7 +173,7 @@ Understanding which payment tool to use for different situations:
 | **Payment Limits** | None — completely unlimited | Customizable per-recipient | Set per cheque |
 | **Setup Time** | Time-locked addition (configurable) | Immediate with limits | No setup needed |
 | **Key Benefit** | Emergency access & multi-wallet strategies | Set once, runs automatically | Cancel anytime before cashed |
-| **Best For** | Hardware wallets, cold storage, other Underscore wallets | Salaries, rent, subscriptions | Contractors, large transfers |
+| **Best For** | Hardware wallets, cold storage, other wallets | Agent services, salaries, subscriptions | Agent purchases, contractors, large transfers |
 | **Risk Level** | Highest — can drain wallet | Medium — capped by limits | Low — cancellable |
 
 ---
@@ -192,8 +187,14 @@ Understanding which payment tool to use for different situations:
 2. Choose a vault (USDC, ETH, etc.)
 3. Deposit — AI handles everything from here
 
+**Building an AI agent? (10 minutes)**
+1. Deploy a [Programmable Wallet](user-wallet.md)
+2. Add your agent as a [Manager](managers.md) with permissions and budget
+3. Configure [Payees](payees.md) for recurring service costs (data feeds, compute, APIs)
+4. Use [Digital Cheques](cheques.md) for one-off payments
+
 **Want full control? (5 minutes)**
-1. Deploy your Underscore smart wallet
+1. Deploy your [Programmable Wallet](user-wallet.md)
 2. Add managers, payees, or whitelist addresses as needed
 3. Start using 20+ DeFi protocols from one place
 
@@ -201,7 +202,9 @@ Understanding which payment tool to use for different situations:
 
 **For Passive Yield**: Start with [Vaults](vaults.md) — deposit and let AI optimize. No wallet setup required.
 
-**For Full Control**: Deploy a [User Wallet](user-wallet.md) and explore features that match your needs:
+**For AI Agents**: Deploy a [Programmable Wallet](user-wallet.md) and configure [Managers](managers.md) for execution, [Payees](payees.md) for recurring costs, and [Cheques](cheques.md) for one-off spend.
+
+**For Full Control**: Deploy a [Programmable Wallet](user-wallet.md) and explore features that match your needs:
 
 - **For Automation**: Set up [Managers](managers.md) to delegate operations
 - **For Recurring Payments**: Configure [Payees](payees.md) for automated transfers
@@ -229,14 +232,8 @@ Build on Underscore's infrastructure with detailed guides on smart contract arch
 
 ## The Future of Financial Operations
 
-Remember those 10 tabs you had open, constantly checking URLs? The yield opportunities you missed at 3am? The manual approvals, one by one, for every protocol?
+AI agents need more than APIs — they need money. The ability to pay for services, capture yield, and move funds autonomously within safe boundaries.
 
-That's not DeFi. That's DeFi handicapped by tools from 2020.
+Underscore delivers what crypto promised: programmable money that works as hard as you do. Your agents executing strategies within unbreakable boundaries. Your funds earning across protocols while maintaining liquidity for payments. Your security protecting without restricting.
 
-Underscore delivers what crypto promised: programmable money that works as hard as you do. Your funds earning across protocols while maintaining liquidity for payments. Your trusted operators executing strategies within unbreakable boundaries. Your security protecting without restricting.
-
-This isn't about choosing the lesser evil. It's about having everything — automation and control, security and accessibility, simplicity and power.
-
-One wallet. Every protocol. Total control.
-
-Stop managing wallets. Start managing wealth.
+AI-managed vaults + agentic wallets. Your money never sleeps.

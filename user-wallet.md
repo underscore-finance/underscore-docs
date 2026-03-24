@@ -1,25 +1,25 @@
 ---
-description: One wallet unifying top DeFi protocols with automated payments and secure delegation
+description: Agentic wallets with DeFi access — give agents execution rights, not custody
 ---
 
-# User Wallet: Your DeFi Command Center
+# Programmable Wallets: Agentic Wallets for DeFi
 
-The Underscore User Wallet is a smart contract wallet that unifies access to top DeFi protocols through a single address. Execute complex multi-protocol strategies in one transaction. Delegate operations to AI agents and trusted operators within strict boundaries. Automate payments while funds earn yield. Move millions between your wallets instantly.
+The Underscore Programmable Wallet is a smart contract wallet purpose-built for AI agents and operators to execute with real funds within onchain rules — without ever holding private keys or having unrestricted access. Unify access to 20+ DeFi protocols through a single address. Delegate operations to agents within strict boundaries. Automate payments while funds earn yield. Move millions between your wallets instantly.
 
-Built on Base L2, your wallet combines institutional-grade security with the flexibility to capture opportunities 24/7 — whether you're actively managing or sound asleep.
+Built on Base L2, your wallet combines institutional-grade security with the flexibility to capture opportunities 24/7 — whether agents are executing autonomously or you're managing directly.
 
-At its core, Underscore provides four key components:
+At its core, Underscore Programmable Wallets provide four key components:
 
 1. **Unified Protocol Access**: Direct integration with top DeFi protocols through standardized adapters
-2. **Delegation System**: [Managers](managers.md) who can execute strategies within defined boundaries
-3. **Payment Rails**: Automated payment systems for recurring transfers and one-time payments (see [Payees](payees.md) and [Cheques](cheques.md))
+2. **Agent Execution**: [Managers](managers.md) who execute strategies within defined boundaries — no custody, no keys
+3. **Payment Rails**: Automated payment systems for agent services and recurring transfers (see [Payees](payees.md) and [Cheques](cheques.md))
 4. **Security Layers**: Time-locks, whitelists, and granular permissions protecting every operation
 
 ## One Wallet, Every Protocol
 
 Underscore connects to DeFi protocols through standardized adapters called "Legos". Each Lego provides a consistent interface for protocol-specific operations, enabling atomic multi-protocol transactions with optimized gas usage. 
 
-**Your wallet is future-proof**: When new DeFi protocols launch or existing ones add features, they're automatically available to your wallet through new Lego integrations. No need to migrate funds, deploy a new wallet, or update anything — your existing Underscore wallet instantly gains access to every new protocol the moment its Lego is deployed.
+**Your wallet is future-proof**: When new DeFi protocols launch or existing ones add features, they're automatically available to your wallet through new Lego integrations. No need to migrate funds, deploy a new wallet, or update anything — your existing Programmable Wallet instantly gains access to every new protocol the moment its Lego is deployed.
 
 ### Yield & Lending Protocols
 
@@ -257,42 +257,44 @@ Deactivate eject mode when secure
 
 Eject mode provides a panic button for emergencies — restrict first, investigate later.
 
-### [Managers](managers.md): Delegated Operations
+### [Managers](managers.md): Give Agents Execution Rights, Not Custody
 
 Managers are authorized operators — human or AI — who execute actions within your defined boundaries. They can trade, optimize yields, and manage payments, but cannot withdraw to external addresses or exceed your limits.
 
 **Use cases**:
 
 - 24/7 yield optimization by AI agents
+- Trading agents paying for data feeds, compute, and inference APIs
+- Automated debt position management
 - CFO handling vendor and contractor payments
 - Professional traders managing portions of portfolio
-- Automated debt position management
 - Family members with emergency access
 
 [→ Learn more about Managers](managers.md)
 
-### [Payees](payees.md): Your Circle of Trust
+### [Payees](payees.md): Let Agents Pay for the Services They Need
 
-Payees form your verified payment network — addresses that can only receive what you've pre-approved. Your funds earn yield until payment time, then transfer automatically. Only you can add addresses to this circle.
+Payees form your verified payment network — addresses that can only receive what you've pre-approved. Pre-approve recurring recipients like market data feeds, model providers, compute vendors, contractors, and payroll. Your funds earn yield until payment time, then transfer automatically.
 
 **Use cases**:
 
+- Agent data feed and inference API subscriptions
+- Compute vendor payments with weekly budgets
 - Employee salaries paid from yield-earning funds
 - Automated vendor and contractor payments
 - Subscription services with pull payment capability
-- Family allowances with monthly limits
 
 [→ Learn more about Payees](payees.md)
 
-### [Cheques](cheques.md): Digital Cheques with Control
+### [Cheques](cheques.md): One-Off Spend Without Blind Trust
 
-Digital cheques bring the control of paper cheques to crypto — write payments that recipients cash on their schedule, cancel anytime before they do. Large amounts get automatic security delays. Your funds keep earning yield until payment.
+Digital cheques turn transfers into controlled payment commitments. Small spends clear immediately. Larger payouts sit behind review delays and stay cancellable. Your funds keep earning yield until payment.
 
 **Use cases**:
 
+- Agent buying a one-time dataset or compute job
 - Contractor payments you can cancel if work isn't delivered
 - Large transfers with built-in review time
-- Social payments like splitting lunch ($30 to a friend)
 - One-time vendor invoices with payment flexibility
 - Any payment where you need an "undo" option
 
@@ -313,7 +315,7 @@ The whitelist breaks the emergency glass on your security — addresses that get
 
 ## Architecture Comparison
 
-| Traditional Multi-Wallet Setup      | Underscore Smart Wallet        |
+| Traditional Multi-Wallet Setup      | Underscore Programmable Wallet  |
 | ----------------------------------- | ------------------------------ |
 | Multiple interfaces and logins      | Single unified interface       |
 | Manual token approvals per protocol | Pre-configured protocol access |
@@ -334,7 +336,7 @@ Yes, absolutely. You maintain complete control of your private keys and assets. 
 Your funds remain safe and accessible. The smart contracts are immutable and don't depend on Underscore's servers. You could interact with your wallet directly through BaseScan or any other interface.
 
 **Can I migrate to a new wallet?**
-Yes. The protocol includes a migration system that lets you move funds and copy your configuration (managers, payees, whitelist) to a new Underscore wallet. Useful if you want access to new features or need to restructure your setup.
+Yes. The protocol includes a migration system that lets you move funds and copy your configuration (managers, payees, whitelist) to a new Programmable Wallet. Useful if you want access to new features or need to restructure your setup.
 
 ### 💰 **Costs & Fees**
 
@@ -350,7 +352,7 @@ See [Protocol Economics](protocol-economics.md) for details on how fees work and
 
 
 **Can I use this with my existing wallet?**  
-Yes. You deploy your Underscore smart wallet using your existing wallet (like MetaMask), which then acts as the owner key.
+Yes. You deploy your Underscore Programmable Wallet using your existing wallet (like MetaMask), which then acts as the owner key.
 
 **What protocols can I access?**  
 20+ protocols including Aave, Morpho, Compound (lending), Ripe Protocol (borrowing), Uniswap, Curve, Aerodrome (trading), and more. New protocols integrate automatically through the Lego system.
@@ -375,8 +377,8 @@ Every day you delay is another day of:
 
 Stop juggling wallets. Stop missing opportunities. Stop letting manual operations eat your time.
 
-Your DeFi operations deserve professional tools. Deploy your Underscore wallet and take control of your financial future.
+Your DeFi operations deserve professional tools. Deploy your Programmable Wallet and take control of your financial future.
 
 ---
 
-_One wallet. Every protocol. Total control._
+_AI-managed vaults + agentic wallets. Your money never sleeps._

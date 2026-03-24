@@ -8,7 +8,7 @@ Underscore Vaults are AI-managed yield strategies wrapped into standard ERC-4626
 
 Vaults are non-custodial. Your assets stay yours. Withdraw anytime, no permissions required.
 
-The key difference from a normal [Underscore Wallet](user-wallet.md): your position isn't locked. Vault shares are composable tokens you can use anywhere in DeFi — trade them, use them as collateral, bridge them cross-chain. The underlying AI strategy keeps running no matter where your tokens go.
+The key difference from a [Programmable Wallet](user-wallet.md): your position isn't locked. Vault shares are composable tokens you can use anywhere in DeFi — trade them, use them as collateral, bridge them cross-chain. The underlying AI strategy keeps running no matter where your tokens go.
 
 ---
 
@@ -18,13 +18,13 @@ The key difference from a normal [Underscore Wallet](user-wallet.md): your posit
 
 Vaults weren't designed in a vacuum — they emerged from real problems we hit while building.
 
-We started with [Hightop](https://hightop.com), where AI agents managed user portfolios through individual [Underscore Wallets](user-wallet.md). The AI would analyze yields across DeFi, then rebalance each user's wallet to capture better opportunities. It worked, but we quickly ran into a wall: every optimization meant touching every wallet. If we wanted to move 10,000 users into a higher-yield Morpho market, that was 10,000 separate transactions. Expensive. Slow. The AI was doing the same work over and over for users who wanted the same outcome.
+We started with [Hightop](https://hightop.com), where AI agents managed user portfolios through individual [Programmable Wallets](user-wallet.md). The AI would analyze yields across DeFi, then rebalance each user's wallet to capture better opportunities. It worked, but we quickly ran into a wall: every optimization meant touching every wallet. If we wanted to move 10,000 users into a higher-yield Morpho market, that was 10,000 separate transactions. Expensive. Slow. The AI was doing the same work over and over for users who wanted the same outcome.
 
 Then came Ripe Protocol. Users would borrow against their yield-bearing positions — Aave deposits, Morpho positions, and the like. But once those positions became collateral, they were locked. Even if a better yield opportunity appeared, users couldn't rebalance that collateral without first repaying their loan. Their yield-earning assets were stuck.
 
 Both problems came from the same place: real users, real usage, real feedback. We felt the inefficiency firsthand running AI optimization at scale on Hightop.
 
-So we built vaults. The core insight: keep everything we built with Underscore Wallets — the AI capabilities, the clear boundaries, the onchain rules and policies — but give the AI just one "wallet" to manage. Users deposit into a shared vault and receive tokens representing their share. The AI optimizes once, everyone benefits. And because vault shares are standard tokens, they can be used as collateral on Ripe while the AI keeps optimizing the underlying positions.
+So we built vaults. The core insight: keep everything we built with Programmable Wallets — the AI capabilities, the clear boundaries, the onchain rules and policies — but give the AI just one "wallet" to manage. Users deposit into a shared vault and receive tokens representing their share. The AI optimizes once, everyone benefits. And because vault shares are standard tokens, they can be used as collateral on Ripe while the AI keeps optimizing the underlying positions.
 
 This architecture also opened the door to new vault types: leveraged strategies, index vaults, and more — all built on the same foundation.
 
@@ -297,9 +297,9 @@ See [Protocol Economics](protocol-economics.md) for how fees are used.
 
 ---
 
-## Vaults vs User Wallets
+## Vaults vs Programmable Wallets
 
-| Feature | **Vaults** | **User Wallets** |
+| Feature | **Vaults** | **Programmable Wallets** |
 |---------|------------|------------------|
 | **Ownership** | Proportional shares (tokens) | Full control of assets |
 | **Management** | AI-managed, hands-off | You + your managers decide |
@@ -311,7 +311,7 @@ See [Protocol Economics](protocol-economics.md) for how fees are used.
 
 **Use Vaults When**: You want set-and-forget yield, need composable/productive collateral, or want to participate without wallet setup.
 
-**Use Wallets When**: You want full control, custom strategies, payment automation, or manager delegation with precise limits.
+**Use Programmable Wallets When**: You want full control, custom strategies, agent execution, payment automation, or manager delegation with precise limits.
 
 ---
 
@@ -387,7 +387,7 @@ Ready to earn AI-optimized yield? [**Open the app →**](https://app.underscore.
 - **Withdraw anytime**: Redeem shares for underlying assets whenever you need them
 - **Build on vaults**: Integrate into your app via [technical documentation](https://underscore-1.gitbook.io/developers)
 
-For full control over your DeFi strategy, explore [User Wallets](user-wallet.md) with custom managers, payment automation, and more.
+For full control over your DeFi strategy, explore [Programmable Wallets](user-wallet.md) with custom managers, payment automation, and more.
 
 ---
 

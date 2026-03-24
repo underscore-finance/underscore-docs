@@ -1,18 +1,26 @@
 ---
-description: Delegate operations to humans or AI within unbreakable boundaries you control
+description: Give agents execution rights, not custody — within unbreakable boundaries you control
 ---
 
-# Managers: 24/7 Operators Within Your Rules
+# Managers: Give Agents Execution Rights, Not Custody
 
-Managers are authorized operators that execute strategies and handle payments for your Underscore wallet — without ever having full control. Set exact permissions: "Trade up to $50k USDC but never touch my ETH." Restrict to specific protocols: "Only rebalance between Aave, Morpho, Euler, and Compound." Define spending limits: "$10k daily, $100k monthly." Add time-based controls that auto-expire. Revoke access instantly with one click.
+Most agents can recommend. Underscore lets them execute — with real funds, without ever holding your private keys.
 
-Let AI agents capture yield spikes at 3am. Enable your CFO to pay vendor invoices without accessing reserves. Allow traders to work specific positions within exact boundaries. Every action validated onchain against your rules.
+Managers are authorized operators that execute strategies and handle payments for your [Programmable Wallet](user-wallet.md) — without ever having full control. Set exact permissions: "Trade up to $50k USDC but never touch my ETH." Restrict to specific protocols: "Only rebalance between Aave, Morpho, Euler, and Compound." Define spending limits: "$10k daily, $100k monthly." Add time-based controls that auto-expire. Revoke access instantly with one click.
+
+Let AI agents capture yield spikes at 3am. Let trading agents pay for their own data feeds and compute. Enable your CFO to pay vendor invoices without accessing reserves. Allow traders to work specific positions within exact boundaries. Every action validated onchain against your rules.
 
 ## Why Managers Exist
 
+### The Agent Problem
+
+AI agents need to execute transactions with real money — rebalancing yield positions, paying for data feeds, buying compute resources. But giving agents private keys or unrestricted access creates unacceptable risk. Traditional API keys and wallet delegation have no onchain enforcement. One bug, one exploit, and everything is gone.
+
+Managers solve this by giving agents execution rights within smart-contract-enforced boundaries. The agent can do exactly what you authorize — nothing more, nothing less. Budgets, asset restrictions, protocol limits, and expiry windows are enforced by code, not policy.
+
 ### The Problem with Manual Wallet Management
 
-Running a [wallet](user-wallet.md) solo creates impossible tradeoffs:
+Running a [Programmable Wallet](user-wallet.md) solo creates impossible tradeoffs:
 
 - **24/7 Opportunities**: DeFi never sleeps, but you need to
 - **Routine Tasks**: Paying vendors, [claiming rewards](rewards.md), rebalancing — repetitive time drains
@@ -246,6 +254,25 @@ Manager B: Can trade = No, Max per tx = $200k → Cannot trade at all
 - Moved to 6.1% Euler promotional rate
 - Auto-claimed $312 in missed [rewards/incentives](rewards.md)
 - Additional yield: $3,000 annually
+
+### Agent Service Payments
+
+**Setup**: Trading agent that needs live data feeds, inference APIs, and compute
+
+**Permissions**:
+
+- General Transfers: To approved [Payees](payees.md) only
+- Create [Cheques](cheques.md): For one-off data purchases
+- Assets: USDC only
+- Limits: $500 per transaction, $5,000 monthly
+- Cooldown: 1 hour between payments
+
+**Results**:
+
+- Agent keeps its data feed, inference API, and GPU provider online
+- Small dataset purchases ($3-$50) clear instantly via Digital Cheques
+- All spend tracked, capped, and revocable
+- Agent never has custody, private keys, or unrestricted access
 
 ### Business Operations
 

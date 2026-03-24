@@ -24,7 +24,7 @@ When your AI agent spots arbitrage or your DAO needs treasury consolidation, [Pa
 
 The Whitelist completes the payment trinity with a special category for absolute trust:
 
-- **Your other [Underscore wallets](user-wallet.md)**: Move millions between your own accounts instantly
+- **Your other [Programmable Wallets](user-wallet.md)**: Move millions between your own accounts instantly
 - **Hardware wallets**: Secure funds without friction when threats emerge
 - **Corporate treasuries**: Enable instant consolidation for business operations
 - **Time-locked security**: Additions require waiting period, removals are instant
@@ -203,5 +203,5 @@ Whitelisted addresses bypass ALL limits — daily, weekly, and lifetime. This is
 - **[Payees](payees.md)**: Set up automated recurring payments for regular expenses
 - **[Cheques](cheques.md)**: One-time payments with time delays and cancellation ability
 - **[Managers](managers.md)**: Learn how to delegate payment tasks to AI or team members
-- **[User Wallet](user-wallet.md)**: Explore your complete financial command center and all its features
+- **[Programmable Wallets](user-wallet.md)**: Explore your agentic wallet and all its features
 

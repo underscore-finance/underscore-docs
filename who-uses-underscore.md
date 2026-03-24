@@ -8,7 +8,7 @@ Underscore isn't a consumer app — it's the rails that power the next generatio
 
 Think of Underscore like AWS for DeFi — but fully non-custodial. Just as millions use Netflix without knowing about Amazon's servers, millions will use financial apps powered by Underscore's infrastructure. The key difference: users always maintain control of their funds. The complexity stays under the hood while users enjoy seamless experiences.
 
-Underscore provides two core products: **[Vaults](vaults.md)** for AI-managed yield that anyone can access, and **[User Wallets](user-wallet.md)** with [Managers](managers.md), [Payees](payees.md), [Cheques](cheques.md), and [Whitelists](whitelist.md) — components developers combine to create powerful financial applications.
+Underscore provides two core products: **[Earn Vaults](vaults.md)** for AI-managed yield that anyone can access, and **[Programmable Wallets](user-wallet.md)** with [Managers](managers.md), [Payees](payees.md), [Cheques](cheques.md), and [Whitelists](whitelist.md) — agentic wallets where AI agents and operators execute with real funds within onchain rules.
 
 ## The Underscore Ecosystem
 
@@ -24,15 +24,17 @@ Underscore provides two core products: **[Vaults](vaults.md)** for AI-managed yi
 **Crypto Wallets**
 
 - Wallets adding advanced DeFi features
-- Smart wallet providers needing [delegation](managers.md)
+- Wallet providers needing [programmable delegation](managers.md)
 - Multi-signature solutions requiring automation
 
-**AI & Automation Platforms**
+**AI Agents & Autonomous Systems**
 
-- AI agents that manage user portfolios
-- Automated trading systems
-- Yield optimization bots
-- DeFi strategy executors
+- **Yield Optimization Agents**: Operate as [Managers](managers.md) within Programmable Wallets, rebalancing across Aave, Morpho, Euler, and Compound 24/7 within strict budget and protocol restrictions
+- **Trading Agents**: Pay for market data feeds, inference APIs, and compute resources through [Payees](payees.md) with fixed budgets — keeping their own infrastructure running autonomously
+- **Autonomous Economic Actors**: Use [Digital Cheques](cheques.md) for one-off purchases — datasets, temporary compute, analysis reports — with review delays on large purchases
+- **Agent Orchestrators**: Platforms that deploy multiple agents, each with their own Manager permissions, budgets, and asset restrictions on a single Programmable Wallet
+
+Underscore lets agents execute with real money without ever giving them custody, private keys, or unrestricted access. Budgets, recipient rules, asset restrictions, review delays, and expiry windows are enforced onchain.
 
 **Enterprise Solutions**
 
@@ -125,6 +127,39 @@ What they never see:
 - Any concept of gas, private keys, or seed phrases
 
 They just earn. The complexity vanishes. That's the power of building on Underscore.
+
+## Case Study: AI Trading Agent
+
+A trading agent needs to operate autonomously: rebalance positions, pay for data feeds, and buy occasional datasets — all without custody or private keys.
+
+### How Underscore Powers the Agent
+
+**Execution ([Manager](managers.md))**
+
+- Agent is configured as a Manager on the wallet owner's Programmable Wallet
+- Permissions: Buy & Sell, Manage Yield, General Transfers to approved Payees
+- Limits: $25,000 daily, stablecoins only, approved protocols only
+- Time controls: 6-hour cooldown, 90-day expiry with renewal
+
+**Recurring Costs ([Payees](payees.md))**
+
+- Data feed provider: $200/month pull payment
+- Inference API: $1,000/month, 50 transactions max
+- Compute vendor: $500/week
+
+**One-Off Purchases ([Cheques](cheques.md))**
+
+- Dataset purchases under $100: instant
+- Larger purchases: 3-day review window, cancellable by owner
+
+**What the agent never gets:**
+
+- Private keys
+- Ability to add new payment recipients
+- Access to exceed its budget
+- Permission to touch restricted assets
+
+The agent executes with real money. The owner maintains full control. All boundaries enforced onchain.
 
 ## Perfect for Vault Integration
 
@@ -249,7 +284,7 @@ As Underscore grows, it becomes more invisible. Users won't ask "Does this use U
 
 - **Every fintech** offering DeFi yields
 - **Every wallet** with advanced features
-- **Every AI agent** managing portfolios
+- **Every AI agent** managing portfolios and paying for its own services
 - **Every platform** needing payment automation
 
 The best infrastructure disappears into the background, enabling experiences that feel like magic.

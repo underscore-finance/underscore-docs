@@ -2,20 +2,20 @@
 
 ## Getting Started
 
-- [Underscore Protocol](README.md) — Your money, working 24/7
-- [Who Uses Underscore](who-uses-underscore.md) — Infrastructure powering next-gen finance apps
+- [Underscore Protocol](README.md) — Your Money Never Sleeps
+- [Who Uses Underscore](who-uses-underscore.md) — Infrastructure for agents, apps, and protocols
+- [DeFi Integrations](defi-integrations.md) — Supported protocols
 
-## Products
+## Earn Vaults
 
 - [AI-Managed Vaults](vaults.md) — Tokenized yield strategies for everyone
-- [User Wallet](user-wallet.md) — Your DeFi command center
-- [DeFi Integrations](defi-integrations.md) — supported protocols
 
-## Payments & Permissions
+## Programmable Wallets
 
-- [Managers](managers.md) — Delegated operators within your rules
-- [Payees](payees.md) — Automated recurring payments
-- [Digital Cheques](cheques.md) — Cancellable one-time payments
+- [Programmable Wallets](user-wallet.md) — Agentic wallets with DeFi access
+- [Managers](managers.md) — Give agents execution rights, not custody
+- [Payees](payees.md) — Let agents pay for the services they need
+- [Digital Cheques](cheques.md) — One-off spend without blind trust
 - [Whitelist](whitelist.md) — Instant unlimited transfers to trusted addresses
 
 ## Economics

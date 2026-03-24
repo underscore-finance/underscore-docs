@@ -1,24 +1,30 @@
 ---
-description: Automated recurring payments to verified addresses while your funds earn yield
+description: Let agents pay for the services they need — recurring payments within exact limits
 ---
 
-# Payees: Autopay That Earns While It Waits
+# Payees: Let Agents Pay for the Services They Need
 
-Payees are pre-approved addresses that receive payments from your Underscore wallet — within exact limits you control. Send payments directly or let recipients pull funds themselves. Set individual caps: "$5k monthly for Employee A, $10k for Employee B." Configure period resets: daily, weekly, monthly, or custom. Your funds keep earning in DeFi until the millisecond they're needed.
+Payees are pre-approved addresses that receive payments from your [Programmable Wallet](user-wallet.md) — within exact limits you control. Pre-approve recurring recipients like market data feeds, model providers, compute vendors, contractors, payroll, and subscriptions. Set per-payment caps, period limits, allowed assets, cooldowns. Your funds keep earning in DeFi until the millisecond they're needed.
 
-Replace wire transfers with programmable payment relationships. Pay salaries automatically while funds compound. Let contractors pull approved amounts without manual transfers. Handle rent, subscriptions, and recurring bills without lifting a finger. Every payment validated against your rules, every penny earning yield until sent.
+Your trading agent keeps its data feed, inference API, and GPU provider online with fixed USDC allowances. Your CFO pays vendors without accessing reserves. Employees pull their exact salary. Every payment validated against your rules, every penny earning yield until sent.
 
 ## Why Payees Exist
 
+### The Agent Payment Problem
+
+AI agents need to pay for services to operate: data feeds for market intelligence, inference APIs for decision-making, compute providers for execution. But giving agents unrestricted spending access is dangerous — one bug or exploit could drain your wallet.
+
+Payees solve this by pre-approving specific recipients with hard spending caps. Your trading agent can keep its data feed and GPU provider online with fixed USDC allowances — but cannot overspend, cannot add new recipients, and cannot access funds beyond its budget. The agent (as a [Manager](managers.md)) can execute payments. Only you can decide who gets paid.
+
 ### The Problem with Recurring Crypto Payments
 
-Making regular crypto payments today means choosing between bad options:
+For both agents and humans, making regular crypto payments today means choosing between bad options:
 
 - **Manual transfers**: Re-enter addresses, risk typos, waste time every pay period
 - **Give full access**: Share private keys or grant unlimited spending permissions
 - **Traditional banking**: Pay wire fees, lose DeFi yield, wait for processing
 
-None of these work for businesses or individuals who need reliable, controlled automation.
+None of these work for agents, businesses, or individuals who need reliable, controlled automation.
 
 ### The Payee Solution
 
@@ -36,7 +42,7 @@ Your funds stay in DeFi earning yield (via protocols like Aave, Morpho, Euler) u
 
 ### Only You Hold the Keys
 
-**Absolute Owner Control**: Only you, as the [wallet owner](user-wallet.md), can add or remove addresses from your Circle of Trust. Not your accountant. Not your manager. Not even your AI assistant. This fundamental rule is enforced by the blockchain itself — it's not a policy that can be bent, it's code that cannot be broken.
+**Absolute Owner Control**: Only you, as the [wallet owner](user-wallet.md), can add or remove addresses from your Circle of Trust. Not your accountant. Not your manager. Not your AI agent. This fundamental rule is enforced by the blockchain itself — it's not a policy that can be bent, it's code that cannot be broken.
 
 ### Tamper-Proof by Design
 
@@ -209,6 +215,41 @@ With pull payments:
 
 ## Real-World Configurations
 
+### Agent Data Feed
+
+```
+Payee: ChainLink Data Provider
+Period: 30 days
+Limits: $200/month, 1 transaction
+Pull Enabled: Yes
+Cooldown: 25 days
+Asset: USDC only
+Result: Agent's data feed stays online automatically
+```
+
+### Agent Compute Provider
+
+```
+Payee: GPU Compute Vendor
+Period: 7 days
+Limits: $500/week, $50 per transaction
+Pull Enabled: No (agent pushes payment)
+Asset: USDC only
+Result: Compute costs capped with weekly budget resets
+```
+
+### Agent Inference API
+
+```
+Payee: LLM Model Provider
+Period: 30 days
+Limits: $1,000/month, 50 transactions
+Pull Enabled: Yes
+Cooldown: 6 hours
+Asset: USDC only
+Result: Agent calls inference endpoint, provider pulls payment per-use
+```
+
 ### Employee Payroll Configuration
 
 ```
@@ -281,6 +322,8 @@ Together, they create unbreakable security:
 
 This separation of powers means you can delegate work without delegating trust. Your CFO can pay all your vendors without being able to add their cousin as a new "vendor." Your AI can optimize payments without being able to drain your wallet to an unknown address.
 
+For AI agents, this separation is critical. The agent (Manager) can execute payments to pre-approved service providers (Payees), but cannot add new recipients or modify spending limits. The wallet owner defines which services the agent can pay for and how much it can spend — enforced onchain, not by policy.
+
 **Learn more**: See how [Managers](managers.md) can automate your payment workflows.
 
 ## Related Features
@@ -288,5 +331,5 @@ This separation of powers means you can delegate work without delegating trust. 
 - **[Cheques](cheques.md)**: One-time payments with time delays and cancellation ability
 - **[Managers](managers.md)**: Learn how to delegate payment tasks to AI or team members
 - **[Whitelist](whitelist.md)**: Configure instant, unlimited transfers for your most trusted addresses
-- **[User Wallet](user-wallet.md)**: Explore your complete financial command center and all its features
+- **[Programmable Wallets](user-wallet.md)**: Explore your agentic wallet and all its features
 
