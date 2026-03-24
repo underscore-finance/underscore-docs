@@ -89,7 +89,7 @@ Your Underscore infrastructure isn't just one thing — it's an ecosystem of int
 
 ### An Agent's Day
 
-**3 AM**: Your [yield agent](managers.md) notices Morpho offering 1% better yield than Aave. It automatically rebalances $50k, staying within its $25,000 daily limit. You're asleep.
+**3 AM**: Your [yield agent](managers.md) notices Morpho offering 1% better yield than Aave. It automatically rebalances $25k, staying within its $25,000 daily limit. You're asleep.
 
 **6 AM**: Your trading agent's data feed subscription renews. $200 USDC pulls automatically from its [Payee](payees.md) allowance. The agent keeps running.
 
@@ -105,19 +105,19 @@ Your Underscore infrastructure isn't just one thing — it's an ecosystem of int
 
 **2 PM**: You need to pay a contractor. Create a $5,000 [cheque](cheques.md) with 3-day delay. If they don't deliver, cancel it.
 
-**4 PM**: Time to fund your trading wallet. Move $20k to your other Underscore wallet ([whitelisted](whitelist.md)) instantly.
+**4 PM**: Time to fund your trading wallet. Move $20k to your other Programmable Wallet ([whitelisted](whitelist.md)) instantly.
 
 ---
 
 ## Who Uses Underscore
 
-Underscore isn't a consumer app — it's the infrastructure that powers the next generation of financial applications. Think of it like AWS for DeFi — but fully non-custodial.
+Underscore isn't a consumer app — it's infrastructure for agents, apps, and protocols. Think of it like AWS for DeFi — but fully non-custodial.
 
 ### Applications Building on Underscore
 
 - **AI Agents & Autonomous Systems**: Yield optimization agents, trading bots, and autonomous economic actors operating as [Managers](managers.md) within user-defined limits — paying for their own data feeds, compute, and inference APIs through [Payees](payees.md) and [Cheques](cheques.md)
 - **Fintech Apps**: Like [Hightop](https://hightop.com), which uses Underscore to power yield optimization, swaps, borrowing, and their AI Private Banker
-- **Vault Integrators**: Apps adding AI-managed yield without building infrastructure — just integrate [Vaults](vaults.md) and go
+- **Vault Integrators**: Apps adding AI-managed yield without building infrastructure — just integrate [Earn Vaults](vaults.md) and go
 - **Payment Platforms**: Cross-border remittance, B2B payments, and payroll systems leveraging our [Cheques](cheques.md) and [Payees](payees.md)
 - **Wallet Providers**: Adding advanced DeFi features and [programmable delegation](managers.md) to existing wallets
 
@@ -200,7 +200,7 @@ Understanding which payment tool to use for different situations:
 
 ### Explore Features
 
-**For Passive Yield**: Start with [Vaults](vaults.md) — deposit and let AI optimize. No wallet setup required.
+**For Passive Yield**: Start with [Earn Vaults](vaults.md) — deposit and let AI optimize. No wallet setup required.
 
 **For AI Agents**: Deploy a [Programmable Wallet](user-wallet.md) and configure [Managers](managers.md) for execution, [Payees](payees.md) for recurring costs, and [Cheques](cheques.md) for one-off spend.
 
@@ -236,4 +236,4 @@ AI agents need more than APIs — they need money. The ability to pay for servic
 
 Underscore delivers what crypto promised: programmable money that works as hard as you do. Your agents executing strategies within unbreakable boundaries. Your funds earning across protocols while maintaining liquidity for payments. Your security protecting without restricting.
 
-AI-managed vaults + agentic wallets. Your money never sleeps.
+Earn Vaults + Programmable Wallets. Your money never sleeps.

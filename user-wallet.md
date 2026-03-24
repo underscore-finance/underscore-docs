@@ -1,10 +1,14 @@
 ---
-description: Agentic wallets with DeFi access — give agents execution rights, not custody
+description: Agentic wallets with programmable payments and DeFi access — execution rights without custody
 ---
 
-# Programmable Wallets: Agentic Wallets for DeFi
+# Programmable Wallets: Money For Agents
 
-The Underscore Programmable Wallet is a smart contract wallet purpose-built for AI agents and operators to execute with real funds within onchain rules — without ever holding private keys or having unrestricted access. Unify access to 20+ DeFi protocols through a single address. Delegate operations to agents within strict boundaries. Automate payments while funds earn yield. Move millions between your wallets instantly.
+Most agents can recommend. Underscore lets them execute with real funds without ever holding your private keys.
+
+Underscore Programmable Wallets are smart contract wallets purpose-built for AI agents and operators to execute within onchain rules. [Managers](managers.md) define permissions. [Payees](payees.md) handle recurring spend. [Digital Cheques](cheques.md) handle one-off payments with optional review delays. Everything is enforced onchain in open-source smart contracts.
+
+Unify access to 20+ DeFi protocols through a single address. Delegate operations to agents within strict boundaries. Automate payments while funds earn yield. Move capital between your wallets instantly.
 
 Built on Base L2, your wallet combines institutional-grade security with the flexibility to capture opportunities 24/7 — whether agents are executing autonomously or you're managing directly.
 
@@ -12,7 +16,7 @@ At its core, Underscore Programmable Wallets provide four key components:
 
 1. **Unified Protocol Access**: Direct integration with top DeFi protocols through standardized adapters
 2. **Agent Execution**: [Managers](managers.md) who execute strategies within defined boundaries — no custody, no keys
-3. **Payment Rails**: Automated payment systems for agent services and recurring transfers (see [Payees](payees.md) and [Cheques](cheques.md))
+3. **Payment Rails**: Programmable payment systems for recurring spend and one-off approvals (see [Payees](payees.md) and [Cheques](cheques.md))
 4. **Security Layers**: Time-locks, whitelists, and granular permissions protecting every operation
 
 ## One Wallet, Every Protocol
@@ -140,7 +144,7 @@ Underscore's architecture allows complex multi-step operations to execute atomic
 
 ## Swaps: Trade Any Token
 
-When you swap tokens through your Underscore wallet, the system finds the best route across integrated DEXes.
+When you swap tokens through your Programmable Wallet, the system finds the best route across integrated DEXes.
 
 ### How Swaps Work
 
@@ -181,7 +185,7 @@ When managers execute swaps, additional controls apply:
 
 ## Liquidity Provision: Earn From Trading Fees
 
-Your Underscore wallet lets you provide liquidity to decentralized exchanges and earn a share of trading fees. This is one of the most powerful DeFi strategies — your assets work for you by facilitating trades for others.
+Your Programmable Wallet lets you provide liquidity to decentralized exchanges and earn a share of trading fees. This is one of the most powerful DeFi strategies — your assets work for you by facilitating trades for others.
 
 ### How It Works
 
@@ -274,7 +278,7 @@ Managers are authorized operators — human or AI — who execute actions within
 
 ### [Payees](payees.md): Let Agents Pay for the Services They Need
 
-Payees form your verified payment network — addresses that can only receive what you've pre-approved. Pre-approve recurring recipients like market data feeds, model providers, compute vendors, contractors, and payroll. Your funds earn yield until payment time, then transfer automatically.
+Payees are your recurring spend layer — pre-approved recipients that can receive only what you've authorized. Use them for market data feeds, model providers, compute vendors, contractors, payroll, and subscriptions. Your funds earn yield until payment time, then transfer automatically.
 
 **Use cases**:
 
@@ -330,7 +334,7 @@ The whitelist breaks the emergency glass on your security — addresses that get
 ### 🔐 **Security & Control**
 
 **Is this a self-custody wallet?**  
-Yes, absolutely. You maintain complete control of your private keys and assets. Underscore provides the smart contract infrastructure, but only you can authorize transactions.
+Yes. You keep custody of the owner keys and ultimate control of the assets. Managers can execute only the bounded actions you authorize onchain; they never receive custody or open-ended signing authority.
 
 **What happens if Underscore disappears?**
 Your funds remain safe and accessible. The smart contracts are immutable and don't depend on Underscore's servers. You could interact with your wallet directly through BaseScan or any other interface.
@@ -364,21 +368,10 @@ Base inherits Ethereum's security model. In the unlikely event of L2 issues, est
 
 ## Your Move
 
-Right now, while you're reading this, yields are compounding. Opportunities are emerging. Strategies are executing.
+AI agents need more than APIs. They need bounded onchain execution, programmable payment rails, and hard security limits.
 
-Just not yours.
-
-Every day you delay is another day of:
-
-- Manual approvals eating your time
-- Missed yields while you sleep
-- Anxiety about security
-- Opportunities slipping through your fingers
-
-Stop juggling wallets. Stop missing opportunities. Stop letting manual operations eat your time.
-
-Your DeFi operations deserve professional tools. Deploy your Programmable Wallet and take control of your financial future.
+Deploy a Programmable Wallet when you need agents or operators to rebalance, pay, borrow, repay, and move funds inside rules you control.
 
 ---
 
-_AI-managed vaults + agentic wallets. Your money never sleeps._
+_Programmable Wallets + Earn Vaults. Your money never sleeps._

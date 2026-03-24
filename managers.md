@@ -22,7 +22,7 @@ Managers solve this by giving agents execution rights within smart-contract-enfo
 
 Running a [Programmable Wallet](user-wallet.md) solo creates impossible tradeoffs:
 
-- **24/7 Opportunities**: DeFi never sleeps, but you need to
+- **24/7 Opportunities**: DeFi never sleeps, but you do
 - **Routine Tasks**: Paying vendors, [claiming rewards](rewards.md), rebalancing — repetitive time drains
 - **Specialized Knowledge**: Complex strategies require expertise you might not have
 - **Emergency Access**: If something happens to you, your funds are locked
@@ -407,7 +407,6 @@ No. Each period starts fresh with the full limit. Use it or lose it.
 
 ### Managers and Whitelist
 
-- Managers cannot modify the [whitelist](whitelist.md)
-- Whitelisted addresses bypass all manager restrictions
-- Use whitelist for emergency access, managers for daily operations
-
+- Managers can interact with the [whitelist](whitelist.md) only if you explicitly grant whitelist-management permissions
+- Once an address is whitelisted, transfers to it bypass normal payee and cheque controls
+- Use whitelist for emergency access and internal capital routing; use managers, payees, and cheques for day-to-day operations

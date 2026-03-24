@@ -1,10 +1,10 @@
 ---
-description: Tokenized yield strategies managed by AI — open to everyone
+description: Earn Vaults are AI-managed yield strategies wrapped in ERC-4626 shares
 ---
 
-# Vaults: AI-Managed Yield for Everyone
+# Earn Vaults: AI-Managed Yield for Everyone
 
-Underscore Vaults are AI-managed yield strategies wrapped into standard ERC-4626 tokens. Deposit assets, receive vault shares that represent your stake in an actively managed portfolio. The vault AI agent monitors yields around the clock — catching rate spikes, monitoring liquidity risk, claiming rewards, rebalancing across protocols — while you just hold the token.
+Underscore Earn Vaults are AI-managed yield strategies wrapped into standard ERC-4626 tokens. Deposit assets, receive vault shares that represent your stake in an actively managed portfolio. The vault AI agent monitors yields around the clock — catching rate spikes, monitoring liquidity risk, claiming rewards, and rebalancing across protocols — while you just hold the token.
 
 Vaults are non-custodial. Your assets stay yours. Withdraw anytime, no permissions required.
 
@@ -55,7 +55,7 @@ Vaults handle all of it. Users deposit, get a token, and earn yield. All the com
 
 ---
 
-## Earn Vaults
+## How Earn Vaults Work
 
 Simple yield optimization for your assets.
 
@@ -70,8 +70,8 @@ Simple yield optimization for your assets.
 
 The AI agent continuously optimizes the vault's positions:
 
-- **Rate Monitoring**: Watches yields across Morpho, Euler, Moonwell, Aave, Fluid, Compound, and other approved protocols
-- **Risk Analysis**: Evaluates strategies beyond just APY — analyzing depositor count, total deposits, utilization ratios, and available liquidity to assess withdrawal risk
+- **Continuous Monitoring**: Watches rates, liquidity, incentives, and withdrawal conditions across Morpho, Euler, Moonwell, Aave, Fluid, Compound, and other approved protocols
+- **Risk-Adjusted Routing**: Evaluates strategies beyond raw APY — analyzing depositor count, total deposits, utilization ratios, and available liquidity before moving capital
 - **Automatic Rebalancing**: Moves funds to capture better risk-adjusted yields as conditions change
 - **Reward Harvesting**: Claims and compounds protocol incentives automatically
 
@@ -297,9 +297,9 @@ See [Protocol Economics](protocol-economics.md) for how fees are used.
 
 ---
 
-## Vaults vs Programmable Wallets
+## Earn Vaults vs Programmable Wallets
 
-| Feature | **Vaults** | **Programmable Wallets** |
+| Feature | **Earn Vaults** | **Programmable Wallets** |
 |---------|------------|------------------|
 | **Ownership** | Proportional shares (tokens) | Full control of assets |
 | **Management** | AI-managed, hands-off | You + your managers decide |
@@ -309,7 +309,7 @@ See [Protocol Economics](protocol-economics.md) for how fees are used.
 | **Use as Collateral** | Yes (shares are tokens) | More complex |
 | **Best For** | Passive yield, composability | Active DeFi, custom strategies |
 
-**Use Vaults When**: You want set-and-forget yield, need composable/productive collateral, or want to participate without wallet setup.
+**Use Earn Vaults When**: You want set-and-forget yield, need composable/productive collateral, or want to participate without wallet setup.
 
 **Use Programmable Wallets When**: You want full control, custom strategies, agent execution, payment automation, or manager delegation with precise limits.
 

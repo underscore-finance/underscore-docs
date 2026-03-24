@@ -38,21 +38,21 @@ Underscore: Add vendor as Payee → $5,000/month limit → Only USDC → Auto-ex
 Your funds stay in DeFi earning yield (via protocols like Aave, Morpho, Euler) until the moment of payment. The system automatically withdraws only what's needed, when it's needed. Plus, you earn [rewards](rewards.md) on all your DeFi activity.
 
 
-## Why Your Circle of Trust is Unbreakable
+## Pre-Approved Recipients, Enforced Onchain
 
-### Only You Hold the Keys
+### Owner-Controlled Recipient List
 
-**Absolute Owner Control**: Only you, as the [wallet owner](user-wallet.md), can add or remove addresses from your Circle of Trust. Not your accountant. Not your manager. Not your AI agent. This fundamental rule is enforced by the blockchain itself — it's not a policy that can be bent, it's code that cannot be broken.
+**Direct owner control**: Only you, as the [wallet owner](user-wallet.md), can directly add, confirm, or widen payees. Managers can propose new payees, but those proposals stay pending until you approve them after the configured delay. Payees can remove themselves, but nobody besides you can activate or expand them. This is enforced by smart contracts, not policy.
 
-### Tamper-Proof by Design
+### Tamper-Resistant Recipient Records
 
-**Immutable Records**: Once you add someone to your Circle of Trust, that record is written to the blockchain permanently. No hacker can secretly change "Alice's Wallet" to point to their own address. The address you saved is the address that stays.
+**Onchain recipient records**: Once a payee is configured, the recipient address and limits live onchain. A manager cannot silently swap "GPU Provider" to a different address or widen the allowance without your approval.
 
-### Managers Can Only Pay Your Trusted Circle
+### Managers Can Pay, Not Expand the List
 
-**The Ultimate Safety Net**: When you grant a manager permission to make payments, they can ONLY send funds to addresses already in your Circle of Trust. They cannot add new payees. They cannot modify existing ones. They cannot "accidentally" send your entire treasury to an unknown address. Every payment must go to someone you've already verified and approved.
+**Separation of powers**: Managers can execute payments to active payees within the configured caps. They cannot unilaterally activate new recipients, raise payee limits, or route funds to unapproved destinations. You control the recipient list. Agents and operators handle the approved flow.
 
-This isn't just security theater — it's security architecture. Your Circle of Trust creates an impenetrable boundary around your funds.
+This is the core payee model: recurring recipients are approved first, then payments execute only within those limits.
 
 ## Payee Controls & Configuration
 
@@ -124,14 +124,14 @@ Price oracles are essential services that provide real-world asset prices to the
 
 ### Who Can Add Payees
 
-**Owner**: Full control to add, modify, or remove any payee
+**Owner**: Full control to add, confirm, modify, or remove any payee
 **Managers**: Can propose new payees (requires owner approval after delay)
-**Others**: No access to modify Circle of Trust
+**Others**: No access to change payees or their limits
 
 ### Who Can Execute Payments
 
 **Owner**: Can pay any active payee within limits
-**Managers**: Same payment rights as owner (to active payees only)
+**Managers**: Can pay active payees only, subject to both manager and payee limits
 **Payees**: Can pull payments if explicitly enabled
 
 ### Who Can Remove
@@ -166,11 +166,11 @@ Added → Pending → Active → Expired/Removed
 - Confirm manager proposals
 - Full control always
 
-**[Managers](managers.md)** — Your Trusted Operators
+**[Managers](managers.md)** — Authorized Operators
 
-- Can make payments to anyone in your Circle of Trust
+- Can make payments to active payees within limits
 - Can suggest new Payees (requires your approval)
-- Cannot modify your Circle of Trust directly
+- Cannot directly activate, remove, or widen payees
 - Perfect for delegating routine payments while maintaining control
 
 **Payees**
@@ -181,7 +181,7 @@ Added → Pending → Active → Expired/Removed
 > **📋 Manager Proposals Need Your Approval**  
 > If a manager proposes a new payee, you'll see a pending request. After the security delay (configurable by you), you must manually confirm to activate the payee. This two-step process prevents unauthorized additions.
 
-## Pull Payments: The Subscription Revolution
+## Pull Payments: Optional Recipient-Initiated Billing
 
 Enable Payees to pull payment directly from your wallet, always within your preset limits.
 
@@ -218,7 +218,7 @@ With pull payments:
 ### Agent Data Feed
 
 ```
-Payee: ChainLink Data Provider
+Payee: Market Data Provider
 Period: 30 days
 Limits: $200/month, 1 transaction
 Pull Enabled: Yes
@@ -241,7 +241,7 @@ Result: Compute costs capped with weekly budget resets
 ### Agent Inference API
 
 ```
-Payee: LLM Model Provider
+Payee: Inference API Provider
 Period: 30 days
 Limits: $1,000/month, 50 transactions
 Pull Enabled: Yes
@@ -311,16 +311,16 @@ Yes. Changes take effect immediately.
 
 ## The Perfect Partnership: Managers + Payees
 
-**Your Circle of Trust** (Payees) defines WHO can receive payments.
-**Your Operators** ([Managers](managers.md)) handle the routine work of making those payments.
+**Payees** define which recurring recipients can receive funds.
+**Managers** ([Managers](managers.md)) handle the approved payment flow within their own permissions and budgets.
 
 Together, they create unbreakable security:
 
 - You verify payment addresses once (adding them as Payees)
 - Your manager handles daily operations (paying only those Payees)
-- You maintain ultimate control (only you can modify the Circle of Trust)
+- You maintain ultimate control (only you can directly activate or widen payees)
 
-This separation of powers means you can delegate work without delegating trust. Your CFO can pay all your vendors without being able to add their cousin as a new "vendor." Your AI can optimize payments without being able to drain your wallet to an unknown address.
+This separation of powers means you can delegate work without delegating trust. Your CFO can pay approved vendors without adding a fake recipient. Your AI can keep approved services online without routing funds to an unknown address.
 
 For AI agents, this separation is critical. The agent (Manager) can execute payments to pre-approved service providers (Payees), but cannot add new recipients or modify spending limits. The wallet owner defines which services the agent can pay for and how much it can spend — enforced onchain, not by policy.
 
@@ -332,4 +332,3 @@ For AI agents, this separation is critical. The agent (Manager) can execute paym
 - **[Managers](managers.md)**: Learn how to delegate payment tasks to AI or team members
 - **[Whitelist](whitelist.md)**: Configure instant, unlimited transfers for your most trusted addresses
 - **[Programmable Wallets](user-wallet.md)**: Explore your agentic wallet and all its features
-

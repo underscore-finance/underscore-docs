@@ -1,10 +1,10 @@
 ---
-description: Understanding Underscore's role as infrastructure for next-generation financial applications
+description: Infrastructure for agents, apps, and protocols building with programmable payments and Earn Vaults
 ---
 
-# Who Uses Underscore: Infrastructure for the Future of Finance
+# Who Uses Underscore: Infrastructure for Agents, Apps, and Protocols
 
-Underscore isn't a consumer app — it's the rails that power the next generation of financial applications. Users experience Underscore through the apps they love, without ever knowing it's there.
+Underscore is infrastructure for agents, apps, and protocols. Some users experience it through products like Hightop. Others through AI systems operating inside Programmable Wallets. Most end users never know it's there.
 
 Think of Underscore like AWS for DeFi — but fully non-custodial. Just as millions use Netflix without knowing about Amazon's servers, millions will use financial apps powered by Underscore's infrastructure. The key difference: users always maintain control of their funds. The complexity stays under the hood while users enjoy seamless experiences.
 
@@ -47,12 +47,12 @@ Underscore lets agents execute with real money without ever giving them custody,
 
 Users interact with friendly apps while Underscore handles the complexity:
 
-- **Earning Yield**: "Deposit USDC, earn 8% APY" → [Vaults](vaults.md) route to optimal protocols automatically
+- **Earning Yield**: "Deposit USDC, earn 8% APY" → [Earn Vaults](vaults.md) route to optimal protocols automatically
 - **Making Payments**: "Send $500 to contractor" → Underscore [cheque system](cheques.md) ensures safety
 - **Portfolio Management**: "AI optimizes my yield" → Underscore [manager](managers.md) executes strategies
 - **Asset Swaps**: "Trade ETH for USDC" → Underscore finds best rates across DEXs
 - **Borrowing**: "Borrow against my ETH" → Underscore Ripe Protocol Lego manages collateral safely
-- **Productive Collateral**: "Use my yield shares as collateral" → [Vault](vaults.md) shares work on Ripe while earning
+- **Productive Collateral**: "Use my yield shares as collateral" → [Earn Vault](vaults.md) shares work on Ripe while earning
 
 The user sees a simple interface. Underscore does the heavy lifting.
 
@@ -305,4 +305,4 @@ Whether you're building the next billion-dollar fintech, optimizing payment flow
 
 ---
 
-Remember: The best technology is invisible. Underscore handles the complexity so developers can build amazing experiences and users can enjoy financial freedom.
+Remember: the best infrastructure disappears into the background. Underscore handles the complexity so developers can build products where agents, apps, and operators move real money safely.

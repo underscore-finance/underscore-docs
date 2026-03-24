@@ -8,11 +8,11 @@
 
 ## Earn Vaults
 
-- [AI-Managed Vaults](vaults.md) — Tokenized yield strategies for everyone
+- [Earn Vaults](vaults.md) — AI-managed ERC-4626 yield strategies
 
 ## Programmable Wallets
 
-- [Programmable Wallets](user-wallet.md) — Agentic wallets with DeFi access
+- [Programmable Wallets](user-wallet.md) — Agentic wallets with programmable payments and DeFi access
 - [Managers](managers.md) — Give agents execution rights, not custody
 - [Payees](payees.md) — Let agents pay for the services they need
 - [Digital Cheques](cheques.md) — One-off spend without blind trust

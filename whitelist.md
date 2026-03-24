@@ -4,7 +4,7 @@ description: Instant unlimited transfers to your most trusted addresses with tim
 
 # Whitelist: Instant Access for Trusted Addresses
 
-The Whitelist allows specific addresses to receive unlimited transfers from your Underscore wallet — no spending limits, no delays, no restrictions. Perfect for your hardware wallets, cold storage, other Underscore wallets, or emergency contacts. Move millions instantly when markets shift. Evacuate funds in seconds if compromised. Execute multi-wallet strategies at the speed of opportunity.
+The Whitelist allows specific addresses to receive unlimited transfers from your Programmable Wallet — no spending limits, no delays, no restrictions. Perfect for your hardware wallets, cold storage, other Programmable Wallets, or emergency contacts. Move millions instantly when markets shift. Evacuate funds in seconds if compromised. Execute multi-wallet strategies at the speed of opportunity.
 
 Add addresses with a time-locked security delay (configurable, typically 3-7 days) to prevent unauthorized additions. Remove instantly if an address becomes compromised. Every whitelisted transfer executes immediately without limits — this is your highest trust level.
 
@@ -80,9 +80,9 @@ Day 1      Your Choice   Ready    Until Removed
 
 **This is your ultimate defense against wallet compromise.**
 
-Every Underscore wallet has an "owner" — the external wallet (EOA or hardware wallet) that has full control. If an attacker compromises this owner wallet, the time-lock gives you a crucial defense window.
+Every Programmable Wallet has an "owner" — the external wallet (EOA or hardware wallet) that has full control. If an attacker compromises this owner wallet, the time-lock gives you a crucial defense window.
 
-Even with full control of your owner wallet, the attacker CANNOT immediately drain your Underscore wallet funds. Here's why:
+Even with full control of your owner wallet, the attacker CANNOT immediately drain your Programmable Wallet funds. Here's why:
 
 1. **Attacker tries to whitelist their address** → Enters time-lock period (e.g., 7 days)
 2. **You see the pending addition** → You have days to respond, not minutes
@@ -204,4 +204,3 @@ Whitelisted addresses bypass ALL limits — daily, weekly, and lifetime. This is
 - **[Cheques](cheques.md)**: One-time payments with time delays and cancellation ability
 - **[Managers](managers.md)**: Learn how to delegate payment tasks to AI or team members
 - **[Programmable Wallets](user-wallet.md)**: Explore your agentic wallet and all its features
-
