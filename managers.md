@@ -147,7 +147,7 @@ Unused amounts don't roll over — each period starts clean
 **Protocol Restrictions (Legos)**
 
 - Restrict to specific DeFi protocols by ID
-- Each protocol (["Lego"](user-wallet.md#the-lego-system) = standardized integration, e.g., Aave, Curve) registered in LegoBook
+- Each protocol (["Lego"](user-wallet.md#one-wallet-every-protocol) = standardized integration, e.g., Aave, Curve) registered in LegoBook
 - Example: Only allow Aave and Compound interactions
 - Maximum 25 different protocols per manager
 

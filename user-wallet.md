@@ -50,7 +50,7 @@ Underscore connects to DeFi protocols through standardized adapters called "Lego
 
 ### Debt Management
 
-**Integrated protocol**: [Ripe Protocol](https://ripeprotocol.com)
+**Integrated protocol**: [Ripe Protocol](https://ripe.finance)
 
 Ripe Protocol is Underscore's borrowing partner, letting you access liquidity without selling your assets. The key advantage: **Underscore Earn Vaults are accepted as collateral**. This means your assets can be earning AI-optimized yield while you borrow against them — you're not choosing between yield and liquidity, you get both.
 
