@@ -27,4 +27,5 @@
 
 - [Technical Documentation](https://underscore-1.gitbook.io/developers) — Smart contract guides and integration docs
 - [Deployed Contracts](https://underscore-1.gitbook.io/developers/home/deployments) — Contract addresses on Base
+- [Params Explorer](https://params.underscore.finance) — Live protocol parameters and contract addresses
 - [GitHub](https://github.com/underscore-finance/underscore-protocol) — Open source repository

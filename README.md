@@ -220,6 +220,8 @@ For developers and integrators: [Complete Technical Documentation](https://under
 
 Build on Underscore's infrastructure with detailed guides on smart contract architecture, Lego Partner integrations, and security models. Over 30 production contracts documented with integration examples.
 
+For live protocol parameters and contract deployments, use the [Params Explorer](https://params.underscore.finance).
+
 ---
 
 ## Community & Support

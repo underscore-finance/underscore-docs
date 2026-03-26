@@ -41,6 +41,8 @@ Your wallet is future-proof. When new protocols are integrated:
 - Automatically available through new Lego deployments
 - All existing security settings still apply
 
+**Live data**: See all active integrations and their onchain status in the [Params Explorer](https://params.underscore.finance/legos).
+
 ## Protocol Safety
 
 All integrated protocols are:

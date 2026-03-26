@@ -386,6 +386,7 @@ Ready to earn AI-optimized yield? [**Open the app →**](https://app.underscore.
 - **Use as collateral**: Deposit shares to Ripe Protocol to borrow against your yield
 - **Withdraw anytime**: Redeem shares for underlying assets whenever you need them
 - **Build on vaults**: Integrate into your app via [technical documentation](https://underscore-1.gitbook.io/developers)
+- **Inspect live vault configs**: View current vault parameters and addresses in the [Params Explorer](https://params.underscore.finance/vaults)
 
 For full control over your DeFi strategy, explore [Programmable Wallets](user-wallet.md) with custom managers, payment automation, and more.
 
