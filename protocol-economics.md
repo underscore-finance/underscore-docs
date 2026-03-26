@@ -60,7 +60,7 @@ No fees on:
 
 All protocol revenue is used to buy back RIPE tokens from [Ripe Protocol](https://ripe.finance), our partner protocol.
 
-**Verify onchain**: View current fee parameters and live contract deployments in the [Params Explorer](https://params.underscore.finance/deployments).
+**Verify onchain**: View current fee parameters in the [Params Explorer](https://params.underscore.finance/protocol).
 
 ---
 

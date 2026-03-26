@@ -337,7 +337,8 @@ The whitelist breaks the emergency glass on your security — addresses that get
 Yes. You keep custody of the owner keys and ultimate control of the assets. Managers can execute only the bounded actions you authorize onchain; they never receive custody or open-ended signing authority.
 
 **What happens if Underscore disappears?**
-Your funds remain safe and accessible. The smart contracts are immutable and don't depend on Underscore's servers. You could interact with your wallet directly through BaseScan or any other interface, and inspect current deployments and protocol configuration in the [Params Explorer](https://params.underscore.finance/deployments).
+Your funds remain safe and accessible. The smart contracts are immutable and don't depend on Underscore's servers. You could interact with your wallet directly through BaseScan or any other interface.
+Current deployments and protocol configuration are also available in the [Params Explorer](https://params.underscore.finance/deployments).
 
 **Can I migrate to a new wallet?**
 Yes. The protocol includes a migration system that lets you move funds and copy your configuration (managers, payees, whitelist) to a new Programmable Wallet. Useful if you want access to new features or need to restructure your setup.
