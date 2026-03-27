@@ -21,7 +21,7 @@ The key difference from a [Programmable Wallet](user-wallet.md): your position i
 
 Vaults weren't designed in a vacuum — they emerged from real problems we hit while building.
 
-We started with [Hightop](https://hightop.com), a digital banking product for AI agents, made simple for humans, and built on Underscore. One of the first workflows there was Earn Autopilot: keep idle cash productive, monitor markets, and rebalance individual [Programmable Wallets](user-wallet.md) toward better yield opportunities. It worked, but we quickly ran into a wall: every optimization meant touching every wallet. If we wanted to roll out the same improved strategy to 10,000 users, that was 10,000 separate transactions. Expensive. Slow. The AI agents were doing the same work over and over for users who wanted the same outcome.
+We started with [Hightop](https://hightop.com), which uses Underscore to deliver digital banking for AI agents, made simple for humans. One of the first workflows there was Earn Autopilot: keep idle cash productive, monitor markets, and rebalance individual [Programmable Wallets](user-wallet.md) toward better yield opportunities. It worked, but we quickly ran into a wall: every optimization meant touching every wallet. If we wanted to roll out the same improved strategy to 10,000 users, that was 10,000 separate transactions. Expensive. Slow. The agents were doing the same work over and over for users who wanted the same outcome.
 
 Then came Ripe Protocol. Users would borrow against their yield-bearing positions — Aave deposits, Morpho positions, and the like. But once those positions became collateral, they were locked. Even if a better yield opportunity appeared, users couldn't rebalance that collateral without first repaying their loan. Their yield-earning assets were stuck.
 
@@ -31,7 +31,7 @@ So we built Earn Vaults. The core insight: keep everything we built with Program
 
 This architecture also opened the door to new vault types: Amplified Vaults, index vaults, and more — all built on the same foundation.
 
-Today, Earn Vaults are live, and both Core Vaults and Amplified Vaults already power Hightop's live yield experience.
+Today, Earn Vaults are live, and both Core Vaults and Amplified Vaults already power Hightop's live Earn Autopilot experience.
 
 ### Scale
 
