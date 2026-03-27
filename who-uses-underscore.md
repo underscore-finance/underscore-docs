@@ -8,7 +8,7 @@ Underscore is infrastructure for agents, apps, and protocols. Some users experie
 
 Think of Underscore like AWS for DeFi — but fully non-custodial. Just as millions use Netflix without knowing about Amazon's servers, millions will use financial apps powered by Underscore's infrastructure. The key difference: users always maintain control of their funds. The complexity stays under the hood while users enjoy seamless experiences.
 
-Underscore provides two core products: **[Earn Vaults](vaults.md)** for onchain yield that anyone can access, including Core Vaults and Amplified Vaults, and **[Programmable Wallets](user-wallet.md)** with [Managers](managers.md), [Payees](payees.md), [Cheques](cheques.md), and [Whitelists](whitelist.md) — agentic wallets where AI agents and operators execute with real funds within onchain rules.
+Underscore provides two core products: **[Earn Vaults](vaults.md)** for onchain yield that anyone can access, including Core Vaults and Amplified Vaults, and **[Programmable Wallets](user-wallet.md)** with [Managers](managers.md), [Payees](payees.md), [Cheques](cheques.md), and [Whitelist](whitelist.md) — agentic wallets where AI agents and operators execute with real funds within onchain rules.
 
 ## The Underscore Ecosystem
 
