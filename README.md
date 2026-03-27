@@ -121,7 +121,7 @@ Underscore isn't a consumer app — it's infrastructure for agents, apps, and pr
 ### Applications Building on Underscore
 
 - **AI Agents & Autonomous Systems**: Yield optimization agents, trading bots, and autonomous economic actors operating as [Managers](managers.md) within user-defined limits — paying for their own data feeds, compute, and inference APIs through [Payees](payees.md) and [Cheques](cheques.md)
-- **Fintech Apps**: Like [Hightop](https://hightop.com), which uses Underscore to power yield optimization, swaps, borrowing, and their AI Private Banker
+- **Fintech Apps**: Like [Hightop](https://hightop.com), a digital banking product for AI agents, made simple for humans, where Underscore powers the onchain controls behind letting AI agents pay, get paid, keep cash productive, and move money while users stay in control
 - **Vault Integrators**: Apps adding AI-managed yield without building infrastructure — integrate [Core Vaults](vaults.md) for passive yield or [Amplified Vaults](vaults.md) for a second yield layer
 - **Payment Platforms**: Cross-border remittance, B2B payments, and payroll systems leveraging our [Cheques](cheques.md) and [Payees](payees.md)
 - **Wallet Providers**: Adding advanced DeFi features and [programmable delegation](managers.md) to existing wallets
@@ -129,10 +129,10 @@ Underscore isn't a consumer app — it's infrastructure for agents, apps, and pr
 ### The Hightop Example
 
 Hightop demonstrates the power of building on Underscore:
-- Their **AI Private Banker** is an Underscore Manager that optimizes yield 24/7
-- **User withdrawals** work through Underscore's Whitelist for instant access
-- **All DeFi operations** (yield, swaps, borrowing) powered by Underscore Legos
-- Users see a simple mobile app — Underscore handles all the complexity
+- **Digital banking for AI agents, made simple for humans**: Hightop gives users a clean product for agent money while Underscore provides the programmable control layer underneath
+- **Let AI agents pay and get paid. You stay in control**: Hightop maps AI agent execution to [Managers](managers.md), recurring counterparties to [Payees](payees.md), one-off payouts to [Cheques](cheques.md), and trusted exits to the [Whitelist](whitelist.md)
+- **Wallets, gas, and money movement stay behind the scenes**: Hightop abstracts [Programmable Wallets](user-wallet.md) infrastructure, gas, and money movement while Underscore enforces limits, permissions, and payment rules onchain
+- **Hightop's Earn experience uses both Core and Amplified Vaults**: [Core Vaults](vaults.md), [Amplified Vaults](vaults.md), and Underscore Legos handle yield, swaps, and portfolio actions, while Ripe powers the lending layer and the leverage rails behind Amplified Vaults
 
 Most users will never interact with Underscore directly. They'll use apps like Hightop that leverage our infrastructure to deliver seamless experiences.
 

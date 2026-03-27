@@ -4,7 +4,7 @@ description: Infrastructure for agents, apps, and protocols building with progra
 
 # Who Uses Underscore: Infrastructure for Agents, Apps, and Protocols
 
-Underscore is infrastructure for agents, apps, and protocols. Some users experience it through products like Hightop. Others through AI systems operating inside Programmable Wallets. Most end users never know it's there.
+Underscore is infrastructure for agents, apps, and protocols. Some users experience it through products like Hightop, a digital banking product for AI agents, made simple for humans, and built on Underscore. Others through AI systems operating inside Programmable Wallets. Most end users never know it's there.
 
 Think of Underscore like AWS for DeFi — but fully non-custodial. Just as millions use Netflix without knowing about Amazon's servers, millions will use financial apps powered by Underscore's infrastructure. The key difference: users always maintain control of their funds. The complexity stays under the hood while users enjoy seamless experiences.
 
@@ -58,75 +58,64 @@ The user sees a simple interface. Underscore does the heavy lifting.
 
 ## Case Study: Hightop
 
-[Hightop](https://hightop.com) is a mobile app that demonstrates the power of building on Underscore infrastructure. Here's how they leverage different Underscore components to create a seamless user experience:
+[Hightop](https://hightop.com) is digital banking for AI agents, made simple for humans. Let AI agents pay and get paid. You stay in control. Hightop handles [Programmable Wallets](user-wallet.md) infrastructure, gas, and money movement behind the scenes, while Underscore supplies the money-control and execution layer for AI agent permissions, payments, withdrawals, and yield automation. Hightop's Earn experience uses both Core Vaults and Amplified Vaults, while borrowing and the leverage rails behind Amplified Vaults are powered by Ripe.
 
 ### What Hightop Offers Users
 
-Through an intuitive mobile interface, Hightop users can:
+Through one product, Hightop users can:
 
-- **Earn Yield** on their assets with one tap
-- **Swap Assets** at competitive rates
-- **Borrow** against their holdings
-- **AI Private Banker** that manages your entire portfolio strategy
-- **Instant Withdrawals** to their personal wallets
+- **Fund an account** and move money in and out through familiar rails
+- **Set limits, permissions, and payment rules for each AI agent**
+- **Let AI agents pay, get paid, earn, borrow, invest, and move money** without handing them private keys or unrestricted wallet access
+- **Keep everything in a simple app** while [Programmable Wallets](user-wallet.md) infrastructure, gas, and money movement stay behind the scenes and the control layer stays onchain and verifiable
 
 ### How Underscore Powers Each Feature
 
-**AI Private Banker (The Magic)**
+**AI Agent Control Layer**
 
-- Hightop's AI is configured as an Underscore [Manager](managers.md)
-- Currently optimizes yield by rebalancing between Aave, Morpho, Euler, Compound, Fluid
-- Soon: Will execute complex DeFi strategies, manage debt positions, and capture arbitrage
-- Operates within user-defined limits (e.g., "Only touch stablecoins", "Keep 20% in ETH")
-- Adapts strategies based on market conditions and user goals
-- Like having a Wall Street quant working 24/7 for your personal portfolio
-- Users wake up to optimized positions and captured opportunities
+- Hightop's AI agent control profiles map to Underscore [Managers](managers.md)
+- Wallet-wide and per-AI-agent rules define what each AI agent can do, which assets and venues it can touch, who it can pay, how much it can spend, and when it expires
+- Key boundaries are enforced onchain by immutable, open-source smart contracts, not just remembered by the app backend
 
-**Yield Generation**
+**Payments and Money Movement**
 
-- Hightop uses Underscore's Lego integrations to access Morpho, Moonwell, Aave, and other yield protocols
-- Users see "8.5% APY on USDC" — Underscore handles the protocol routing
-- Their AI Manager automatically rebalances between protocols to optimize yields
+- Approved recurring counterparties map cleanly to Underscore [Payees](payees.md)
+- Ad hoc payouts and larger purchases use [Digital Cheques](cheques.md) with optional review delays and cancellation windows
+- Trusted withdrawal and self-custody paths use the [Whitelist](whitelist.md) for instant transfers to approved destinations
+- AI agents can also get paid through one-off or usage-based flows. A research agent can get paid per request, or a support agent can get paid per workflow
+- This is how Hightop lets AI agents pay vendors, get paid, and move money without giving them open-ended account access
 
-**Asset Swaps**
+**Yield and Portfolio Automation**
 
-- Leverages Underscore's DEX integrations (Uniswap, Curve, Aerodrome)
-- Users swap with one tap — Underscore finds optimal routes
-- No need to approve tokens for each protocol
+- Hightop's Earn flow uses Underscore's yield Legos plus both [Core Vaults](vaults.md) and [Amplified Vaults](vaults.md) to keep idle cash productive across multiple yield profiles
+- Swaps and portfolio moves run through Underscore's DEX integrations
+- Hightop's AI autopilot can maximize yield and help manage the portfolio without exposing users to protocol complexity
 
 **Borrowing**
 
-- Utilizes Underscore's debt management Legos, specifically Ripe Protocol
-- Users see simple "Borrow up to 50% of collateral"
-- Underscore manages the complex protocol interactions
-
-**User Withdrawals**
-
-- Users' personal wallets are added to Underscore's [Whitelist](whitelist.md)
-- Enables instant withdrawals with no limits
-- Provides emergency exit if needed
-- Maintains non-custodial security
+- Hightop presents borrowing as a simple in-app feature
+- The lending layer is powered by Ripe, which also supplies the leverage rails behind Amplified Vaults, while Underscore handles the surrounding AI agent controls, [Programmable Wallets](user-wallet.md) permission model, and AI agent execution model
 
 ### The Hightop User Experience
 
 From the user's perspective:
 
 1. Download [Hightop](https://hightop.com) app
-2. Deposit USDC (soon fiat onramps)
-3. Enable "AI Private Banker" for Yield Auto-Pilot
-4. Watch balance grow
-5. Withdraw anytime
+2. Fund the account through familiar bank or crypto rails
+3. Create an AI agent and give it clear rules
+4. Let that AI agent pay, get paid, earn, invest, or protect the portfolio inside its lane
+5. Borrow when needed and withdraw to trusted destinations anytime
 
 What they never see:
 
 - Token approvals for 20+ protocols
-- Yield protocol comparisons
+- Yield protocol comparisons and cash routing logic
 - Slippage calculations
 - Smart contract interactions
-- Permission management
+- AI agent permissions, payment-path rules, and spending guardrails
 - Any concept of gas, private keys, or seed phrases
 
-They just earn. The complexity vanishes. That's the power of building on Underscore.
+They just use a clean product while the money layer stays programmable. That's the power of building on Underscore.
 
 ## Case Study: AI Trading Agent
 
