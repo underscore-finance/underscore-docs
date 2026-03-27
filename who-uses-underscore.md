@@ -8,7 +8,7 @@ Underscore is infrastructure for agents, apps, and protocols. Some users experie
 
 Think of Underscore like AWS for DeFi — but fully non-custodial. Just as millions use Netflix without knowing about Amazon's servers, millions will use financial apps powered by Underscore's infrastructure. The key difference: users always maintain control of their funds. The complexity stays under the hood while users enjoy seamless experiences.
 
-Underscore provides two core products: **[Earn Vaults](vaults.md)** for AI-managed yield that anyone can access, and **[Programmable Wallets](user-wallet.md)** with [Managers](managers.md), [Payees](payees.md), [Cheques](cheques.md), and [Whitelists](whitelist.md) — agentic wallets where AI agents and operators execute with real funds within onchain rules.
+Underscore provides two core products: **[Earn Vaults](vaults.md)** for onchain yield that anyone can access, including Core Vaults and Amplified Vaults, and **[Programmable Wallets](user-wallet.md)** with [Managers](managers.md), [Payees](payees.md), [Cheques](cheques.md), and [Whitelists](whitelist.md) — agentic wallets where AI agents and operators execute with real funds within onchain rules.
 
 ## The Underscore Ecosystem
 
@@ -19,7 +19,7 @@ Underscore provides two core products: **[Earn Vaults](vaults.md)** for AI-manag
 - Consumer-facing apps that need DeFi yields
 - Neobanks offering crypto services
 - Payment processors requiring automated flows
-- Apps integrating [Vaults](vaults.md) for instant AI-managed yield features
+- Apps integrating [Earn Vaults](vaults.md) for instant yield features, whether that means Core Vaults for passive yield or Amplified Vaults for a second yield layer
 
 **Crypto Wallets**
 
@@ -47,12 +47,12 @@ Underscore lets agents execute with real money without ever giving them custody,
 
 Users interact with friendly apps while Underscore handles the complexity:
 
-- **Earning Yield**: "Deposit USDC, earn 8% APY" → [Earn Vaults](vaults.md) route to optimal protocols automatically
+- **Earning Yield**: "Deposit USDC, earn 8% APY" → [Core Vaults](vaults.md) route to optimal protocols automatically
 - **Making Payments**: "Send $500 to contractor" → Underscore [cheque system](cheques.md) ensures safety
 - **Portfolio Management**: "AI optimizes my yield" → Underscore [manager](managers.md) executes strategies
 - **Asset Swaps**: "Trade ETH for USDC" → Underscore finds best rates across DEXs
 - **Borrowing**: "Borrow against my ETH" → Underscore Ripe Protocol Lego manages collateral safely
-- **Productive Collateral**: "Use my yield shares as collateral" → [Earn Vault](vaults.md) shares work on Ripe while earning
+- **Productive Collateral**: "Use my yield shares as collateral" → [Core Vault shares](vaults.md) work on Ripe while earning
 
 The user sees a simple interface. Underscore does the heavy lifting.
 
@@ -167,9 +167,11 @@ The fastest way to add AI-managed yield to any application:
 
 ### Why Integrate Vaults
 
+Underscore Earn Vaults share one architecture but two return profiles: Core Vaults for straightforward AI-managed yield, and Amplified Vaults for a Ripe-powered second yield layer.
+
 **For Fintech Apps**
 
-Skip months of infrastructure development. Integrate [Vaults](vaults.md) directly:
+Skip months of infrastructure development. Integrate [Core Vaults](vaults.md) directly, or build around [Amplified Vaults](vaults.md) when you want a second yield layer:
 
 - Standard ERC4626 interface — minimal integration work
 - AI optimization handled entirely by Underscore
@@ -180,7 +182,7 @@ Skip months of infrastructure development. Integrate [Vaults](vaults.md) directl
 
 Make collateral productive:
 
-- Accept vault shares as collateral
+- Accept Core Vault shares as collateral
 - Users earn yield while borrowing
 - Standard ERC20 compatibility
 - Vault value trackable on-chain
@@ -189,8 +191,8 @@ Make collateral productive:
 
 Offer managed strategies without building infrastructure:
 
-- Earn Vaults for straightforward yield optimization
-- Leveraged Vaults for amplified returns with managed risk
+- Core Vaults for straightforward yield optimization
+- Amplified Vaults for amplified returns with managed risk
 - White-label as your own product
 - Focus on user acquisition, not infrastructure
 

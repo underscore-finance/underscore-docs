@@ -12,7 +12,7 @@ Underscore generates revenue through fees on value-generating activities. All pr
 
 ### Vault Performance Fees (Primary)
 
-The largest source of protocol revenue comes from [Vaults](vaults.md) — AI-managed yield strategies that optimize returns across DeFi protocols.
+The largest source of protocol revenue comes from [Underscore Earn Vaults](vaults.md). That includes both Core Vaults and Amplified Vaults.
 
 - **Fee**: 20% of yield profits
 - **Applied to**: Profits only, never principal

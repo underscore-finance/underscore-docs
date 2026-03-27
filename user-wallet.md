@@ -52,28 +52,28 @@ Underscore connects to DeFi protocols through standardized adapters called "Lego
 
 **Integrated protocol**: [Ripe Protocol](https://ripe.finance)
 
-Ripe Protocol is Underscore's borrowing partner, letting you access liquidity without selling your assets. The key advantage: **Underscore Earn Vaults are accepted as collateral**. This means your assets can be earning AI-optimized yield while you borrow against them — you're not choosing between yield and liquidity, you get both.
+Ripe Protocol is Underscore's borrowing partner, letting you access liquidity without selling your assets. The key advantage: **Underscore Core Vault shares are accepted as collateral**. This means your assets can be earning AI-optimized yield while you borrow against them — you're not choosing between yield and liquidity, you get both. Amplified Vaults build on that same pattern inside the vault strategy.
 
 **How It Works**:
 
-1. **Deposit Collateral**: Lock assets in Ripe Protocol — including Underscore Earn Vault tokens
+1. **Deposit Collateral**: Lock assets in Ripe Protocol — including Underscore Core Vault shares
 2. **Borrow Against It**: Take a loan in GREEN (stablecoin) or yield-bearing sGREEN
-3. **Keep Earning**: If using Vault tokens as collateral, your underlying assets continue earning optimized yield
+3. **Keep Earning**: If using Core Vault shares as collateral, your underlying assets continue earning optimized yield
 4. **Repay Anytime**: Pay back principal + interest on your schedule
 5. **Reclaim Collateral**: Withdraw your assets once debt is cleared
 
 **Why This Matters**:
 
 Traditional borrowing forces a choice: either earn yield OR use assets as collateral. With Underscore + Ripe:
-- Deposit into an Earn Vault (AI optimizes your yield)
-- Use your vault tokens as collateral on Ripe
+- Deposit into a Core Vault (AI optimizes your yield)
+- Use your Core Vault shares as collateral on Ripe
 - Borrow GREEN/sGREEN for liquidity needs
 - Your collateral keeps earning the whole time
 
 **Capabilities**:
 
 - Deposit any supported asset as collateral
-- Use Underscore Earn Vault tokens as productive collateral
+- Use Underscore Core Vault shares as productive collateral
 - Borrow GREEN (stablecoin) or sGREEN (yield-bearing stablecoin)
 - Repay debt with any accepted token
 - Earn and claim RIPE rewards on debt positions

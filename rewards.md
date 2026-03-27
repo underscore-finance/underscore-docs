@@ -86,7 +86,7 @@ Underscore charges small fees on certain activities:
 | -------- | --- | ---------- |
 | Swaps | 0.25% | Trade amount |
 | External Rewards | 20% | Protocol reward claims (MORPHO, WELL, etc.) |
-| Vault Performance | 20% | Vault yield profits only |
+| Vault Performance | 20% | Yield profits in Core Vaults and Amplified Vaults |
 
 **No fees on**: Transfers, deposits, idle funds, or principal.
 
@@ -127,7 +127,7 @@ Your DeFi activity directly translates to token rewards.
 
 ## Next Steps
 
-- **[Deposit in Vaults](vaults.md)**: Earn AI-optimized yields + RIPE bonuses
+- **[Deposit in Earn Vaults](vaults.md)**: Choose Core Vaults for straightforward yield or Amplified Vaults for a second yield layer, then earn RIPE bonuses on top
 - **[Deploy Your Wallet](user-wallet.md)**: Start accumulating deposit points
 - **[Add Managers](managers.md)**: Automate reward claiming
 - **[Set Up Whitelist](whitelist.md)**: Direct rewards to any trusted wallet

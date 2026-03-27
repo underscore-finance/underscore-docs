@@ -8,7 +8,7 @@
 
 ## Earn Vaults
 
-- [Earn Vaults](vaults.md) — AI-managed ERC-4626 yield strategies
+- [Earn Vaults: Core Vaults and Amplified Vaults](vaults.md) — AI-managed yield and Ripe-powered amplified yield
 
 ## Programmable Wallets
 

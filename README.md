@@ -6,7 +6,7 @@ description: Your Money Never Sleeps
 
 One protocol. Two products.
 
-1. **[Earn Vaults](vaults.md)** — AI-managed passive yield across 10+ DeFi protocols. Deposit assets, receive vault shares, and the AI handles everything.
+1. **[Earn Vaults](vaults.md)** — two yield profiles built on the same share-based architecture: Core Vaults for passive AI-managed yield, and Amplified Vaults for Ripe-powered yield amplification.
 
 2. **[Programmable Wallets](user-wallet.md)** — Agentic wallets where AI agents and operators pay, rebalance, and move funds within your rules. No custody. No private keys. No unrestricted access.
 
@@ -16,15 +16,20 @@ Your funds earn while you sleep. No manual management. No missed opportunities.
 
 ## Earn Vaults
 
-AI-managed yield strategies wrapped into standard ERC-4626 tokens. Deposit assets, receive vault shares, and the AI handles everything — finding the best yields, rebalancing across protocols, claiming rewards. You just hold the token.
+Underscore Earn Vaults come in two forms:
 
-- **Composable** — Vault shares work anywhere in DeFi: trade them, bridge them, use as collateral
+- **Core Vaults** — AI-managed passive yield wrapped into standard ERC-4626 shares
+- **Amplified Vaults** — built on top of Core Vault shares using Ripe to add a second yield layer with USD-based debt safety
+
+Deposit assets, receive Earn Vault shares, and let the strategy run underneath.
+
+- **Composable** — Earn Vault shares work anywhere in DeFi: trade them, bridge them, use as collateral
 - **Productive collateral** — Borrow on Ripe while your collateral keeps earning yield
 - **Scalable** — 100,000 users share one strategy. AI rebalances once. Everyone benefits.
 
-**Perfect for:** Passive yield seekers, protocols needing productive collateral, fintech apps adding yield features
+**Perfect for:** Passive yield seekers, protocols needing productive collateral, and apps adding straightforward or amplified yield features
 
-**→ Learn more: [AI-Managed Vaults](vaults.md)**
+**→ Learn more: [Earn Vaults: Core Vaults and Amplified Vaults](vaults.md)**
 
 ---
 
@@ -117,7 +122,7 @@ Underscore isn't a consumer app — it's infrastructure for agents, apps, and pr
 
 - **AI Agents & Autonomous Systems**: Yield optimization agents, trading bots, and autonomous economic actors operating as [Managers](managers.md) within user-defined limits — paying for their own data feeds, compute, and inference APIs through [Payees](payees.md) and [Cheques](cheques.md)
 - **Fintech Apps**: Like [Hightop](https://hightop.com), which uses Underscore to power yield optimization, swaps, borrowing, and their AI Private Banker
-- **Vault Integrators**: Apps adding AI-managed yield without building infrastructure — just integrate [Earn Vaults](vaults.md) and go
+- **Vault Integrators**: Apps adding AI-managed yield without building infrastructure — integrate [Core Vaults](vaults.md) for passive yield or [Amplified Vaults](vaults.md) for a second yield layer
 - **Payment Platforms**: Cross-border remittance, B2B payments, and payroll systems leveraging our [Cheques](cheques.md) and [Payees](payees.md)
 - **Wallet Providers**: Adding advanced DeFi features and [programmable delegation](managers.md) to existing wallets
 
@@ -150,7 +155,7 @@ Yes. Whitelist them for instant transfers between your wallets.
 Currently Base L2 only. More chains coming.
 
 **How do fees work?**
-Small fees on swaps (0.25%) and external reward claims (20%). Vaults charge 20% performance fees on yield profits only. No fees on transfers, deposits, or idle funds. See [Protocol Economics](protocol-economics.md) for details.
+Small fees on swaps (0.25%) and external reward claims (20%). Earn Vaults charge 20% performance fees on yield profits only. No fees on transfers, deposits, or idle funds. See [Protocol Economics](protocol-economics.md) for details.
 
 **What happens if I lose my owner wallet?**
 If you've set up managers and whitelisted addresses beforehand, managers can still transfer funds to your whitelisted addresses (like hardware wallets), providing a recovery path.
@@ -184,7 +189,7 @@ Understanding which payment tool to use for different situations:
 
 **Want passive yield? (2 minutes)**
 1. Connect your wallet to Underscore
-2. Choose a vault (USDC, ETH, etc.)
+2. Choose a vault profile: Core Vaults for passive yield, or Amplified Vaults for yield amplification
 3. Deposit — AI handles everything from here
 
 **Building an AI agent? (10 minutes)**
@@ -200,7 +205,9 @@ Understanding which payment tool to use for different situations:
 
 ### Explore Features
 
-**For Passive Yield**: Start with [Earn Vaults](vaults.md) — deposit and let AI optimize. No wallet setup required.
+**For Passive Yield**: Start with [Core Vaults](vaults.md) — deposit and let AI optimize. No wallet setup required.
+
+**For Amplified Yield**: Explore [Amplified Vaults](vaults.md) to keep BTC or USDC exposure while adding a second yield layer through Ripe.
 
 **For AI Agents**: Deploy a [Programmable Wallet](user-wallet.md) and configure [Managers](managers.md) for execution, [Payees](payees.md) for recurring costs, and [Cheques](cheques.md) for one-off spend.
 

@@ -1,18 +1,21 @@
 ---
-description: Earn Vaults are AI-managed yield strategies wrapped in ERC-4626 shares
+description: Earn Vaults combine Core Vaults for passive AI-managed yield with Amplified Vaults for Ripe-powered yield amplification
 ---
 
-# Earn Vaults: AI-Managed Yield for Everyone
+# Earn Vaults: Core Vaults and Amplified Vaults
 
-Underscore Earn Vaults are AI-managed yield strategies wrapped into standard ERC-4626 tokens. Deposit assets, receive vault shares that represent your stake in an actively managed portfolio. The vault AI agent monitors yields around the clock — catching rate spikes, monitoring liquidity risk, claiming rewards, and rebalancing across protocols — while you just hold the token.
+Underscore Earn Vaults share one architecture and two return profiles:
 
-Vaults are non-custodial. Your assets stay yours. Withdraw anytime, no permissions required.
+- **Core Vaults**: AI-managed passive yield wrapped into standard ERC-4626 shares
+- **Amplified Vaults**: built on top of Core Vault shares, using Ripe Protocol to add a second yield layer while keeping the borrowed leg in USD-denominated strategies
 
-The key difference from a [Programmable Wallet](user-wallet.md): your position isn't locked. Vault shares are composable tokens you can use anywhere in DeFi — trade them, use them as collateral, bridge them cross-chain. The underlying AI strategy keeps running no matter where your tokens go.
+Earn Vaults are non-custodial. Your assets stay yours. Withdraw anytime, no permissions required.
+
+The key difference from a [Programmable Wallet](user-wallet.md): your position isn't locked. Vault shares are composable tokens you can use anywhere in DeFi — trade them, use them as collateral, bridge them cross-chain. The underlying strategy keeps running no matter where your tokens go.
 
 ---
 
-## Why Vaults Exist
+## Why Earn Vaults Exist
 
 ### The Origin Story
 
@@ -24,11 +27,11 @@ Then came Ripe Protocol. Users would borrow against their yield-bearing position
 
 Both problems came from the same place: real users, real usage, real feedback. We felt the inefficiency firsthand running AI optimization at scale on Hightop.
 
-So we built vaults. The core insight: keep everything we built with Programmable Wallets — the AI capabilities, the clear boundaries, the onchain rules and policies — but give the AI just one "wallet" to manage. Users deposit into a shared vault and receive tokens representing their share. The AI optimizes once, everyone benefits. And because vault shares are standard tokens, they can be used as collateral on Ripe while the AI keeps optimizing the underlying positions.
+So we built Earn Vaults. The core insight: keep everything we built with Programmable Wallets — the AI capabilities, the clear boundaries, the onchain rules and policies — but give the AI just one "wallet" to manage. Users deposit into a shared vault and receive tokens representing their share. The AI optimizes once, everyone benefits. And because Core Vault shares are standard tokens, they can be used as collateral on Ripe while the AI keeps optimizing the underlying positions.
 
-This architecture also opened the door to new vault types: leveraged strategies, index vaults, and more — all built on the same foundation.
+This architecture also opened the door to new vault types: Amplified Vaults, index vaults, and more — all built on the same foundation.
 
-Today, vaults are live and powering Hightop in production.
+Today, Earn Vaults are live, and Core Vaults already power Hightop in production.
 
 ### Scale
 
@@ -38,12 +41,12 @@ That's how we scale to millions of users.
 
 ### Composability
 
-Vault shares are standard ERC-20 tokens. This unlocks:
+Core Vault shares are standard ERC-20 tokens. This unlocks:
 
-- **Collateral**: Use vault shares on Ripe Protocol to get a loan — the AI keeps optimizing your collateral even while it's locked
+- **Collateral**: Use Core Vault shares on Ripe Protocol to get a loan — the AI keeps optimizing your collateral even while it's locked
 - **Liquidity**: Sell shares in liquidity pools for instant exit
 - **Portability**: Bridge cross-chain, use in other protocols
-- **Integration**: Any app can plug into vaults with a standard interface
+- **Integration**: Any app can plug into Earn Vaults with a standard interface
 
 Your position becomes a building block, not a locked asset.
 
@@ -51,11 +54,11 @@ Your position becomes a building block, not a locked asset.
 
 Chasing yields is exhausting. Checking Morpho rates, comparing Aave markets, tracking Euler promotions, claiming rewards before they expire — it's a full-time job.
 
-Vaults handle all of it. Users deposit, get a token, and earn yield. All the complexity — multi-protocol strategies, AI rebalancing, risk management, claiming and compounding rewards — happens behind the scenes.
+Core Vaults handle all of it. Users deposit, get a token, and earn yield. All the complexity — multi-protocol strategies, AI rebalancing, risk management, claiming and compounding rewards — happens behind the scenes.
 
 ---
 
-## How Earn Vaults Work
+## How Core Vaults Work
 
 Simple yield optimization for your assets.
 
@@ -75,7 +78,7 @@ The AI agent continuously optimizes the vault's positions:
 - **Automatic Rebalancing**: Moves funds to capture better risk-adjusted yields as conditions change
 - **Reward Harvesting**: Claims and compounds protocol incentives automatically
 
-### Example: USDC Earn Vault
+### Example: USDC Core Vault
 
 **You deposit 10,000 USDC**:
 - Vault has 1,000,000 USDC total at $1.00/share
@@ -91,9 +94,9 @@ The AI agent continuously optimizes the vault's positions:
 
 ## Capital Efficiency with Ripe Protocol
 
-Vault shares become premium collateral on [Ripe Protocol](https://ripe.finance). This unlocks powerful capital efficiency:
+Core Vault shares become premium collateral on [Ripe Protocol](https://ripe.finance). This unlocks powerful capital efficiency:
 
-1. **Deposit** into an Earn Vault, receive _USDC
+1. **Deposit** into a Core Vault, receive _USDC
 2. **Use _USDC as collateral** on Ripe to borrow stablecoins
 3. **Your collateral keeps earning** — the AI optimizes yield in the background
 4. **Borrow and deploy** those stablecoins elsewhere
@@ -102,38 +105,38 @@ Your collateral works 24/7. This isn't static collateral sitting idle — it's a
 
 ---
 
-## Leveraged Vaults
+## Amplified Vaults
 
-Higher yields through managed leverage on Ripe Protocol — with built-in debt safety.
+Higher yields through managed leverage built on Core Vault shares and Ripe Protocol — with built-in debt safety.
 
 ### How It Works
 
-Leveraged Vaults amplify your yield by borrowing against your collateral, but with a key safety feature: **borrowed funds always maintain USD-based exposure** to ensure the vault can always repay its debt. The borrowed amount is also deposited back into Ripe as additional collateral, giving you two layers of collateral backing your debt — your original asset plus the borrowed USD.
+Amplified Vaults amplify your yield by borrowing against your collateral, but with a key safety feature: **borrowed funds always maintain USD-based exposure** to ensure the vault can always repay its debt. The borrowed amount is also deposited back into Ripe as additional collateral, giving you two layers of collateral backing your debt — your original asset plus the borrowed USD.
 
 Here's the full flow:
 
-1. **You deposit** a volatile asset into the Underscore Leverage vault (e.g., cbBTC, ETH)
-2. **Vault deposits** your asset into the corresponding Earn Vault (AI optimizes yield)
+1. **You deposit** a supported base asset into the Underscore Amplified Vault (currently cbBTC or USDC)
+2. **Vault deposits** your asset into the corresponding Core Vault (AI optimizes yield)
 3. **Vault uses** those yield-bearing shares as collateral on Ripe Protocol
 4. **Vault borrows** GREEN (stablecoin) against that collateral
 5. **Vault swaps** GREEN to USDC
-6. **Vault deposits** USDC into the USDC Earn Vault (more yield)
-7. **Vault adds** those USDC vault shares as additional collateral on Ripe
+6. **Vault deposits** USDC into the USDC Core Vault (more yield)
+7. **Vault adds** those USDC Core Vault shares as additional collateral on Ripe
 
 The result: your original asset earns yield, AND the borrowed amount earns yield — but the borrowed portion stays in USD-denominated assets.
 
-#### Yield Math: Leveraged cbBTC
+#### Yield Math: Amplified cbBTC
 
 Let's walk through the math with a $100,000 cbBTC deposit:
 
 | Layer | Amount | Rate | Annual Yield |
 |-------|--------|------|--------------|
-| cbBTC in Earn Vault | $100,000 | 0.5% | +$500 |
+| cbBTC in Core Vault | $100,000 | 0.5% | +$500 |
 | Borrow from Ripe (70% LTV) | $70,000 | 3%* | -$2,100 |
-| USDC in Earn Vault | $70,000 | 8% | +$5,600 |
+| USDC in Core Vault | $70,000 | 8% | +$5,600 |
 | **Net Yield** | | | **+$4,000** |
 
-*\*Underscore Vaults receive discounted borrow rates (3% vs standard 6%)*
+*\*Underscore Amplified Vaults receive discounted borrow rates (3% vs standard 6%)*
 
 **Combined APY: 4.0%** on your original $100k cbBTC — an 8x improvement over the base 0.5% yield, while maintaining full BTC exposure.
 
@@ -141,8 +144,8 @@ Let's walk through the math with a $100,000 cbBTC deposit:
 
 This design protects the vault from liquidation:
 
-- **Borrowed funds stay in USDC** — The vault cannot swap borrowed stablecoins into volatile assets like BTC or ETH
-- **Debt is always covered** — Even if your collateral (cbBTC, ETH) drops 50%, the borrowed USD portion maintains its value
+- **Borrowed funds stay in USDC or Savings GREEN** — The vault cannot swap borrowed capital into BTC or other volatile assets
+- **Debt is always covered** — Even if your BTC collateral (cbBTC) drops 50%, the borrowed USD portion maintains its value
 - **No death spiral** — The borrowed amount doesn't amplify losses from price drops
 
 **Example**: Using the same $100k cbBTC deposit from above:
@@ -158,7 +161,7 @@ Compare this to traditional leveraged positions where borrowed funds buy more of
 
 The AI manages both yield and risk:
 
-- **Collateral Management**: Deposits assets into Earn Vaults, then into Ripe Protocol
+- **Collateral Management**: Deposits assets into Core Vaults, then into Ripe Protocol
 - **Strategic Borrowing**: Borrows GREEN against collateral, then either swaps to USDC (if DEX liquidity is favorable) or stakes as Savings GREEN — either way, the borrowed amount earns yield
 - **USD Exposure Only**: Borrowed funds stay in USD-denominated assets (USDC or GREEN) — never swapped to volatile assets
 - **Debt Ratio Monitoring**: Maintains configurable maximum leverage
@@ -166,7 +169,7 @@ The AI manages both yield and risk:
 
 ### Risk Management
 
-Leveraged vaults include built-in safety mechanisms:
+Amplified vaults include built-in safety mechanisms:
 
 | Control | Purpose |
 |---------|---------|
@@ -176,28 +179,28 @@ Leveraged vaults include built-in safety mechanisms:
 | **Withdrawal Safety** | Automatically unwinds leverage for redemptions |
 | **Continuous Monitoring** | AI watches health factor around the clock |
 
-### Example: Leveraged cbBTC Vault
+### Example: Amplified cbBTC Vault
 
 **You deposit 1 cbBTC ($100,000)**:
 
 ```
 Your 1 cbBTC
     ↓
-cbBTC Earn Vault (earning 0.5%)
+cbBTC Core Vault (earning 0.5%)
     ↓
-Deposit vault shares to Ripe as collateral
+Deposit Core Vault shares to Ripe as collateral
     ↓
 Borrow $70,000 GREEN (70% LTV) → swap to USDC
     ↓
-USDC Earn Vault (earning 8%)
+USDC Core Vault (earning 8%)
     ↓
-Deposit USDC vault shares to Ripe as additional collateral
+Deposit USDC Core Vault shares to Ripe as additional collateral
 ```
 
 **Yield amplification**:
-- Your cbBTC earns 0.5% in the cbBTC Earn Vault → +$500/year
+- Your cbBTC earns 0.5% in the cbBTC Core Vault → +$500/year
 - Borrow cost at 3% (discounted rate) → -$2,100/year
-- Your borrowed $70k earns 8% in the USDC Earn Vault → +$5,600/year
+- Your borrowed $70k earns 8% in the USDC Core Vault → +$5,600/year
 - **Net yield: 4.0%** — an 8x improvement over base yield
 
 **If cbBTC drops 40%**:
@@ -207,6 +210,18 @@ Deposit USDC vault shares to Ripe as additional collateral
 - Position remains healthy — no liquidation risk
 
 **Your risk exposure**: Only the price movement of your original deposit (cbBTC). The leverage doesn't amplify your losses — it only amplifies your yield. If cbBTC drops 40%, you lose 40% of your initial value, same as holding cbBTC directly. The borrowed USD portion maintains its value and doesn't add downside risk.
+
+---
+
+## Core Vaults vs Amplified Vaults
+
+| Feature | **Core Vaults** | **Amplified Vaults** |
+|---------|----------------------|----------------------|
+| **Return profile** | Passive AI-managed yield | Core yield plus a second USD-based borrowed yield layer |
+| **Borrowing inside the strategy** | No | Yes, via Ripe Protocol |
+| **Debt exposure** | None | Managed debt with auto-deleverage |
+| **Collateral usage** | Optional: use shares on Ripe yourself | Built into the vault strategy |
+| **Best For** | Passive earners who want composable ERC-4626 shares | Users who want BTC or USDC exposure with additional yield amplification |
 
 ---
 
@@ -261,7 +276,7 @@ These rules are onchain. No rogue trades. No experimental farms. No hallucinatio
 
 ### Deposit Controls
 
-Vaults can implement additional safeguards:
+Earn Vaults can implement additional safeguards:
 
 | Control | Purpose |
 |---------|---------|
@@ -281,7 +296,7 @@ For extreme market conditions:
 
 ## Performance Fees
 
-Vaults charge fees only on profits — never on your principal:
+Earn Vaults charge fees only on profits — never on your principal:
 
 - **Rate**: 20% of yield generated
 - **Applied To**: Profits only, not deposits
@@ -297,9 +312,9 @@ See [Protocol Economics](protocol-economics.md) for how fees are used.
 
 ---
 
-## Earn Vaults vs Programmable Wallets
+## Core Vaults vs Programmable Wallets
 
-| Feature | **Earn Vaults** | **Programmable Wallets** |
+| Feature | **Core Vaults** | **Programmable Wallets** |
 |---------|------------|------------------|
 | **Ownership** | Proportional shares (tokens) | Full control of assets |
 | **Management** | AI-managed, hands-off | You + your managers decide |
@@ -309,7 +324,7 @@ See [Protocol Economics](protocol-economics.md) for how fees are used.
 | **Use as Collateral** | Yes (shares are tokens) | More complex |
 | **Best For** | Passive yield, composability | Active DeFi, custom strategies |
 
-**Use Earn Vaults When**: You want set-and-forget yield, need composable/productive collateral, or want to participate without wallet setup.
+**Use Core Vaults When**: You want set-and-forget yield, need composable/productive collateral, or want to participate without wallet setup.
 
 **Use Programmable Wallets When**: You want full control, custom strategies, agent execution, payment automation, or manager delegation with precise limits.
 
@@ -321,7 +336,7 @@ See [Protocol Economics](protocol-economics.md) for how fees are used.
 
 **Sarah** has 50,000 USDC sitting idle. She wants yield but doesn't have time to monitor rates.
 
-**Solution**: Deposits to USDC Earn Vault
+**Solution**: Deposits to the USDC Core Vault
 - Receives _USDC tokens instantly
 - AI captures yields across Morpho, Aave, Euler, and more.
 - Uses _USDC as collateral on Ripe to borrow for other opportunities
@@ -335,7 +350,7 @@ See [Protocol Economics](protocol-economics.md) for how fees are used.
 
 **Problem**: Building yield infrastructure from scratch requires significant engineering effort and security audits.
 
-**Solution**: Integrates Underscore Vaults directly
+**Solution**: Integrates Underscore Core Vaults directly
 - Users deposit through PayFlow's interface
 - Vault handles all yield optimization
 - PayFlow tracks user shares internally
@@ -343,18 +358,18 @@ See [Protocol Economics](protocol-economics.md) for how fees are used.
 
 **Result**: AI-managed yield without building yield infrastructure.
 
-### Leveraged Yield Strategy
+### Amplified Yield Strategy
 
-**Marcus** wants amplified yield on his ETH without managing liquidation risk.
+**Marcus** wants amplified yield on his BTC without managing liquidation risk.
 
-**Solution**: Deposits 20 ETH to Leveraged ETH Vault
-- ETH earns base yield in the ETH Earn Vault
-- Vault borrows USDC against his ETH (70% LTV) via Ripe Protocol
-- Borrowed USDC earns yield in the USDC Earn Vault
-- Borrowed funds stay USD-denominated — no amplified downside if ETH drops
+**Solution**: Deposits 1 cbBTC to the Amplified cbBTC Vault
+- cbBTC earns base yield in the cbBTC Core Vault
+- Vault borrows USDC against his cbBTC-linked collateral (70% LTV) via Ripe Protocol
+- Borrowed USDC earns yield in the USDC Core Vault
+- Borrowed funds stay USD-denominated — no amplified downside if BTC drops
 - AI manages rebalancing and debt ratios automatically
 
-**Result**: ~8x yield improvement over base ETH yield, with risk exposure limited to ETH price movement only.
+**Result**: ~8x yield improvement over base BTC yield, with risk exposure limited to BTC price movement only.
 
 ---
 
@@ -367,7 +382,7 @@ Yes. Withdrawals are immediate — the vault automatically unwinds positions as 
 Your shares reflect actual vault value. If underlying assets lose value (market movement, not AI error), share price decreases. Performance fees only apply to profits.
 
 **What assets can I deposit?**
-Each vault specifies its underlying asset (USDC, ETH, etc.). You deposit that asset and receive vault-specific shares.
+Core Vaults specify their underlying asset (USDC, ETH, cbBTC, AERO, RIPE, etc.). Amplified Vaults currently support BTC- and USDC-based positions on Base.
 
 **Are vault shares transferable?**
 Yes. Vault shares are standard ERC-20 tokens. Transfer, trade, or use as collateral anywhere ERC-20 tokens are accepted.
@@ -381,7 +396,8 @@ No protocol-enforced minimum, though gas costs make very small deposits impracti
 
 Ready to earn AI-optimized yield? [**Open the app →**](https://app.underscore.finance/)
 
-- **Deposit directly**: Connect your wallet and deposit into any vault
+- **Deposit directly**: Connect your wallet and deposit into a Core Vault or Amplified Vault
+- **Choose your profile**: Use Core Vaults for passive yield or Amplified Vaults for a Ripe-powered second yield layer
 - **Track your position**: Your vault shares appear in any ERC-20 compatible wallet
 - **Use as collateral**: Deposit shares to Ripe Protocol to borrow against your yield
 - **Withdraw anytime**: Redeem shares for underlying assets whenever you need them
@@ -392,4 +408,4 @@ For full control over your DeFi strategy, explore [Programmable Wallets](user-wa
 
 ---
 
-_Deposit. Earn. Compose._
+_Deposit. Earn. Amplify. Compose._
