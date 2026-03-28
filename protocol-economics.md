@@ -4,7 +4,7 @@ description: How Underscore generates revenue and what happens with it
 
 # Protocol Economics
 
-Underscore generates revenue through fees on value-generating activities. All protocol revenue is used to buy back RIPE tokens from [Ripe Protocol](https://ripe.finance), our partner protocol.
+Underscore generates revenue through fees on value-generating activities. Most of that revenue comes from a 20% performance fee on vault profits, so the protocol earns when vault users earn. 100% of protocol revenue is used to buy back [$RIPE](https://app.ripe.finance/ripe) in the open market.
 
 ---
 
@@ -56,9 +56,11 @@ No fees on:
 
 ---
 
-## Revenue Allocation: RIPE Buybacks
+## Revenue Allocation: $RIPE Buybacks
 
-All protocol revenue is used to buy back RIPE tokens from [Ripe Protocol](https://ripe.finance), our partner protocol.
+100% of protocol revenue is used to buy back [$RIPE](https://app.ripe.finance/ripe) in the open market.
+
+As Underscore usage grows, buyback demand scales with it and flows back into the broader ecosystem.
 
 **Verify onchain**: View current fee parameters in the [Params Explorer](https://params.underscore.finance/protocol).
 
@@ -72,4 +74,4 @@ All protocol revenue is used to buy back RIPE tokens from [Ripe Protocol](https:
 | Swap Fees | 0.25% of amount | Medium |
 | External Rewards | 20% of claims | Smaller |
 
-**100% of revenue → RIPE buybacks**
+**100% of revenue → [$RIPE](https://app.ripe.finance/ripe) bought back in the open market**

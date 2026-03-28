@@ -173,6 +173,8 @@ Every swap includes slippage protection — you specify the minimum amount you'l
 
 Underscore charges 0.25% on swaps. This is in addition to any DEX fees (which go to liquidity providers).
 
+Swap fees are one of Underscore's smaller revenue sources. Like all protocol revenue, they are used to buy back [$RIPE](https://app.ripe.finance/ripe) in the open market.
+
 ### Manager Swap Controls
 
 When managers execute swaps, additional controls apply:
@@ -347,8 +349,10 @@ Yes. The protocol includes a migration system that lets you move funds and copy 
 
 **What are the fees?**
 
+- **Earn Vault performance fees**: 20% on yield profits only
 - **Swap fees**: 0.25% on token swaps
 - **External reward claims**: 20% when claiming protocol rewards (MORPHO, WELL, etc.)
+- **Revenue use**: 100% of protocol revenue is used to buy back [$RIPE](https://app.ripe.finance/ripe) in the open market
 - **No fees on**: Transfers, idle funds, deposits, debt operations, liquidity provision, or ETH/WETH wrapping
 
 See [Protocol Economics](protocol-economics.md) for details on how fees work and where they go.

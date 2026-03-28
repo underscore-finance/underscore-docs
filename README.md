@@ -156,7 +156,7 @@ Yes. Whitelist them for instant transfers between your wallets.
 Currently Base L2 only. More chains coming.
 
 **How do fees work?**
-Small fees on swaps (0.25%) and external reward claims (20%). Earn Vaults charge 20% performance fees on yield profits only. No fees on transfers, deposits, or idle funds. See [Protocol Economics](protocol-economics.md) for details.
+Small fees on swaps (0.25%) and external reward claims (20%). Earn Vaults charge 20% performance fees on yield profits only. No fees on transfers, deposits, or idle funds. 100% of protocol revenue buys back [$RIPE](https://app.ripe.finance/ripe) in the open market. See [Protocol Economics](protocol-economics.md) for details.
 
 **What happens if I lose my owner wallet?**
 If you've set up managers and whitelisted addresses beforehand, managers can still transfer funds to your whitelisted addresses (like hardware wallets), providing a recovery path.

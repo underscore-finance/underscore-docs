@@ -94,7 +94,7 @@ Underscore charges small fees on certain activities:
 
 ## Future: Ambassador Revenue Share
 
-In addition to the RIPE yield bonuses described above, ambassadors may also receive a percentage of fees in-kind (paid in the same asset as the fee). This feature exists in the protocol but revenue share ratios are currently set to 0%.
+In addition to the RIPE yield bonuses described above, ambassadors may also receive a percentage of fees in-kind (paid in the same asset as the fee). This feature exists in the protocol but revenue share ratios are currently set to 0%. If ambassador revenue share is activated in the future, it would be deducted before the remaining protocol revenue is allocated to [$RIPE](https://app.ripe.finance/ripe) buybacks.
 
 ---
 

@@ -136,7 +136,7 @@ Let's walk through the math with a $100,000 cbBTC deposit:
 | USDC in Core Vault | $70,000 | 8% | +$5,600 |
 | **Net Yield** | | | **+$4,000** |
 
-*\*Underscore Amplified Vaults receive discounted borrow rates (3% vs standard 6%)*
+*\*In this example, the 3% borrow rate reflects Ripe's protocol-level Underscore vault discount: a 50% discount applied to a standard 6% borrow rate. This discount is configurable and may change.*
 
 **Combined APY: 4.0%** on your original $100k cbBTC — an 8x improvement over the base 0.5% yield, while maintaining full BTC exposure.
 
@@ -307,6 +307,8 @@ Earn Vaults charge fees only on profits — never on your principal:
 - Vault earns $1,000 in yield
 - 20% fee = $200 to protocol
 - $800 distributed to depositors via increased share price
+
+Most Underscore revenue comes from this 20% performance fee on vault profits. The protocol earns when vault users earn. 100% of fee revenue buys back [$RIPE](https://app.ripe.finance/ripe) in the open market.
 
 See [Protocol Economics](protocol-economics.md) for how fees are used.
 

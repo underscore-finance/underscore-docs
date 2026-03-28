@@ -10,6 +10,14 @@ Think of Underscore like AWS for DeFi — but fully non-custodial. Just as milli
 
 Underscore provides two core products: **[Earn Vaults](vaults.md)** for onchain yield that anyone can access, including Core Vaults and Amplified Vaults, and **[Programmable Wallets](user-wallet.md)** with [Managers](managers.md), [Payees](payees.md), [Cheques](cheques.md), and [Whitelist](whitelist.md) — agentic wallets where AI agents and operators execute with real funds within onchain rules.
 
+## Aligned Economics
+
+- The protocol earns when users earn: most Underscore revenue comes from a 20% performance fee on vault profits only
+- Small additional revenue comes from swap fees and external reward claim fees
+- No fees on deposits, transfers, idle funds, or principal
+- 100% of protocol revenue buys back [$RIPE](https://app.ripe.finance/ripe) in the open market
+- See [Protocol Economics](protocol-economics.md) for details on fees, examples, and onchain verification
+
 ## The Underscore Ecosystem
 
 ### Who Builds on Underscore
